@@ -13,6 +13,42 @@
 
       scope.s_scheduleStagesWidth = 100;
       scope.s_scheduleTimelineWidth = scope.s_mainWidth - scope.s_scheduleStagesWidth;
+
+
+
+      scope.model = {
+        days: [
+          '1',
+          '2',
+          '3',
+          '4'
+        ],
+        stages: [
+          'main',
+          'dance arena',
+          'fusion',
+          'blues & jazz',
+          'stage',
+          'stage',
+          'stage',
+          'stage',
+          'stage',
+          'stage',
+          'stage',
+          'stage',
+          'stage',
+          'stage',
+          'stage',
+          'stage',
+          'stage',
+          'stage',
+          'stage'
+        ],
+        tabSchedule: {
+          selectedStage: 0,
+          selectedDay: 0
+        }
+      }
     }
   })
 

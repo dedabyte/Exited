@@ -1,0 +1,29 @@
+<div class="content schedule">
+  <div class="schedule-top" style="height: {{::s_scheduleTopHeight}}px">
+    <div class="schedule-timeline" style="width: {{::s_scheduleTimelineWidth}}px"></div>
+    <div class="schedule-stages" style="width: {{::s_scheduleStagesWidth}}px">
+      <table class="cards">
+        <tbody>
+          <tr ng-repeat="stage in ::model.stages track by $index">
+            <td ng-bind="::stage"
+                ng-click="model.tabSchedule.selectedStage = $index"
+                ng-class="{selected: model.tabSchedule.selectedStage == $index}"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="schedule-bottom" style="height: {{::s_scheduleBottomHeight}}px">
+    <div class="schedule-tabs" style="width: {{::s_scheduleTimelineWidth}}px">
+      <table class="cards">
+        <tbody>
+        <tr>
+          <td ng-repeat="day in ::model.days track by $index"
+              ng-click="model.tabSchedule.selectedDay = $index"
+              ng-class="{selected: model.tabSchedule.selectedDay == $index}"><small>day</small> {{::day}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
