@@ -29,12 +29,14 @@ body {
 
 .schedule-timeline {
   height: 100%;
-  float: left; }
+  float: left;
+  width: calc(100% - 200px); }
 
 .schedule-stages {
   height: 100%;
   float: right;
-  background: red; }
+  background: red;
+  width: 200px; }
 
 .cards {
   border-spacing: 0;

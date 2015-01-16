@@ -44,11 +44,13 @@ body {
 .schedule-timeline {
   height: 100%;
   float: left;
+  width: calc(100% - 200px);
 }
 .schedule-stages {
   height: 100%;
   float: right;
   background: $mainBackground;
+  width: 200px;
 }
 
 .cards {
