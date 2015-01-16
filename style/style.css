@@ -7,13 +7,11 @@ html,
 body {
   height: 100%;
   font-family: sans-serif;
-  font-size: 12px; }
+  font-size: 12px;
+  background: red; }
 
 .main {
   height: 100%; }
-
-.tabs-wrap {
-  background: red; }
 
 .contents-wrap {
   position: relative; }
@@ -23,24 +21,28 @@ body {
   height: 100%; }
 
 .schedule-top {
-  position: relative; }
+  position: relative;
+  background: white; }
 
-.schedule-bottom {
-  background: green; }
+.schedule-tabs {
+  height: 100%; }
 
 .schedule-timeline {
   height: 100%;
-  float: left;
-  background: lightblue; }
+  float: left; }
 
 .schedule-stages {
   height: 100%;
   float: right;
-  background: cornflowerblue; }
+  background: red; }
 
-.stages {
+.cards {
+  border-spacing: 0;
   text-align: center;
   width: 100%;
   height: 100%; }
+
+.cards .selected {
+  background: white; }
 
 /*# sourceMappingURL=style.css.map */

@@ -18,10 +18,10 @@
         <div class="schedule-top" style="height: {{::s_scheduleTopHeight}}px">
           <div class="schedule-timeline" style="width: {{::s_scheduleTimelineWidth}}px"></div>
           <div class="schedule-stages" style="width: {{::s_scheduleStagesWidth}}px">
-            <table class="stages">
+            <table class="cards">
               <tbody>
                 <tr><td>MAIN</td></tr>
-                <tr><td>DANCE ARENA</td></tr>
+                <tr><td class="selected">DANCE ARENA</td></tr>
                 <tr><td>FUSION</td></tr>
                 <tr><td>BLUES & JAZZ</td></tr>
                 <tr><td>STAGE</td></tr>
@@ -39,7 +39,20 @@
             </table>
           </div>
         </div>
-        <div class="schedule-bottom" style="height: {{::s_scheduleBottomHeight}}px"></div>
+        <div class="schedule-bottom" style="height: {{::s_scheduleBottomHeight}}px">
+          <div class="schedule-tabs" style="width: {{::s_scheduleTimelineWidth}}px">
+            <table class="cards">
+              <tbody>
+                <tr>
+                  <td>1<small>st</small></td>
+                  <td class="selected">2<small>nd</small></td>
+                  <td>3<small>rd</small></td>
+                  <td>4<small>th</small></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
 

@@ -5,7 +5,7 @@
       scope.s_mainHeight = element.height();
       scope.s_mainWidth = element.width();
 
-      scope.s_tabsWrapHeight = 60;
+      scope.s_tabsWrapHeight = 50;
       scope.s_contentsWrapHeight = scope.s_mainHeight - scope.s_tabsWrapHeight;
 
       scope.s_scheduleBottomHeight = 50;
