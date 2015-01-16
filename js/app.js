@@ -1,0 +1,1 @@
+var exited = angular.module('app', []);
