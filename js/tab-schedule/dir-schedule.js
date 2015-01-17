@@ -5,7 +5,7 @@
       replace: true,
       templateUrl: 'js/tab-schedule/dir-schedule-tpl.html',
       link: function(scope, element){
-        console.log('hello');
+        scope.timelineHeightRatio = (scope.s_scheduleTopHeight - 20) / 780;
       }
     };
   })

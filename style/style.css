@@ -29,7 +29,8 @@ body {
 
 .schedule-timeline {
   height: 100%;
-  float: left; }
+  float: left;
+  padding: 10px; }
 
 .schedule-stages {
   height: 100%;
@@ -45,5 +46,36 @@ body {
 
 .cards .selected {
   background: white; }
+
+.timeline {
+  position: relative;
+  height: 100%; }
+
+.timeline table {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-spacing: 1px;
+  background: #dfdfdf; }
+
+.timeline table td {
+  background: white; }
+
+.timeline table tr td:first-child {
+  font-size: 10px;
+  font-weight: bold;
+  width: 40px;
+  vertical-align: top;
+  padding-top: 2px; }
+
+.event-wrap {
+  position: absolute;
+  width: 100%; }
+
+.event {
+  margin-left: 41px;
+  background: rgba(255, 0, 0, 0.3);
+  height: 100%;
+  border: 1px solid red; }
 
 /*# sourceMappingURL=style.css.map */

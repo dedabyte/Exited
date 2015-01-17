@@ -1,12 +1,33 @@
 <div class="content schedule">
   <div class="schedule-top" style="height: {{::s_scheduleTopHeight}}px">
-    <div class="schedule-timeline" style="width: {{::s_scheduleTimelineWidth}}px"></div>
+    <div class="schedule-timeline" style="width: {{::s_scheduleTimelineWidth}}px">
+      <div class="timeline">
+        <table>
+          <tbody>
+            <tr><td>19:00</td><td>&nbsp;</td></tr>
+            <tr><td>20:00</td><td>&nbsp;</td></tr>
+            <tr><td>21:00</td><td>&nbsp;</td></tr>
+            <tr><td>22:00</td><td>&nbsp;</td></tr>
+            <tr><td>23:00</td><td>&nbsp;</td></tr>
+            <tr><td>00:00</td><td>&nbsp;</td></tr>
+            <tr><td>01:00</td><td>&nbsp;</td></tr>
+            <tr><td>02:00</td><td>&nbsp;</td></tr>
+            <tr><td>03:00</td><td>&nbsp;</td></tr>
+            <tr><td>04:00</td><td>&nbsp;</td></tr>
+            <tr><td>05:00</td><td>&nbsp;</td></tr>
+            <tr><td>06:00</td><td>&nbsp;</td></tr>
+            <tr><td>07:00</td><td>&nbsp;</td></tr>
+          </tbody>
+        </table>
+        <div ex-event ng-repeat="event in model.tabSchedule.timeline[model.tabSchedule.selectedDay][model.tabSchedule.selectedStage]"></div>
+      </div>
+    </div>
     <div class="schedule-stages" style="width: {{::s_scheduleStagesWidth}}px">
       <table class="cards">
         <tbody>
           <tr ng-repeat="stage in ::model.stages track by $index">
             <td ng-bind="::stage"
-                ng-click="model.tabSchedule.selectedStage = $index"
+                ng-tap="model.tabSchedule.selectedStage = $index"
                 ng-class="{selected: model.tabSchedule.selectedStage == $index}"></td>
           </tr>
         </tbody>
@@ -19,7 +40,7 @@
         <tbody>
         <tr>
           <td ng-repeat="day in ::model.days track by $index"
-              ng-click="model.tabSchedule.selectedDay = $index"
+              ng-tap="model.tabSchedule.selectedDay = $index"
               ng-class="{selected: model.tabSchedule.selectedDay == $index}"><small>day</small> {{::day}}</td>
         </tr>
         </tbody>
