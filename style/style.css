@@ -74,8 +74,8 @@ body {
 
 .event {
   margin-left: 41px;
-  background: rgba(255, 0, 0, 0.3);
   height: 100%;
-  border: 1px solid red; }
+  border: 1px solid red;
+  background: rgba(255, 0, 0, 0.3); }
 
 /*# sourceMappingURL=style.css.map */
