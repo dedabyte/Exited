@@ -38,7 +38,8 @@ body {
   background: white;
   height: 100%;
   float: left;
-  padding: 10px; }
+  padding: 10px;
+  overflow: auto; }
 
 .schedule-stages {
   height: 100%;
@@ -65,6 +66,7 @@ body {
   .timeline table td {
     background: white;
     height: 36px;
+    max-height: 36px;
     border-top: 1px solid #dfdfdf;
     border-left: 1px solid #dfdfdf; }
   .timeline table tr td:first-child {
