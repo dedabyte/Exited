@@ -4,18 +4,30 @@
       <div class="timeline">
         <table>
           <tbody>
-            <tr><td><span class="time">19:00</span></td><td></td></tr>
-            <tr><td><span class="time">20:00</span></td><td></td></tr>
-            <tr><td><span class="time">21:00</span></td><td></td></tr>
-            <tr><td><span class="time">22:00</span></td><td></td></tr>
-            <tr><td><span class="time">23:00</span></td><td></td></tr>
-            <tr><td><span class="time">00:00</span></td><td></td></tr>
-            <tr><td><span class="time">01:00</span></td><td></td></tr>
-            <tr><td><span class="time">02:00</span></td><td></td></tr>
-            <tr><td><span class="time">03:00</span></td><td></td></tr>
-            <tr><td><span class="time">04:00</span></td><td></td></tr>
-            <tr><td><span class="time">05:00</span></td><td></td></tr>
-            <tr><td><span class="time">06:00</span></td><td></td></tr>
+            <tr><td class="time" rowspan="2"><span>19:00</span></td><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td class="time" rowspan="2"><span>20:00</span></td><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td class="time" rowspan="2"><span>21:00</span></td><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td class="time" rowspan="2"><span>22:00</span></td><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td class="time" rowspan="2"><span>23:00</span></td><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td class="time" rowspan="2"><span>00:00</span></td><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td class="time" rowspan="2"><span>01:00</span></td><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td class="time" rowspan="2"><span>02:00</span></td><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td class="time" rowspan="2"><span>03:00</span></td><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td class="time" rowspan="2"><span>04:00</span></td><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td class="time" rowspan="2"><span>05:00</span></td><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td class="time last" rowspan="2"><span>06:00</span></td><td></td></tr>
+            <tr><td></td></tr>
           </tbody>
         </table>
         <div ex-event ng-repeat="event in model.tabSchedule.timeline[model.tabSchedule.selectedDay][model.tabSchedule.selectedStage]"></div>
@@ -40,7 +52,10 @@
         <tr>
           <td ng-repeat="day in ::model.days track by $index"
               ng-tap="model.tabSchedule.selectedDay = $index"
-              ng-class="{selected: model.tabSchedule.selectedDay == $index}"><small>day</small> {{::($index+1)}}<br><small>{{::day}}</small></td>
+              ng-class="{selected: model.tabSchedule.selectedDay == $index}"
+              style="width: {{::100/model.days.length}}px">
+            <small>day</small> {{::($index+1)}}<br><small>{{::day}}</small>
+          </td>
         </tr>
         </tbody>
       </table>

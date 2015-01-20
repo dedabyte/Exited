@@ -1,6 +1,9 @@
 @font-face {
-  font-family: RCr;
+  font-family: fontRegular;
   src: url(RobotoCondensed-Regular.ttf); }
+@font-face {
+  font-family: fontBold;
+  src: url(RobotoCondensed-Bold.ttf); }
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,7 +12,7 @@
 html,
 body {
   height: 100%;
-  font-family: RCr, sans-serif;
+  font-family: fontRegular, sans-serif;
   font-size: 13px; }
 
 .main {
@@ -51,10 +54,10 @@ body {
   width: 100%;
   height: 100%;
   text-transform: uppercase; }
-
-.cards .selected {
-  background: white;
-  color: #dc051e; }
+  .cards .selected {
+    background: white;
+    color: #dc051e;
+    font-family: fontBold; }
 
 .timeline {
   position: relative;
@@ -67,19 +70,24 @@ body {
     border-spacing: 0; }
   .timeline table td {
     background: white;
-    height: 35px;
-    max-height: 35px;
+    height: 17px;
+    max-height: 17px;
     border-top: 1px solid #dfdfdf;
     border-left: 1px solid #dfdfdf; }
-  .timeline table tr td:first-child {
-    width: 40px; }
+  .timeline table tr:nth-child(even) td {
+    border-top: 1px dashed #e6e6e6; }
   .timeline table tr td:last-child {
     border-right: 1px solid #dfdfdf; }
   .timeline table tr:last-child td {
     border-bottom: 1px solid #dfdfdf; }
   .timeline table .time {
-    font-size: 10px;
-    font-weight: bold; }
+    width: 39px;
+    vertical-align: top; }
+    .timeline table .time span {
+      font-size: 10px;
+      color: #888; }
+    .timeline table .time.last {
+      border-bottom: 1px solid #dfdfdf; }
 
 .event-wrap {
   position: absolute;
@@ -93,6 +101,6 @@ body {
   background: rgba(220, 5, 30, 0.2);
   font-size: 12px; }
   .event .time {
-    font-weight: bold; }
+    font-family: fontBold; }
 
 /*# sourceMappingURL=style.css.map */

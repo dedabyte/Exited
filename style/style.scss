@@ -4,8 +4,12 @@ $mainColor: rgba(220, 5, 30, 1);
 
 
 @font-face {
-  font-family: RCr;
+  font-family: fontRegular;
   src: url(RobotoCondensed-Regular.ttf);
+}
+@font-face {
+  font-family: fontBold;
+  src: url(RobotoCondensed-Bold.ttf);
 }
 * {
   box-sizing: border-box;
@@ -15,7 +19,7 @@ $mainColor: rgba(220, 5, 30, 1);
 html,
 body {
   height: 100%;
-  font-family: RCr, sans-serif;
+  font-family: fontRegular, sans-serif;
   font-size: 13px;
 }
 .main {
@@ -66,10 +70,12 @@ body {
   width: 100%;
   height: 100%;
   text-transform: uppercase;
-}
-.cards .selected {
-  background: white;
-  color: $mainColor;
+
+  .selected {
+    background: white;
+    color: $mainColor;
+    font-family: fontBold;
+  }
 }
 
 .timeline {
@@ -89,14 +95,14 @@ body {
 
   table td {
     background: white;
-    height: 35px;
-    max-height: 35px;
+    height: 17px;
+    max-height: 17px;
     border-top: $timelineBorder;
     border-left: $timelineBorder;
   }
 
-  table tr td:first-child {
-    width: 40px;
+  table tr:nth-child(even) td {
+    border-top: 1px dashed #e6e6e6;
   }
 
   table tr td:last-child {
@@ -108,8 +114,16 @@ body {
   }
 
   table .time {
-    font-size: 10px;
-    font-weight: bold;
+    width: 39px;
+    vertical-align: top;
+
+    span {
+      font-size: 10px;
+      color: #888;
+    }
+    &.last {
+      border-bottom: $timelineBorder;
+    }
   }
 }
 
@@ -126,6 +140,6 @@ body {
   font-size: 12px;
 
   .time {
-    font-weight: bold;
+    font-family: fontBold;
   }
 }
