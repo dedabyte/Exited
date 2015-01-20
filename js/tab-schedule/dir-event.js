@@ -5,8 +5,16 @@
       replace: true,
       templateUrl: 'js/tab-schedule/dir-event-tpl.html',
       link: function(scope, element){
-        scope.top = getMinutesFromProgrameStart(scope.event.start) / 5 * 3;
-        scope.height = getMinutesFromProgrameStart(scope.event.end) / 5 * 3 - scope.top - 1;
+        var minsStart = getMinutesFromProgrameStart(scope.event.start);
+        var minsEnd = getMinutesFromProgrameStart(scope.event.end);
+        scope.top = minsStart / 5 * 3;
+        scope.height = minsEnd / 5 * 3 - scope.top - 1;
+
+        if(minsStart <= scope.currentTime && scope.currentTime <= minsEnd){
+          element.addClass('in-progress');
+        }else{
+          element.removeClass('in-progress');
+        }
 
         function getMinutesFromProgrameStart(sTime){
           var aTime = sTime.split(':');
