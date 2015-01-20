@@ -1,6 +1,6 @@
 $timelineFirstTdWidth: 40px;
 $timelineBorder: 1px solid #dfdfdf;
-$mainColor: #DC051E;
+$mainColor: rgba(220, 5, 30, 1);
 
 
 @font-face {
@@ -35,9 +35,11 @@ body {
   height: 100%;
 }
 
+.schedule {
+  background: #dfdfdf;
+}
 .schedule-top {
   position: relative;
-  background: white;
 }
 .schedule-bottom {
 
@@ -47,6 +49,7 @@ body {
 }
 
 .schedule-timeline {
+  background: white;
   height: 100%;
   float: left;
   padding: 10px;
@@ -109,8 +112,8 @@ body {
 .event {
   margin-left: 40px;
   height: 100%;
-  border: 1px solid #888;
-  background: rgba(0,0,0,.2);
+  border: 1px solid $mainColor;
+  background: transparentize($mainColor, 0.8);
 
 //  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,0,0,0.4)), color-stop(80%,rgba(255,0,0,0.4)), color-stop(90%,rgba(255,128,128,0.4)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
 //  background: -webkit-linear-gradient(top,  rgba(255,0,0,0.4) 0%,rgba(255,0,0,0.4) 80%,rgba(255,128,128,0.4) 90%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
