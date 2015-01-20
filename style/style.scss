@@ -76,6 +76,11 @@ body {
   position: relative;
   height: 100%;
 
+  // android webview bug!
+  table * {
+    box-sizing: content-box;
+  }
+
   table {
     text-align: center;
     width: 100%;
@@ -84,8 +89,8 @@ body {
 
   table td {
     background: white;
-    height: 36px;
-    max-height: 36px;
+    height: 35px;
+    max-height: 35px;
     border-top: $timelineBorder;
     border-left: $timelineBorder;
   }

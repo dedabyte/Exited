@@ -59,14 +59,16 @@ body {
 .timeline {
   position: relative;
   height: 100%; }
+  .timeline table * {
+    box-sizing: content-box; }
   .timeline table {
     text-align: center;
     width: 100%;
     border-spacing: 0; }
   .timeline table td {
     background: white;
-    height: 36px;
-    max-height: 36px;
+    height: 35px;
+    max-height: 35px;
     border-top: 1px solid #dfdfdf;
     border-left: 1px solid #dfdfdf; }
   .timeline table tr td:first-child {
