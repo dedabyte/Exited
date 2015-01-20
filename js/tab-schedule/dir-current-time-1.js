@@ -17,7 +17,7 @@
         }else{
           element.removeClass('current-time-1');
         }
-      });
+      }, true);
     };
   });
 
