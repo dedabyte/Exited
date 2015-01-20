@@ -16,7 +16,6 @@
             <tr><td>04:00</td><td>&nbsp;</td></tr>
             <tr><td>05:00</td><td>&nbsp;</td></tr>
             <tr><td>06:00</td><td>&nbsp;</td></tr>
-            <tr><td>07:00</td><td>&nbsp;</td></tr>
           </tbody>
         </table>
         <div ex-event ng-repeat="event in model.tabSchedule.timeline[model.tabSchedule.selectedDay][model.tabSchedule.selectedStage]"></div>
@@ -41,7 +40,7 @@
         <tr>
           <td ng-repeat="day in ::model.days track by $index"
               ng-tap="model.tabSchedule.selectedDay = $index"
-              ng-class="{selected: model.tabSchedule.selectedDay == $index}"><small>day</small> {{::day}}</td>
+              ng-class="{selected: model.tabSchedule.selectedDay == $index}"><small>day</small> {{::($index+1)}}<br><small>{{::day}}</small></td>
         </tr>
         </tbody>
       </table>

@@ -5,8 +5,8 @@
       replace: true,
       templateUrl: 'js/tab-schedule/dir-event-tpl.html',
       link: function(scope, element){
-        scope.top = getMinutesFromProgrameStart(scope.event.start) * scope.timelineHeightRatio;
-        scope.height = getMinutesFromProgrameStart(scope.event.end) * scope.timelineHeightRatio - scope.top - 1;
+        scope.top = getMinutesFromProgrameStart(scope.event.start) / 5 * 3;
+        scope.height = getMinutesFromProgrameStart(scope.event.end) / 5 * 3 - scope.top - 1;
 
         function getMinutesFromProgrameStart(sTime){
           var aTime = sTime.split(':');

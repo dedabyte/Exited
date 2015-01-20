@@ -18,10 +18,10 @@
 
       scope.model = {
         days: [
-          '1',
-          '2',
-          '3',
-          '4'
+          'thu',
+          'fri',
+          'sat',
+          'sun'
         ],
         stages: [
           'main',
@@ -34,11 +34,7 @@
           'stage',
           'stage',
           'stage',
-          'stage',
-          'stage',
-          'stage',
-          'stage',
-          'stage',
+          'stage'
         ],
         tabSchedule: {
           selectedStage: 0,
@@ -51,7 +47,7 @@
                 { start: '19:30', end: '21:00', title: 'Night Train, Novi Sad' },
                 { start: '21:00', end: '22:00', title: 'WisePeach, Novi Sad' },
                 { start: '22:00', end: '23:30', title: 'Jezgro, Novi Sad' },
-                { start: '23:30', end: '01:00', title: 'Ritam Nereda, Novi Sad' },
+                { start: '23:30', end: '01:00', title: 'Ritam Nereda, Novi Sad' }
               ]
             ]
           ]

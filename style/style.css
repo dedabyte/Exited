@@ -1,3 +1,6 @@
+@font-face {
+  font-family: RCr;
+  src: url(RobotoCondensed-Regular.ttf); }
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,12 +9,14 @@
 html,
 body {
   height: 100%;
-  font-family: sans-serif;
-  font-size: 12px;
-  background: red; }
+  font-family: RCr, sans-serif;
+  font-size: 13px; }
 
 .main {
   height: 100%; }
+
+.tabs-wrap {
+  background: #DC051E; }
 
 .contents-wrap {
   position: relative; }
@@ -34,8 +39,7 @@ body {
 
 .schedule-stages {
   height: 100%;
-  float: right;
-  background: red; }
+  float: right; }
 
 .cards {
   border-spacing: 0;
@@ -45,37 +49,40 @@ body {
   text-transform: uppercase; }
 
 .cards .selected {
-  background: white; }
+  background: white;
+  color: #DC051E; }
 
 .timeline {
   position: relative;
   height: 100%; }
-
-.timeline table {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  border-spacing: 1px;
-  background: #dfdfdf; }
-
-.timeline table td {
-  background: white; }
-
-.timeline table tr td:first-child {
-  font-size: 10px;
-  font-weight: bold;
-  width: 40px;
-  vertical-align: top;
-  padding-top: 2px; }
+  .timeline table {
+    text-align: center;
+    width: 100%;
+    border-spacing: 0; }
+  .timeline table td {
+    background: white;
+    height: 36px;
+    border-top: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf; }
+  .timeline table tr td:first-child {
+    font-size: 10px;
+    font-weight: bold;
+    width: 40px;
+    vertical-align: top;
+    padding-top: 2px; }
+  .timeline table tr td:last-child {
+    border-right: 1px solid #dfdfdf; }
+  .timeline table tr:last-child td {
+    border-bottom: 1px solid #dfdfdf; }
 
 .event-wrap {
   position: absolute;
   width: 100%; }
 
 .event {
-  margin-left: 41px;
+  margin-left: 40px;
   height: 100%;
-  border: 1px solid red;
-  background: rgba(255, 0, 0, 0.3); }
+  border: 1px solid #888;
+  background: rgba(0, 0, 0, 0.2); }
 
 /*# sourceMappingURL=style.css.map */
