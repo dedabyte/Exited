@@ -67,7 +67,8 @@ body {
   .timeline table {
     text-align: center;
     width: 100%;
-    border-spacing: 0; }
+    border-spacing: 0;
+    margin-bottom: 10px; }
   .timeline table td {
     background: white;
     height: 17px;
