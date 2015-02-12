@@ -3,6 +3,7 @@ $timelineBorder: 1px solid #dfdfdf;
 $mainColor: rgba(220, 5, 30, 1);
 
 
+
 @font-face {
   font-family: fontRegular;
   src: url(RobotoCondensed-Regular.ttf);
@@ -22,6 +23,9 @@ body {
   font-family: fontRegular, sans-serif;
   font-size: 13px;
 }
+b {
+  font-family: fontBold;
+}
 .main {
   height: 100%;
 }
@@ -35,11 +39,13 @@ body {
   text-align: center;
   color: white;
   line-height: 50px;
+
+  &.selected {
+    background: transparentize(white, 0.8);
+    font-family: fontBold;
+  }
 }
-.tab.selected {
-  background: transparentize(white, 0.8);
-  font-weight: bold;
-}
+
 
 .contents-wrap {
   position: relative;
@@ -148,8 +154,8 @@ body {
   margin-left: 34px;
   height: 100%;
   border: 1px solid #666;
-  background: transparentize(#666, 0.15);
-  font-size: 12px;
+  background: transparentize(#666, 0.2);
+  //font-size: 12px;
   color: white;
 
   .time {
@@ -158,7 +164,7 @@ body {
 }
 .event-wrap.in-progress .event {
   border: 1px solid $mainColor;
-  background: transparentize($mainColor, 0.15);
+  background: transparentize($mainColor, 0.2);
   color: white;
 }
 

@@ -15,6 +15,9 @@ body {
   font-family: fontRegular, sans-serif;
   font-size: 13px; }
 
+b {
+  font-family: fontBold; }
+
 .main {
   height: 100%; }
 
@@ -27,10 +30,9 @@ body {
   text-align: center;
   color: white;
   line-height: 50px; }
-
-.tab.selected {
-  background: rgba(255, 255, 255, 0.2);
-  font-weight: bold; }
+  .tab.selected {
+    background: rgba(255, 255, 255, 0.2);
+    font-family: fontBold; }
 
 .contents-wrap {
   position: relative; }
@@ -110,15 +112,14 @@ body {
   margin-left: 34px;
   height: 100%;
   border: 1px solid #666;
-  background: rgba(102, 102, 102, 0.85);
-  font-size: 12px;
+  background: rgba(102, 102, 102, 0.8);
   color: white; }
   .event .time {
     font-family: fontBold; }
 
 .event-wrap.in-progress .event {
   border: 1px solid #dc051e;
-  background: rgba(220, 5, 30, 0.85);
+  background: rgba(220, 5, 30, 0.8);
   color: white; }
 
 .current-time-1 {
