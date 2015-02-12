@@ -29,6 +29,17 @@ body {
 .tabs-wrap {
   background: $mainColor;
 }
+.tab {
+  float: left;
+  width: 50%;
+  text-align: center;
+  color: white;
+  line-height: 50px;
+}
+.tab.selected {
+  background: transparentize(white, 0.8);
+  font-weight: bold;
+}
 
 .contents-wrap {
   position: relative;
@@ -115,7 +126,7 @@ body {
   }
 
   table .time {
-    width: 39px;
+    width: 33px;
     vertical-align: top;
 
     span {
@@ -134,10 +145,10 @@ body {
 }
 .event {
   padding: 3px;
-  margin-left: 40px;
+  margin-left: 34px;
   height: 100%;
-  border: 1px solid #444;
-  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #666;
+  background: transparentize(#666, 0.15);
   font-size: 12px;
   color: white;
 
@@ -147,13 +158,13 @@ body {
 }
 .event-wrap.in-progress .event {
   border: 1px solid $mainColor;
-  background: transparentize($mainColor, 0.8);
-  color: #444;
+  background: transparentize($mainColor, 0.15);
+  color: white;
 }
 
 .current-time-1 {
   position: absolute;
   height: 2px;
   width: 100%;
-  background: transparentize($mainColor, 0.6);
+  background: transparentize($mainColor, 0.4);
 }

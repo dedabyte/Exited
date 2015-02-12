@@ -1,9 +1,9 @@
 (function(){
 
-  exited.directive('exEvent', function Event(){
+  exited.directive('exScheduleEvent', function ScheduleEvent(){
     return {
       replace: true,
-      templateUrl: 'js/tab-schedule/dir-event-tpl.html',
+      templateUrl: 'js/tab-schedule/dir-schedule-event-tpl.html',
       link: function(scope, element){
         var minsStart = getMinutesFromProgrameStart(scope.event.start);
         var minsEnd = getMinutesFromProgrameStart(scope.event.end);

@@ -27,23 +27,11 @@
             <tr><td></td></tr>
             <tr><td class="time" rowspan="2"><span>05:00</span></td><td></td></tr>
             <tr><td></td></tr>
-            <tr><td class="time" rowspan="2"><span>05:00</span></td><td></td></tr>
-            <tr><td></td></tr>
-            <tr><td class="time" rowspan="2"><span>05:00</span></td><td></td></tr>
-            <tr><td></td></tr>
-            <tr><td class="time" rowspan="2"><span>05:00</span></td><td></td></tr>
-            <tr><td></td></tr>
-            <tr><td class="time" rowspan="2"><span>05:00</span></td><td></td></tr>
-            <tr><td></td></tr>
-            <tr><td class="time" rowspan="2"><span>05:00</span></td><td></td></tr>
-            <tr><td></td></tr>
-            <tr><td class="time" rowspan="2"><span>05:00</span></td><td></td></tr>
-            <tr><td></td></tr>
             <tr><td class="time last" rowspan="2"><span>06:00</span></td><td></td></tr>
             <tr><td></td></tr>
           </tbody>
         </table>
-        <div ex-event ng-repeat="event in model.data[model.tabSchedule.selectedDay][model.tabSchedule.selectedStage]"></div>
+        <div ex-schedule-event ng-repeat="event in model.data[model.tabSchedule.selectedDay][model.tabSchedule.selectedStage]"></div>
       </div>
     </div>
     <div class="schedule-stages" style="width: {{::s_scheduleStagesWidth}}px">
@@ -66,7 +54,7 @@
           <td ng-repeat="day in ::model.days track by $index"
               ng-tap="model.tabSchedule.selectedDay = $index"
               ng-class="{selected: model.tabSchedule.selectedDay == $index}"
-              style="width: {{::100/model.days.length}}px">
+              style="width: {{::100/model.days.length}}%">
             <small>day</small> {{::($index+1)}}<br><small>{{::day}}</small>
           </td>
         </tr>

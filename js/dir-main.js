@@ -16,7 +16,9 @@
 
 
 
+
       scope.model = {
+        tab: 1,
         days: [
           'thu',
           'fri',

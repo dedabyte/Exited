@@ -10,11 +10,13 @@
   <div class="main" ex-main>
 
     <div class="tabs-wrap" style="height: {{::s_tabsWrapHeight}}px">
-      <div class="tab"></div>
+      <div class="tab" ng-class="{selected: model.tab == 1}" ng-tap="model.tab = 1">STAGES</div>
+      <div class="tab" ng-class="{selected: model.tab == 2}" ng-tap="model.tab = 2">ALL</div>
     </div>
 
     <div class="contents-wrap" style="height: {{::s_contentsWrapHeight}}px">
-      <div ex-tab-schedule></div>
+      <div ex-tab-schedule ng-show="model.tab == 1"></div>
+      <div ex-tab-lineup   ng-show="model.tab == 2"></div>
     </div>
 
   </div>
@@ -32,7 +34,8 @@
   <script src="js/dir-ng-tap.js"></script>
   <script src="js/dir-main.js"></script>
   <script src="js/tab-schedule/dir-schedule.js"></script>
-  <script src="js/tab-schedule/dir-event.js"></script>
+  <script src="js/tab-schedule/dir-schedule-event.js"></script>
   <script src="js/tab-schedule/dir-current-time-1.js"></script>
+  <script src="js/tab-lineup/dir-lineup.js"></script>
 </body>
 </html>

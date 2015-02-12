@@ -21,6 +21,17 @@ body {
 .tabs-wrap {
   background: #dc051e; }
 
+.tab {
+  float: left;
+  width: 50%;
+  text-align: center;
+  color: white;
+  line-height: 50px; }
+
+.tab.selected {
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: bold; }
+
 .contents-wrap {
   position: relative; }
 
@@ -82,7 +93,7 @@ body {
   .timeline table tr:last-child td {
     border-bottom: 1px solid #dfdfdf; }
   .timeline table .time {
-    width: 39px;
+    width: 33px;
     vertical-align: top; }
     .timeline table .time span {
       font-size: 10px;
@@ -96,10 +107,10 @@ body {
 
 .event {
   padding: 3px;
-  margin-left: 40px;
+  margin-left: 34px;
   height: 100%;
-  border: 1px solid #444;
-  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #666;
+  background: rgba(102, 102, 102, 0.85);
   font-size: 12px;
   color: white; }
   .event .time {
@@ -107,13 +118,13 @@ body {
 
 .event-wrap.in-progress .event {
   border: 1px solid #dc051e;
-  background: rgba(220, 5, 30, 0.2);
-  color: #444; }
+  background: rgba(220, 5, 30, 0.85);
+  color: white; }
 
 .current-time-1 {
   position: absolute;
   height: 2px;
   width: 100%;
-  background: rgba(220, 5, 30, 0.4); }
+  background: rgba(220, 5, 30, 0.6); }
 
 /*# sourceMappingURL=style.css.map */
