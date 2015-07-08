@@ -34,6 +34,13 @@ b {
     background: rgba(255, 255, 255, 0.2);
     font-family: fontBold; }
 
+.tab2 {
+  text-align: center;
+  color: white;
+  line-height: 50px;
+  font-family: fontBold;
+  font-size: 16px; }
+
 .contents-wrap {
   position: relative; }
 
