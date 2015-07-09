@@ -33,7 +33,10 @@
             <tr><td></td></tr>
           </tbody>
         </table>
-        <div ex-schedule-event ng-repeat="event in model.data[model.tabSchedule.selectedDay][model.tabSchedule.selectedStage]"></div>
+        <div ex-schedule-event
+             ng-class="{ fav: favs.hasOwnProperty(event.id) }"
+             ng-tap="saveFav(event.id)"
+             ng-repeat="event in model.data[model.tabSchedule.selectedDay][model.tabSchedule.selectedStage]"></div>
       </div>
     </div>
     <div class="schedule-stages" style="width: {{::s_scheduleStagesWidth}}px">
@@ -41,7 +44,7 @@
         <tbody>
           <tr ng-repeat="stage in ::model.stages track by $index">
             <td ng-bind="::stage"
-                ng-tap="model.tabSchedule.selectedStage = $index"
+                ng-tap="model.tabSchedule.selectedStage = $index; saveStage($index)"
                 ng-class="{selected: model.tabSchedule.selectedStage == $index}"></td>
           </tr>
         </tbody>

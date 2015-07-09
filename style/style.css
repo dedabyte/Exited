@@ -124,6 +124,10 @@ b {
   .event .time {
     font-family: fontBold; }
 
+.event-wrap.fav .event {
+  border: 1px solid black;
+  background: rgba(0, 0, 0, 0.8); }
+
 .event-wrap.in-progress .event {
   border: 1px solid #dc051e;
   background: rgba(220, 5, 30, 0.8);

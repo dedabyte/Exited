@@ -169,6 +169,10 @@ b {
     font-family: fontBold;
   }
 }
+.event-wrap.fav .event {
+  border: 1px solid black;
+  background: transparentize(black, 0.2);
+}
 .event-wrap.in-progress .event {
   border: 1px solid $mainColor;
   background: transparentize($mainColor, 0.2);

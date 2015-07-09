@@ -2,6 +2,7 @@
 
   exited.directive('exMain', function MainDirective(){
     return function(scope, element){
+      // APP DIMENSIONS
       scope.s_mainHeight = element.height();
       scope.s_mainWidth = element.width();
 
@@ -15,8 +16,36 @@
       scope.s_scheduleTimelineWidth = scope.s_mainWidth - scope.s_scheduleStagesWidth;
 
 
+      // LOCAL STORAGE
+      // selected stage
+      var selectedStage = parseInt(localStorage.getItem('exited.selectedStage')) || 0;
+      scope.saveStage = function(stage){
+        localStorage.setItem('exited.selectedStage', stage)
+      };
+      // favourite events
+      try{
+        scope.favs = JSON.parse(localStorage.getItem('exited.favs')) || {};
+      }catch(e){
+        scope.favs = {};
+      }
+      scope.saveFav = function(eventId){
+        if(scope.favs.hasOwnProperty(eventId)){
+          delete scope.favs[eventId];
+        }else{
+          scope.favs[eventId] = 1;
+        }
+        localStorage.setItem('exited.favs', JSON.stringify(scope.favs));
+      };
 
 
+      // UTILS
+      function generateDateStamp(){
+        var today = new Date();
+        return today.getFullYear() + '-' + (today.getMonth()+1) + '-' + today.getDate();
+      }
+
+
+      // APP DATA MODEL
       scope.model = {
         tab: 1,
         days: [
@@ -44,7 +73,7 @@
           'fusion',
           'future shock',
           'gaia trance',
-          'ns',
+          //'ns',
           'main',
           'latino',
           'reggae',
@@ -53,7 +82,7 @@
           'chill-in'
         ],
         tabSchedule: {
-          selectedStage: 0,
+          selectedStage: selectedStage,
           selectedDay: 0
         },
         //data: [
@@ -2799,6 +2828,16 @@
           "error": false
         }]]]
       }
+
+
+      // INIT
+      var days = ['2015-7-9','2015-7-10','2015-7-11','2015-7-12'];
+      var currentDay = generateDateStamp();
+      var currentDayIndex = days.indexOf(currentDay);
+      if(currentDayIndex > -1){
+        scope.model.tabSchedule.selectedDay = currentDayIndex;
+      }
+
     }
   });
 
