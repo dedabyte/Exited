@@ -41,7 +41,7 @@
       // UTILS
       function generateDateStamp(){
         var now = Date.now() - 8 * 60 * 60 * 1000;
-        var today = new Date();
+        var today = new Date(now);
         return today.getFullYear() + '-' + (today.getMonth()+1) + '-' + today.getDate();
       }
 
