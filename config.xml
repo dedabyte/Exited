@@ -4,12 +4,12 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "info.igordedic.exited"
-        version   = "0.1.2">
+        version   = "0.1.3">
 
     <name>Exited 2015</name>
 
     <description>
-        Get Exited! Exit 2015 lineup.
+        Get Exited! Exit 2015 timeline.
     </description>
 
     <author href="http://igordedic.info" email="igdedic@gmail.com">
