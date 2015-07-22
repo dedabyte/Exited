@@ -16,6 +16,8 @@
         Dedabyte
     </author>
 
+    <preference name='phonegap-version' value='cli-5.1.1' />
+
     <!--
         Enable individual API permissions here.
         The "device" permission is required for the 'deviceready' event.
