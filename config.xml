@@ -30,6 +30,7 @@
         permission on your app, which PhoneGap requires.
     -->
     <preference name="permissions"                value="none"/>
+    <preference name="StatusBarBackgroundColor" value="#DC051E" />
 
     <!-- Customize your app and platform with the preference element. -->
     <!-- <preference name="phonegap-version"      value="3.4.0" /> -->      <!-- all: current version of PhoneGap -->
