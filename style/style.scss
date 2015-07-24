@@ -120,10 +120,10 @@ b {
 
   table td {
     background: white;
-    height: 17px;
-    max-height: 17px;
+    height: 23px;
+    max-height: 23px;
     border-top: $timelineBorder;
-    border-left: $timelineBorder;
+    //border-left: $timelineBorder;
   }
 
   table tr:nth-child(even) td {
@@ -131,7 +131,7 @@ b {
   }
 
   table tr td:last-child {
-    border-right: $timelineBorder;
+    //border-right: $timelineBorder;
   }
 
   table tr:last-child td {
@@ -157,16 +157,23 @@ b {
   width: 100%;
 }
 .event {
-  padding: 3px;
+  padding: 3px 6px;
   margin-left: 34px;
   height: 100%;
   border: 1px solid #666;
   background: transparentize(#666, 0.2);
+  border-radius: 3px;
   //font-size: 12px;
   color: white;
+  overflow: hidden;
+  line-height: 1;
 
   .time {
     font-family: fontBold;
+  }
+
+  span {
+    font-size: 12px;
   }
 }
 .event-wrap.fav .event {

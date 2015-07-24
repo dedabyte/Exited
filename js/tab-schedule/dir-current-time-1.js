@@ -13,7 +13,7 @@
             hours -= 19;
           }
           scope.currentTime = hours * 60 + mins;
-          element.addClass('current-time-1').css('top', (scope.currentTime / 5 * 3).toInt());
+          element.addClass('current-time-1').css('top', (scope.currentTime / 5 * 4).toInt());
         }else{
           element.removeClass('current-time-1');
         }

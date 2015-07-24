@@ -91,14 +91,11 @@ b {
     margin-bottom: 10px; }
   .timeline table td {
     background: white;
-    height: 17px;
-    max-height: 17px;
-    border-top: 1px solid #dfdfdf;
-    border-left: 1px solid #dfdfdf; }
+    height: 23px;
+    max-height: 23px;
+    border-top: 1px solid #dfdfdf; }
   .timeline table tr:nth-child(even) td {
     border-top: 1px dashed #e6e6e6; }
-  .timeline table tr td:last-child {
-    border-right: 1px solid #dfdfdf; }
   .timeline table tr:last-child td {
     border-bottom: 1px solid #dfdfdf; }
   .timeline table .time {
@@ -115,14 +112,19 @@ b {
   width: 100%; }
 
 .event {
-  padding: 3px;
+  padding: 3px 6px;
   margin-left: 34px;
   height: 100%;
   border: 1px solid #666;
   background: rgba(102, 102, 102, 0.8);
-  color: white; }
+  border-radius: 3px;
+  color: white;
+  overflow: hidden;
+  line-height: 1; }
   .event .time {
     font-family: fontBold; }
+  .event span {
+    font-size: 12px; }
 
 .event-wrap.fav .event {
   border: 1px solid black;

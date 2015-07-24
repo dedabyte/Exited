@@ -7,9 +7,9 @@
       link: function(scope, element){
         var minsStart = getMinutesFromProgrameStart(scope.event.start);
         var minsEnd = getMinutesFromProgrameStart(scope.event.end);
-        scope.top = minsStart / 5 * 3;
+        scope.top = minsStart / 5 * 4;
         //scope.height = minsEnd / 5 * 3 - scope.top - 1;
-        scope.height = minsEnd / 5 * 3 - scope.top + 1;
+        scope.height = minsEnd / 5 * 4 - scope.top + 1;
 
         if(minsStart <= scope.currentTime && scope.currentTime <= minsEnd){
           element.addClass('in-progress');
