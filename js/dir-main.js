@@ -55,7 +55,23 @@
           'sat',
           'sun'
         ],
-        stages: ["Main Stage","mts Dance Arena","Fusion Stage by Blic","Explosive Stage","No Sleep Novi Sad Stage","Future Shock Stage","Urban Bug Stage","Gaia Experiment Trance Stage","Wenti Wadada Positive Reggae Stage","Guarana Radio AS FM Stage","Latino Stage by Aqua Viva","Silent Disco","Disko Zone","World Chill-inn","OTPevaj Karaoke Stage"],
+        stages: [
+          "Main",
+          "Dance Arena",
+          "Fusion",
+          "Explosive",
+          "Novi Sad",
+          "Future Shock",
+          "Urban Bug",
+          "Trance",
+          "Reggae",
+          "Radio AS FM",
+          "Latino",
+          "Silent Disco",
+          "Disko Zone",
+          "Chill-inn",
+          "Karaoke"
+        ],
         tabSchedule: {
           selectedStage: selectedStage,
           selectedDay: 0
