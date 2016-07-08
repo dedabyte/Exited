@@ -11,7 +11,11 @@
         //scope.height = minsEnd / 5 * 3 - scope.top - 1;
         scope.height = minsEnd / 5 * 4 - scope.top + 1;
 
-        if(minsStart <= scope.currentTime && scope.currentTime <= minsEnd){
+        if(
+          minsStart <= scope.currentTime &&
+          scope.currentTime <= minsEnd &&
+          scope.model.tabSchedule.selectedDay === scope.model.tabSchedule.currentDay
+        ){
           element.addClass('in-progress');
         }else{
           element.removeClass('in-progress');
