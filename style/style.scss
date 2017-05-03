@@ -46,11 +46,12 @@ b {
   }
 }
 .tab2 {
-  text-align: center;
+  //text-align: center;
   color: white;
   line-height: 42px;
   font-family: fontBold;
   font-size: 16px;
+  padding: 0 16px;
 }
 
 
@@ -95,6 +96,11 @@ b {
   height: 100%;
   text-transform: uppercase;
   font-size: 12px;
+
+  td {
+    transition-property: background, color;
+    transition-duration: 600ms;
+  }
 
   .selected {
     background: white;
@@ -169,6 +175,10 @@ b {
   overflow: hidden;
   line-height: 1;
 
+  animation-name: event-anim;
+  animation-duration: 600ms;
+  animation-iteration-count: 1;
+
   .time {
     font-family: fontBold;
   }
@@ -185,6 +195,14 @@ b {
   border: 1px solid $mainColor;
   background: transparentize($mainColor, 0.2);
   color: white;
+}
+@keyframes event-anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .current-time-1 {
