@@ -20,7 +20,7 @@
       // selected stage
       var selectedStage = parseInt(localStorage.getItem('exited.selectedStage')) || 0;
       scope.saveStage = function(stage){
-        localStorage.setItem('exited.selectedStage', stage)
+        localStorage.setItem('exited.selectedStage', stage);
       };
       // favourite events
       try{
@@ -36,6 +36,16 @@
         }
         localStorage.setItem('exited.favs', JSON.stringify(scope.favs));
       };
+      // theme
+      var selectedTheme = localStorage.getItem('exited.selectedTheme') || 'light';
+      scope.setTheme = function(){
+        if(scope.model.theme === 'light'){
+          scope.model.theme = 'dark';
+        }else{
+          scope.model.theme = 'light';
+        }
+        localStorage.setItem('exited.selectedTheme', scope.model.theme);
+      };
 
 
       // UTILS
@@ -48,6 +58,7 @@
 
       // APP DATA MODEL
       scope.model = {
+        theme: selectedTheme,
         tab: 1,
         days: [
           'thu',

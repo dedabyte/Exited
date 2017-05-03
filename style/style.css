@@ -34,12 +34,21 @@ b {
     background: rgba(255, 255, 255, 0.2);
     font-family: fontBold; }
 
-.tab2 {
+.tab-title {
+  float: left;
   color: white;
   line-height: 42px;
   font-family: fontBold;
-  font-size: 16px;
-  padding: 0 16px; }
+  font-size: 18px;
+  padding-left: 16px; }
+
+.theme-switcher {
+  float: right;
+  line-height: 42px;
+  font-size: 14px;
+  padding-right: 16px;
+  color: white;
+  text-transform: uppercase; }
 
 .contents-wrap {
   position: relative; }
@@ -124,10 +133,7 @@ b {
   border-radius: 3px;
   color: white;
   overflow: hidden;
-  line-height: 1;
-  animation-name: event-anim;
-  animation-duration: 600ms;
-  animation-iteration-count: 1; }
+  line-height: 1; }
   .event .time {
     font-family: fontBold; }
   .event span {
@@ -142,15 +148,31 @@ b {
   background: rgba(220, 5, 30, 0.8);
   color: white; }
 
-@keyframes event-anim {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 .current-time-1 {
   position: absolute;
   height: 2px;
   width: 100%;
   background: rgba(220, 5, 30, 0.6); }
+
+.dark .schedule {
+  background: #494949; }
+.dark .schedule-timeline {
+  background: black; }
+.dark .cards {
+  color: #efefef; }
+  .dark .cards .selected {
+    background: black;
+    color: #dc051e; }
+.dark .timeline table td {
+  background: black;
+  border-color: #333; }
+.dark .timeline table tr:nth-child(even) td {
+  border-color: #333; }
+.dark .timeline table tr:last-child td {
+  border-color: #333; }
+.dark .event {
+  background: rgba(68, 68, 68, 0.8);
+  border-color: #555;
+  color: #efefef; }
 
 /*# sourceMappingURL=style.css.map */

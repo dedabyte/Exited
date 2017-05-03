@@ -45,13 +45,21 @@ b {
     font-family: fontBold;
   }
 }
-.tab2 {
-  //text-align: center;
+.tab-title {
+  float: left;
   color: white;
   line-height: 42px;
   font-family: fontBold;
-  font-size: 16px;
-  padding: 0 16px;
+  font-size: 18px;
+  padding-left: 16px;
+}
+.theme-switcher {
+  float: right;
+  line-height: 42px;
+  font-size: 14px;
+  padding-right: 16px;
+  color: white;
+  text-transform: uppercase;
 }
 
 
@@ -175,10 +183,6 @@ b {
   overflow: hidden;
   line-height: 1;
 
-  animation-name: event-anim;
-  animation-duration: 600ms;
-  animation-iteration-count: 1;
-
   .time {
     font-family: fontBold;
   }
@@ -196,18 +200,52 @@ b {
   background: transparentize($mainColor, 0.2);
   color: white;
 }
-@keyframes event-anim {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 .current-time-1 {
   position: absolute;
   height: 2px;
   width: 100%;
   background: transparentize($mainColor, 0.4);
+}
+
+.dark {
+
+  .schedule {
+    background: #494949;
+  }
+
+  .schedule-timeline {
+    background: black;
+  }
+
+  .cards {
+    color: #efefef;
+
+    .selected {
+      background: black;
+      color: $mainColor;
+    }
+  }
+
+  .timeline {
+
+    table td {
+      background: black;
+      border-color: #333;
+    }
+
+    table tr:nth-child(even) td {
+      border-color: #333;
+    }
+
+    table tr:last-child td {
+      border-color: #333;
+    }
+  }
+
+  .event {
+    background: transparentize(#444, 0.2);
+    border-color: #555;
+    color: #efefef;
+  }
 }

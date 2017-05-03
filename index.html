@@ -7,10 +7,11 @@
   <link href="style/style.css" rel="stylesheet">
 </head>
 <body ng-app="app">
-  <div class="main" ex-main>
+  <div class="main" ex-main ng-class="model.theme">
 
     <div class="tabs-wrap" style="height: {{::s_tabsWrapHeight}}px">
-      <div class="tab2">EXIT 2017 TIMELINE</div>
+      <div class="tab-title">EXIT 2017 TIMELINE</div>
+      <div class="theme-switcher" ng-bind="model.theme" ng-tap="setTheme()"></div>
       <!--<div class="tab" ng-class="{selected: model.tab == 1}" ng-tap="model.tab = 1">STAGES</div>-->
       <!--<div class="tab" ng-class="{selected: model.tab == 2}" ng-tap="model.tab = 2">ALL</div>-->
     </div>

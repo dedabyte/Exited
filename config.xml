@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "info.igordedic.exited"
-        version   = "1.2017.1">
+        version   = "1.2017.2">
 
     <name>Exited 2017</name>
 
@@ -30,7 +30,7 @@
         permission on your app, which PhoneGap requires.
     -->
     <preference name="permissions"                value="none"/>
-    <preference name="StatusBarBackgroundColor"   value="#D5051E" />
+    <preference name="StatusBarBackgroundColor"   value="#B2051E" />
 
     <!-- Customize your app and platform with the preference element. -->
     <!-- <preference name="phonegap-version"      value="3.4.0" /> -->      <!-- all: current version of PhoneGap -->
