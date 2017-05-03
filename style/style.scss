@@ -50,13 +50,13 @@ b {
   color: white;
   line-height: 42px;
   font-family: fontBold;
-  font-size: 18px;
+  font-size: 16px;
   padding-left: 16px;
 }
 .theme-switcher {
   float: right;
   line-height: 42px;
-  font-size: 14px;
+  font-size: 13px;
   padding-right: 16px;
   color: white;
   text-transform: uppercase;
@@ -191,9 +191,15 @@ b {
     font-size: 12px;
   }
 }
-.event-wrap.fav .event {
-  border: 1px solid black;
-  background: transparentize(black, 0.2);
+.event-wrap.fav {
+  z-index: 1;
+
+  .event {
+    //border: 1px solid black;
+    //background: transparentize(black, 0.2);
+    border-color: $mainColor;
+    border-right-width: 6px;
+  }
 }
 .event-wrap.in-progress .event {
   border: 1px solid $mainColor;
@@ -211,7 +217,7 @@ b {
 .dark {
 
   .schedule {
-    background: #494949;
+    background: #3c3c3c;
   }
 
   .schedule-timeline {
@@ -240,6 +246,16 @@ b {
 
     table tr:last-child td {
       border-color: #333;
+    }
+
+    table tr:last-child td {
+      border-color: #333;
+    }
+
+    table .time {
+      &.last {
+        border-color: #333;
+      }
     }
   }
 
