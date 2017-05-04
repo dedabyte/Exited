@@ -198,7 +198,17 @@ b {
     //border: 1px solid black;
     //background: transparentize(black, 0.2);
     border-color: $mainColor;
-    border-right-width: 6px;
+    border-right-width: 4px;
+
+    &::after {
+      content: "\2605";
+      position: absolute;
+      bottom: 4px;
+      right: 6px;
+      width: 10px;
+      height: 10px;
+      color: $mainColor;
+    }
   }
 }
 .event-wrap.in-progress .event {

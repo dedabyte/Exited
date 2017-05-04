@@ -36,7 +36,7 @@
         <div ex-schedule-event
              ng-class="{ fav: favs.hasOwnProperty(event.id) }"
              ng-tap="saveFav(event.id)"
-             ng-repeat="event in model.data[model.tabSchedule.selectedDay][model.tabSchedule.selectedStage]"></div>
+             ng-repeat="event in model.data[model.prefs.selectedDay][model.prefs.selectedStage]"></div>
       </div>
     </div>
     <div class="schedule-stages" style="width: {{::s_scheduleStagesWidth}}px">
@@ -44,8 +44,8 @@
         <tbody>
           <tr ng-repeat="stage in ::model.stages track by $index">
             <td ng-bind="::stage"
-                ng-tap="model.tabSchedule.selectedStage = $index; saveStage($index)"
-                ng-class="{selected: model.tabSchedule.selectedStage == $index}"></td>
+                ng-tap="model.prefs.selectedStage = $index; saveStage($index)"
+                ng-class="{selected: model.prefs.selectedStage == $index}"></td>
           </tr>
         </tbody>
       </table>
@@ -57,8 +57,8 @@
         <tbody>
         <tr>
           <td ng-repeat="day in ::model.days track by $index"
-              ng-tap="model.tabSchedule.selectedDay = $index"
-              ng-class="{selected: model.tabSchedule.selectedDay == $index}"
+              ng-tap="model.prefs.selectedDay = $index"
+              ng-class="{selected: model.prefs.selectedDay == $index}"
               style="width: {{::100/model.days.length}}%">
             <small>day</small> {{::($index+1)}}<br><small>{{::day}}</small>
           </td>

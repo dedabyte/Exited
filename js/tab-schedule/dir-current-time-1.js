@@ -1,8 +1,16 @@
 (function(){
 
-  exited.directive('exCurrentTime1', function CurrentTime1(){
+  exited.directive('exCurrentTime1', function CurrentTime1($interval){
+    // minutes
+    var intTime = 60000 * 5;
+
     return function(scope, element){
-      scope.$watch('model.tabSchedule', function(){
+      // scope.$watch('model.prefs', setCurrentTime, true);
+
+      $interval(setCurrentTime, intTime);
+      setCurrentTime();
+
+      function setCurrentTime(){
         var now = new Date();
         var hours = now.getHours();
         var mins = now.getMinutes();
@@ -17,8 +25,10 @@
         }else{
           element.removeClass('current-time-1');
         }
-      }, true);
+      }
+
     };
+
   });
 
 })();

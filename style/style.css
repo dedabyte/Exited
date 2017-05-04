@@ -143,7 +143,15 @@ b {
   z-index: 1; }
   .event-wrap.fav .event {
     border-color: #dc051e;
-    border-right-width: 6px; }
+    border-right-width: 4px; }
+    .event-wrap.fav .event::after {
+      content: "\2605";
+      position: absolute;
+      bottom: 4px;
+      right: 6px;
+      width: 10px;
+      height: 10px;
+      color: #dc051e; }
 
 .event-wrap.in-progress .event {
   border: 1px solid #dc051e;

@@ -7,19 +7,15 @@
   <link href="style/style.css" rel="stylesheet">
 </head>
 <body ng-app="app">
-  <div class="main" ex-main ng-class="model.theme">
+  <div class="main" ex-main ng-class="model.prefs.theme">
 
     <div class="tabs-wrap" style="height: {{::s_tabsWrapHeight}}px">
       <div class="tab-title">EXIT 2017 TIMELINE</div>
-      <div class="theme-switcher" ng-bind="model.theme" ng-tap="setTheme()"></div>
-      <!--<div class="tab" ng-class="{selected: model.tab == 1}" ng-tap="model.tab = 1">STAGES</div>-->
-      <!--<div class="tab" ng-class="{selected: model.tab == 2}" ng-tap="model.tab = 2">ALL</div>-->
+      <div class="theme-switcher" ng-bind="model.prefs.theme" ng-tap="setTheme()"></div>
     </div>
 
     <div class="contents-wrap" style="height: {{::s_contentsWrapHeight}}px">
-      <div ex-tab-schedule ng-show="model.tab == 1"></div>
-      <!--<div ex-tab-schedule ng-show="model.tab == 1"></div>-->
-      <!--<div ex-tab-lineup   ng-show="model.tab == 2"></div>-->
+      <div ex-tab-schedule></div>
     </div>
 
   </div>
@@ -31,15 +27,16 @@
 
   <script src="lib/jquery.js"></script>
   <script src="lib/angular.js"></script>
-  <!--<script src="lib/angular-touch.js"></script>-->
 
   <script src="js/app.js"></script>
   <script src="js/dir-ng-tap.js"></script>
+  <script src="js/model/model.js"></script>
+  <script src="js/model/ls-service.js"></script>
+  <script src="js/model/db-service.js"></script>
   <script src="js/dir-main.js"></script>
   <script src="js/tab-schedule/dir-schedule.js"></script>
   <script src="js/tab-schedule/dir-schedule-event.js"></script>
   <script src="js/tab-schedule/dir-current-time-1.js"></script>
-  <script src="js/tab-lineup/dir-lineup.js"></script>
 
 
   <script src="cordova.js"></script>

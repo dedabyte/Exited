@@ -14,7 +14,7 @@
         if(
           minsStart <= scope.currentTime &&
           scope.currentTime <= minsEnd &&
-          scope.model.tabSchedule.selectedDay === scope.model.tabSchedule.currentDay
+          scope.model.prefs.selectedDay === scope.model.prefs.currentDay
         ){
           element.addClass('in-progress');
         }else{
