@@ -1,20 +1,7 @@
 (function(){
 
   exited.directive('exMain', function MainDirective(Model, DataModel, DbService, LsService, LSKEYS){
-    return function(scope, element){
-      // APP DIMENSIONS
-      scope.s_mainHeight = element.height();
-      scope.s_mainWidth = element.width();
-
-      scope.s_tabsWrapHeight = 42;
-      scope.s_contentsWrapHeight = scope.s_mainHeight - scope.s_tabsWrapHeight;
-
-      scope.s_scheduleBottomHeight = 42;
-      scope.s_scheduleTopHeight = scope.s_contentsWrapHeight - scope.s_scheduleBottomHeight;
-
-      scope.s_scheduleStagesWidth = 100;
-      scope.s_scheduleTimelineWidth = scope.s_mainWidth - scope.s_scheduleStagesWidth;
-
+    return function(scope){
       scope.model = angular.extend({}, Model);
 
       // LOCAL STORAGE
@@ -83,14 +70,6 @@
           }
         },
         function(error){
-          if(navigator && navigator.notification && navigator.notification.alert){
-            navigator.notification.alert(
-              JSON.stringify(error, null, 2),  // message
-              angular.noop,         // callback
-              'Error',            // title
-              'Close'                  // buttonName
-            );
-          }
           console.error('getLatestData: error', error);
         }
       );

@@ -22,7 +22,8 @@ b {
   height: 100%; }
 
 .tabs-wrap {
-  background: #dc051e; }
+  background: #dc051e;
+  height: 42px; }
 
 .tab {
   float: left;
@@ -51,7 +52,8 @@ b {
   text-transform: uppercase; }
 
 .contents-wrap {
-  position: relative; }
+  position: relative;
+  height: calc(100% - 42px); }
 
 .content {
   position: relative;
@@ -61,12 +63,18 @@ b {
   background: #dfdfdf; }
 
 .schedule-top {
-  position: relative; }
+  position: relative;
+  height: calc(100% - 42px); }
+
+.schedule-bottom {
+  height: 42px; }
 
 .schedule-tabs {
-  height: 100%; }
+  height: 100%;
+  width: calc(100% - 100px); }
 
 .schedule-timeline {
+  width: calc(100% - 100px);
   background: white;
   height: 100%;
   float: left;
@@ -74,6 +82,7 @@ b {
   overflow: auto; }
 
 .schedule-stages {
+  width: 100px;
   height: 100%;
   float: right; }
 

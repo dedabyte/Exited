@@ -9,12 +9,12 @@
 <body ng-app="app">
   <div class="main" ex-main ng-class="model.prefs.theme">
 
-    <div class="tabs-wrap" style="height: {{::s_tabsWrapHeight}}px">
+    <div class="tabs-wrap">
       <div class="tab-title">EXIT 2017 TIMELINE</div>
       <div class="theme-switcher" ng-bind="model.prefs.theme" ng-tap="setTheme()"></div>
     </div>
 
-    <div class="contents-wrap" style="height: {{::s_contentsWrapHeight}}px">
+    <div class="contents-wrap">
       <div ex-tab-schedule></div>
     </div>
 

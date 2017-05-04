@@ -1,6 +1,6 @@
 <div class="content schedule">
-  <div class="schedule-top" style="height: {{::s_scheduleTopHeight}}px">
-    <div class="schedule-timeline" style="width: {{::s_scheduleTimelineWidth}}px">
+  <div class="schedule-top">
+    <div class="schedule-timeline">
       <div class="timeline">
         <div ex-current-time-1></div>
         <table>
@@ -39,7 +39,7 @@
              ng-repeat="event in model.data[model.prefs.selectedDay][model.prefs.selectedStage]"></div>
       </div>
     </div>
-    <div class="schedule-stages" style="width: {{::s_scheduleStagesWidth}}px">
+    <div class="schedule-stages">
       <table class="cards">
         <tbody>
           <tr ng-repeat="stage in ::model.stages track by $index">
@@ -51,8 +51,8 @@
       </table>
     </div>
   </div>
-  <div class="schedule-bottom" style="height: {{::s_scheduleBottomHeight}}px">
-    <div class="schedule-tabs" style="width: {{::s_scheduleTimelineWidth}}px">
+  <div class="schedule-bottom">
+    <div class="schedule-tabs">
       <table class="cards">
         <tbody>
         <tr>
