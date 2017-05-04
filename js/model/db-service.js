@@ -22,7 +22,7 @@
             return $q.resolve(response.data);
           },
           function(error){
-            return $q.reject(error.data);
+            return $q.reject(error);
           }
         );
       }
@@ -36,7 +36,7 @@
             return $q.resolve(data);
           },
           function(error){
-            return $q.reject(error.data);
+            return $q.reject(error);
           }
         );
       }

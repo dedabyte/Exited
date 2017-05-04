@@ -51,16 +51,15 @@
         LsService.set(LSKEYS.selectedTheme, scope.model.prefs.theme);
       };
 
-
       // UTILS
       function generateDateStamp(){
         var now = Date.now() - 8 * 60 * 60 * 1000;
         var today = new Date(now);
-        return today.getFullYear() + '-' + (today.getMonth()+1) + '-' + today.getDate();
+        return today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
       }
 
       // INIT
-      var days = ['2017-7-6','2017-7-7','2017-7-8','2017-7-9'];
+      var days = ['2017-7-6', '2017-7-7', '2017-7-8', '2017-7-9'];
       var currentDay = generateDateStamp();
       var currentDayIndex = days.indexOf(currentDay);
       if(currentDayIndex > -1){
@@ -84,6 +83,14 @@
           }
         },
         function(error){
+          if(navigator && navigator.notification && navigator.notification.alert){
+            navigator.notification.alert(
+              JSON.stringify(error, null, 2),  // message
+              angular.noop,         // callback
+              'Error',            // title
+              'Close'                  // buttonName
+            );
+          }
           console.error('getLatestData: error', error);
         }
       );
