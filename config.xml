@@ -77,7 +77,4 @@
         <access origin="http://phonegap.com" browserOnly="true" /> - only allows http://phonegap.com to be opened by the child browser.
     -->
 
-    <preference name="windows-appx-target" value="uap" />
-    <preference name="windows-arch" value="anycpu" />
-
 </widget>
