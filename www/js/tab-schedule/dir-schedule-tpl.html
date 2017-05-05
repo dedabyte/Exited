@@ -44,6 +44,7 @@
         <tbody>
           <tr ng-repeat="stage in ::model.stages track by $index">
             <td ng-bind="::stage"
+                class="stage"
                 ng-tap="model.prefs.selectedStage = $index; saveStage($index)"
                 ng-class="{selected: model.prefs.selectedStage == $index}"></td>
           </tr>
@@ -57,6 +58,7 @@
         <tbody>
         <tr>
           <td ng-repeat="day in ::model.days track by $index"
+              class="day"
               ng-tap="model.prefs.selectedDay = $index"
               ng-class="{selected: model.prefs.selectedDay == $index}"
               style="width: {{::100/model.days.length}}%">

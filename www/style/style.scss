@@ -6,6 +6,8 @@ $height--header: 42px;
 $height--day-cards: 42px;
 $width--stage-cards: 100px;
 
+$dimension--selection-border: 4px;
+
 
 @font-face {
   font-family: fontRegular;
@@ -117,12 +119,34 @@ b {
   td {
     transition-property: background, color;
     transition-duration: 600ms;
+    position: relative;
   }
 
   .selected {
     background: white;
     color: $mainColor;
     font-family: fontBold;
+
+    &:after {
+      content: '';
+      position: absolute;
+      background-color: $mainColor;
+    }
+
+    &.stage:after {
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: $dimension--selection-border;
+    }
+
+    &.day:after {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+
+      height: $dimension--selection-border;
+    }
   }
 }
 
@@ -185,6 +209,7 @@ b {
   margin-left: 34px;
   height: 100%;
   border: 1px solid #666;
+  border-right-width: $dimension--selection-border;
   background: transparentize(#666, 0.2);
   border-radius: 3px;
   //font-size: 12px;
@@ -207,13 +232,12 @@ b {
     //border: 1px solid black;
     //background: transparentize(black, 0.2);
     border-color: $mainColor;
-    border-right-width: 4px;
 
     &::after {
       content: "\2605";
       position: absolute;
       bottom: 4px;
-      right: 6px;
+      right: 8px;
       width: 10px;
       height: 10px;
       color: $mainColor;

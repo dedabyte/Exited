@@ -2,7 +2,7 @@
 
   exited.directive('exCurrentTime1', function CurrentTime1($interval){
     // minutes
-    var intTime = 60000 * 5;
+    var intTime = 60000 * 1;
 
     return function(scope, element){
       // scope.$watch('model.prefs', setCurrentTime, true);
