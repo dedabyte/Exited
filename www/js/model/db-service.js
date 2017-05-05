@@ -7,6 +7,7 @@
       var auth = 'gTf2SKTXTQY24DnT8bV0eVaaoYyfOc6455oLtyWC';
       var baseUrl = 'https://exited-f73b2.firebaseio.com/';
       var dbVersion = LsService.get(LSKEYS.dbVersion) || 0;
+      var favsVersion = LsService.get(LSKEYS.favsVersion) || 0;
 
       function getUrl(path, params){
         var url = baseUrl + path + '.json?auth=' + auth;
@@ -44,8 +45,12 @@
       function getLatestData(){
         return getVersion().then(
           function(version){
-            if(version > dbVersion){
-              dbVersion = version;
+            //TODO
+            //if(version.favs > favsVersion){
+            //
+            //}
+            if(version.db > dbVersion){
+              dbVersion = version.db;
               LsService.set(LSKEYS.dbVersion, dbVersion);
 
               return getData();

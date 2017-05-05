@@ -7,11 +7,11 @@
   <link href="style/style.css" rel="stylesheet">
 </head>
 <body ng-app="app">
-  <div class="main" ex-main ng-class="model.prefs.theme">
+  <div class="main" ex-main ng-class="prefs.theme">
 
     <div class="tabs-wrap">
       <div class="tab-title">EXITED 2017</div>
-      <div class="theme-switcher" ng-bind="model.prefs.theme" ng-tap="setTheme()"></div>
+      <div class="theme-switcher" ng-bind="prefs.theme" ng-tap="methods.setTheme()"></div>
     </div>
 
     <div class="contents-wrap">

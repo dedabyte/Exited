@@ -1,16 +1,20 @@
 (function(){
 
   exited
+    .constant('LSVER', 1);
+
+  exited
     .constant('LSKEYS', {
+      lsVersion: 'lsVersion',
       dbVersion: 'dbVersion',
+      favsVersion: 'favsVersion',
       data: 'data',
-      selectedStage: 'selectedStage',
-      selectedTheme: 'selectedTheme',
-      favs: 'favs'
+      favs: 'favs',
+      prefs: 'prefs'
     });
 
   exited
-    .service('LsService', function LsService(){
+    .service('LsService', function LsService(LSKEYS, LSVER){
       var svc = this;
 
       // prefix for keys in local storage
@@ -59,6 +63,12 @@
           return key;
         }
         return prefixAndLink + key;
+      }
+
+      var lsver = get(LSKEYS.lsVersion);
+      if(!lsver || LSKEYS > lsver){
+        localStorage.clear();
+        set(LSKEYS.lsVersion, LSVER);
       }
 
       svc.set = set;
