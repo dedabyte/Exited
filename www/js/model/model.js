@@ -3,6 +3,7 @@
   exited
     .value('Prefs', {
       theme: 'light',
+      selectedTab: 'timeline',
       selectedStage: 'Main',
       selectedDay: '2017-7-6',
       currentDay: null

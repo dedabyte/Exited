@@ -36,7 +36,7 @@
         <div ex-schedule-event
              ng-class="{ fav: favs.hasOwnProperty(event.id) }"
              ng-tap="methods.setFav(event.id)"
-             ng-repeat="event in events"></div>
+             ng-repeat="event in filteredEvents"></div>
       </div>
     </div>
     <div class="schedule-stages">
@@ -61,7 +61,7 @@
               class="day"
               ng-tap="methods.setDay(day)"
               ng-class="{ selected: prefs.selectedDay === day }"
-              ng-style="{ width: 100/(Object.keys(days).length) }">
+              ng-style="{ width: 100/methods.getDaysCount() + '%' }">
             <small>day</small> {{dayObj.index}}<br><small>{{dayObj.name}}</small>
           </td>
         </tr>

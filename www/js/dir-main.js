@@ -31,8 +31,13 @@
         LsService.set(LSKEYS.data, data);
       }
 
-      function setStage(stageName){
-        scope.prefs.selectedStage = stageName;
+      function setTab(tab){
+        scope.prefs.selectedTab = tab;
+        savePrefs();
+      }
+
+      function setStage(stage){
+        scope.prefs.selectedStage = stage;
         savePrefs();
         filterEvents();
       }
@@ -41,12 +46,20 @@
         scope.prefs.selectedDay = day;
         savePrefs(); // TODO maybe not?
         filterEvents();
+        filterFavs();
       }
 
       function filterEvents(){
-        scope.events = data.events.filter(function(event){
+        scope.filteredEvents = data.events.filter(function(event){
           return event.day === scope.prefs.selectedDay && event.stage === scope.prefs.selectedStage;
         });
+      }
+
+      function filterFavs(){
+        scope.filteredFavs = data.events.filter(function(event){
+          return event.day === scope.prefs.selectedDay && scope.favs.hasOwnProperty(event.id);
+        });
+        console.log(scope.filteredFavs);
       }
 
       function setTheme(){
@@ -64,14 +77,21 @@
         }else{
           scope.favs[eventId] = 1;
         }
+        filterFavs();
         LsService.set(LSKEYS.favs, scope.favs);
       }
 
+      function getDaysCount(){
+        return Object.keys(data.days).length;
+      }
+
       scope.methods = {
+        setTab: setTab,
         setStage: setStage,
         setDay: setDay,
         setFav: setFav,
-        setTheme: setTheme
+        setTheme: setTheme,
+        getDaysCount: getDaysCount
       };
 
       // UTILS
@@ -86,7 +106,8 @@
 
       scope.stages = data.stages;
       scope.days = data.days;
-      scope.events = [];
+      scope.filteredEvents = [];
+      scope.filteredFavs = [];
 
       // TODO remove hardcoded days
       var days = ['2017-7-6', '2017-7-7', '2017-7-8', '2017-7-9'];
@@ -99,6 +120,7 @@
 
       saveData();
       filterEvents();
+      filterFavs();
 
       DbService.getLatestData().then(
         function(latestData){
@@ -109,6 +131,7 @@
             scope.days = data.days;
             //saveData(); data saved in model DbService
             filterEvents();
+            filterFavs();
           }else{
             console.log('getLatestData: no new data.');
           }

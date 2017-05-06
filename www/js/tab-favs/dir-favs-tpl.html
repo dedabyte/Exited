@@ -1,0 +1,26 @@
+<div class="content favs">
+  <div class="favs-top">
+    <div ng-repeat="fav in filteredFavs"
+         class="fav-wrap">
+      <p class="fav-title" ng-bind="fav.title"></p>
+      <p class="last"><span class="fav-stage" ng-bind="fav.stage"></span><span class="fav-start-end" ng-bind="fav.start + ' - ' + fav.end"></span></p>
+    </div>
+  </div>
+  <div class="favs-bottom">
+    <div class="favs-tabs">
+      <table class="cards">
+        <tbody>
+        <tr>
+          <td ng-repeat="(day, dayObj) in days"
+              class="day"
+              ng-tap="methods.setDay(day)"
+              ng-class="{ selected: prefs.selectedDay === day }"
+              ng-style="{ width: 100/methods.getDaysCount() + '%' }">
+            <small>day</small> {{dayObj.index}}<br><small>{{dayObj.name}}</small>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
