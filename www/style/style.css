@@ -28,10 +28,13 @@ b {
 .header-title {
   float: left;
   color: white;
-  line-height: 42px;
   font-family: fontBold;
   font-size: 16px;
-  padding-left: 16px; }
+  padding-left: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px; }
 
 .header-tabs-wrap {
   float: right;
@@ -44,8 +47,10 @@ b {
   float: left;
   padding: 0 10px;
   position: relative;
-  height: 42px;
-  line-height: 42px; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px; }
   .header-tab.selected {
     background-color: rgba(255, 255, 255, 0.2); }
     .header-tab.selected:after {
@@ -159,7 +164,8 @@ b {
 
 .event-wrap {
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  min-height: 20px; }
 
 .event {
   padding: 3px 6px;
@@ -235,6 +241,8 @@ b {
     text-transform: uppercase;
     padding: 3px 6px 2px;
     border-radius: 2px; }
+    .fav-wrap .fav-stage.in-progress {
+      background: rgba(220, 5, 30, 0.8) !important; }
   .fav-wrap .fav-start-end {
     padding: 3px 0 2px;
     color: #666; }

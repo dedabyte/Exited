@@ -3,7 +3,7 @@
     <div ng-repeat="fav in filteredFavs"
          class="fav-wrap">
       <p class="fav-title" ng-bind="fav.title"></p>
-      <p><span class="fav-stage" ng-bind="fav.stage"></span><span class="fav-start-end" ng-bind="fav.start + ' - ' + fav.end"></span></p>
+      <p><span class="fav-stage in-progress" ng-show="fav.inProgress">live!</span><span class="fav-stage" ng-bind="fav.stage"></span><span class="fav-start-end" ng-bind="fav.start + ' - ' + fav.end"></span></p>
       <div class="fav-trash" ng-tap="methods.setFav(fav.id)"></div>
     </div>
   </div>

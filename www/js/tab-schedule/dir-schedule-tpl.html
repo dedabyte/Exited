@@ -34,7 +34,7 @@
           </tbody>
         </table>
         <div ex-schedule-event
-             ng-class="{ fav: favs.hasOwnProperty(event.id) }"
+             ng-class="{ 'fav': favs.hasOwnProperty(event.id), 'in-progress': event.inProgress }"
              ng-tap="methods.setFav(event.id)"
              ng-repeat="event in filteredEvents"></div>
       </div>

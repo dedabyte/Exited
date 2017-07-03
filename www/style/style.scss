@@ -42,10 +42,15 @@ b {
 .header-title {
   float: left;
   color: white;
-  line-height: $height--header;
+  //line-height: $height--header;
   font-family: fontBold;
   font-size: 16px;
   padding-left: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $height--header;
 }
 .header-tabs-wrap {
   float: right;
@@ -58,8 +63,12 @@ b {
   float: left;
   padding: 0 10px;
   position: relative;
+  //height: $height--header;
+  //line-height: $height--header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: $height--header;
-  line-height: $height--header;
 
   &.selected {
     background-color: transparentize(white, 0.8);
@@ -220,6 +229,7 @@ b {
 .event-wrap {
   position: absolute;
   width: 100%;
+  min-height: 20px;
 }
 .event {
   padding: 3px 6px;
@@ -315,6 +325,10 @@ b {
     text-transform: uppercase;
     padding: 3px 6px 2px;
     border-radius: 2px;
+
+    &.in-progress {
+      background: transparentize($mainColor, 0.2) !important;
+    }
   }
 
   .fav-start-end {

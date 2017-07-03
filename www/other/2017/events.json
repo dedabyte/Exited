@@ -168,10 +168,10 @@
     "day": "2017-7-6",
     "start": "20:00",
     "startInt": 2000,
-    "end": "22:00",
-    "endInt": 2200,
+    "end": "20:45",
+    "endInt": 2045,
     "stage": "Main Stage",
-    "title": "Radio emsija Oradija i eFM radija",
+    "title": "Obojeni program",
     "id": "C1",
     "error": false
   },
@@ -195,6 +195,17 @@
     "stage": "Main Stage",
     "title": "Opening ceremony",
     "id": "C3",
+    "error": false
+  },
+  {
+    "day": "2017-7-6",
+    "start": "23:20",
+    "startInt": 2320,
+    "end": "23:30",
+    "endInt": 2330,
+    "stage": "Main Stage",
+    "title": "Fireworks",
+    "id": "C4",
     "error": false
   },
   {
@@ -237,7 +248,7 @@
     "end": "06:00",
     "endInt": 10600,
     "stage": "Main Stage",
-    "title": "Fred V & Grafix",
+    "title": "Fred V & Grafix ft. Stamina MC",
     "id": "C8",
     "error": false
   },
@@ -331,6 +342,17 @@
   },
   {
     "day": "2017-7-6",
+    "start": "21:45",
+    "startInt": 2145,
+    "end": "22:30",
+    "endInt": 2230,
+    "stage": "Fusion",
+    "title": "Ana Curcin",
+    "id": "C17",
+    "error": false
+  },
+  {
+    "day": "2017-7-6",
     "start": "23:00",
     "startInt": 2300,
     "end": "23:45",
@@ -415,6 +437,17 @@
     "stage": "Explosive",
     "title": "Words That Burn",
     "id": "C25",
+    "error": false
+  },
+  {
+    "day": "2017-7-6",
+    "start": "21:50",
+    "startInt": 2150,
+    "end": "22:30",
+    "endInt": 2230,
+    "stage": "Explosive",
+    "title": "Dordeduh",
+    "id": "C26",
     "error": false
   },
   {
@@ -690,6 +723,17 @@
     "stage": "Latino",
     "title": "Arabian Night",
     "id": "C51",
+    "error": false
+  },
+  {
+    "day": "2017-7-6",
+    "start": "23:30",
+    "startInt": 2330,
+    "end": "00:00",
+    "endInt": 10000,
+    "stage": "Latino",
+    "title": "Latin Sweets",
+    "id": "C52",
     "error": false
   },
   {
@@ -980,13 +1024,24 @@
   },
   {
     "day": "2017-7-6",
-    "start": "23:15",
-    "startInt": 2315,
-    "end": "01:01",
-    "endInt": 10101,
+    "start": "22:00",
+    "startInt": 2200,
+    "end": "23:37",
+    "endInt": 2337,
+    "stage": "Cinema",
+    "title": "20,000 Days on Earth",
+    "id": "C79",
+    "error": false
+  },
+  {
+    "day": "2017-7-6",
+    "start": "01:00",
+    "startInt": 10100,
+    "end": "03:17",
+    "endInt": 10317,
     "stage": "Cinema",
     "title": "The Beatles: Eight Days a Week - The Touring Years",
-    "id": "C79",
+    "id": "C80",
     "error": false
   },
   {
@@ -997,7 +1052,7 @@
     "endInt": 2030,
     "stage": "Pachamama zone",
     "title": "Anika, Silvana, Mirjana",
-    "id": "C80",
+    "id": "C81",
     "error": false
   },
   {
@@ -1008,7 +1063,7 @@
     "endInt": 2120,
     "stage": "Pachamama zone",
     "title": "Boris Magdalenc",
-    "id": "C81",
+    "id": "C82",
     "error": false
   },
   {
@@ -1019,7 +1074,7 @@
     "endInt": 2230,
     "stage": "Pachamama zone",
     "title": "Cudesmo",
-    "id": "C82",
+    "id": "C83",
     "error": false
   },
   {
@@ -1030,7 +1085,7 @@
     "endInt": 2300,
     "stage": "Pachamama zone",
     "title": "Anika, Silvana, Mirjana",
-    "id": "C83",
+    "id": "C84",
     "error": false
   },
   {
@@ -1041,7 +1096,7 @@
     "endInt": 10000,
     "stage": "Pachamama zone",
     "title": "Herbert",
-    "id": "C84",
+    "id": "C85",
     "error": false
   },
   {
@@ -1052,7 +1107,7 @@
     "endInt": 10100,
     "stage": "Pachamama zone",
     "title": "Shaktipad Diksha",
-    "id": "C85",
+    "id": "C86",
     "error": false
   },
   {
@@ -1063,7 +1118,18 @@
     "endInt": 2040,
     "stage": "Future Shock",
     "title": "Sink",
-    "id": "C86",
+    "id": "C87",
+    "error": false
+  },
+  {
+    "day": "2017-7-6",
+    "start": "20:55",
+    "startInt": 2055,
+    "end": "21:35",
+    "endInt": 2135,
+    "stage": "Future Shock",
+    "title": "Prljave sestre",
+    "id": "C88",
     "error": false
   },
   {
@@ -1074,7 +1140,7 @@
     "endInt": 2230,
     "stage": "Future Shock",
     "title": "Stranger In My Town",
-    "id": "C88",
+    "id": "C89",
     "error": false
   },
   {
@@ -1085,7 +1151,7 @@
     "endInt": 2325,
     "stage": "Future Shock",
     "title": "Ljubicice",
-    "id": "C89",
+    "id": "C90",
     "error": false
   },
   {
@@ -1096,7 +1162,7 @@
     "endInt": 10000,
     "stage": "Future Shock",
     "title": "Novembar",
-    "id": "C90",
+    "id": "C91",
     "error": false
   },
   {
@@ -1107,7 +1173,18 @@
     "endInt": 10040,
     "stage": "Future Shock",
     "title": "Remedy",
-    "id": "C91",
+    "id": "C92",
+    "error": false
+  },
+  {
+    "day": "2017-7-6",
+    "start": "00:55",
+    "startInt": 10055,
+    "end": "01:35",
+    "endInt": 10135,
+    "stage": "Future Shock",
+    "title": "Naked",
+    "id": "C93",
     "error": false
   },
   {
@@ -1118,7 +1195,7 @@
     "endInt": 10230,
     "stage": "Future Shock",
     "title": "Penetratori",
-    "id": "C93",
+    "id": "C94",
     "error": false
   },
   {
@@ -1129,7 +1206,7 @@
     "endInt": 10330,
     "stage": "Future Shock",
     "title": "Bvana iz Lagune",
-    "id": "C94",
+    "id": "C95",
     "error": false
   },
   {
@@ -1140,7 +1217,7 @@
     "endInt": 2300,
     "stage": "Beats & Bass",
     "title": "Revibe",
-    "id": "C95",
+    "id": "C96",
     "error": false
   },
   {
@@ -1151,7 +1228,7 @@
     "endInt": 10000,
     "stage": "Beats & Bass",
     "title": "Kritik",
-    "id": "C96",
+    "id": "C97",
     "error": false
   },
   {
@@ -1162,7 +1239,7 @@
     "endInt": 10000,
     "stage": "Beats & Bass",
     "title": "MC Bo Jah",
-    "id": "C97",
+    "id": "C98",
     "error": false
   },
   {
@@ -1173,7 +1250,7 @@
     "endInt": 10200,
     "stage": "Beats & Bass",
     "title": "Massivity",
-    "id": "C98",
+    "id": "C99",
     "error": false
   },
   {
@@ -1184,7 +1261,7 @@
     "endInt": 10300,
     "stage": "Beats & Bass",
     "title": "Merikan",
-    "id": "C99",
+    "id": "C100",
     "error": false
   },
   {
@@ -1195,7 +1272,7 @@
     "endInt": 10400,
     "stage": "Beats & Bass",
     "title": "Splash Heads",
-    "id": "C100",
+    "id": "C101",
     "error": false
   },
   {
@@ -1206,7 +1283,7 @@
     "endInt": 10500,
     "stage": "Beats & Bass",
     "title": "Dbanshee",
-    "id": "C101",
+    "id": "C102",
     "error": false
   },
   {
@@ -1217,7 +1294,7 @@
     "endInt": 2200,
     "stage": "World Chill-Inn",
     "title": "KK Banda DJ's",
-    "id": "C102",
+    "id": "C103",
     "error": false
   },
   {
@@ -1228,7 +1305,7 @@
     "endInt": 2330,
     "stage": "World Chill-Inn",
     "title": "Dub Duba",
-    "id": "C103",
+    "id": "C104",
     "error": false
   },
   {
@@ -1239,7 +1316,7 @@
     "endInt": 10100,
     "stage": "World Chill-Inn",
     "title": "Marunga",
-    "id": "C104",
+    "id": "C105",
     "error": false
   },
   {
@@ -1250,7 +1327,7 @@
     "endInt": 10230,
     "stage": "World Chill-Inn",
     "title": "Baga Sound",
-    "id": "C105",
+    "id": "C106",
     "error": false
   },
   {
@@ -1261,7 +1338,7 @@
     "endInt": 10400,
     "stage": "World Chill-Inn",
     "title": "Sun Matt",
-    "id": "C106",
+    "id": "C107",
     "error": false
   },
   {
@@ -1272,7 +1349,7 @@
     "endInt": 2000,
     "stage": "Fusion Pub",
     "title": "TBC",
-    "id": "C107",
+    "id": "C108",
     "error": false
   },
   {
@@ -1283,7 +1360,7 @@
     "endInt": 2055,
     "stage": "Fusion Pub",
     "title": "Gospodjo, bate!",
-    "id": "C108",
+    "id": "C109",
     "error": false
   },
   {
@@ -1294,7 +1371,7 @@
     "endInt": 2045,
     "stage": "Planetarium",
     "title": "Tijana Prodanovic - Little Green Man: Science and Fiction (popular science lecture)",
-    "id": "C109",
+    "id": "C110",
     "error": false
   },
   {
@@ -1305,7 +1382,7 @@
     "endInt": 2131,
     "stage": "Planetarium",
     "title": "From Earth to the Universe (dome movie)",
-    "id": "C110",
+    "id": "C111",
     "error": false
   },
   {
@@ -1316,7 +1393,7 @@
     "endInt": 2238,
     "stage": "Planetarium",
     "title": "Dark Matter Mystery (dome movie)",
-    "id": "C111",
+    "id": "C112",
     "error": false
   },
   {
@@ -1327,7 +1404,7 @@
     "endInt": 2327,
     "stage": "Planetarium",
     "title": "Cosmic Origin Spectrograph (dome movie)",
-    "id": "C112",
+    "id": "C113",
     "error": false
   },
   {
@@ -1338,7 +1415,7 @@
     "endInt": 10000,
     "stage": "Tunnel",
     "title": "Rudhaman",
-    "id": "C113",
+    "id": "C114",
     "error": false
   },
   {
@@ -1349,7 +1426,7 @@
     "endInt": 10200,
     "stage": "Tunnel",
     "title": "Janchezz",
-    "id": "C114",
+    "id": "C115",
     "error": false
   },
   {
@@ -1360,17 +1437,17 @@
     "endInt": 10400,
     "stage": "Tunnel",
     "title": "Branko Vukovic b2b Marko Miletic",
-    "id": "C115",
+    "id": "C116",
     "error": false
   },
   {
     "day": "2017-7-7",
     "start": "20:00",
     "startInt": 2000,
-    "end": "22:00",
-    "endInt": 2200,
+    "end": "20:35",
+    "endInt": 2035,
     "stage": "Main Stage",
-    "title": "Radio emsija Oradija i eFM radija",
+    "title": "3 Kapljice",
     "id": "P1",
     "error": false
   },
@@ -1618,6 +1695,17 @@
   },
   {
     "day": "2017-7-7",
+    "start": "22:50",
+    "startInt": 2250,
+    "end": "23:35",
+    "endInt": 2335,
+    "stage": "Explosive",
+    "title": "In Other Climes",
+    "id": "P24",
+    "error": false
+  },
+  {
+    "day": "2017-7-7",
     "start": "23:50",
     "startInt": 2350,
     "end": "00:50",
@@ -1636,6 +1724,17 @@
     "stage": "Explosive",
     "title": "Ground Zero",
     "id": "P26",
+    "error": false
+  },
+  {
+    "day": "2017-7-7",
+    "start": "01:55",
+    "startInt": 10155,
+    "end": "02:35",
+    "endInt": 10235,
+    "stage": "Explosive",
+    "title": "Doghouse",
+    "id": "P27",
     "error": false
   },
   {
@@ -1882,6 +1981,17 @@
   },
   {
     "day": "2017-7-7",
+    "start": "21:30",
+    "startInt": 2130,
+    "end": "22:00",
+    "endInt": 2200,
+    "stage": "Latino",
+    "title": "Baila con Choma",
+    "id": "P50",
+    "error": false
+  },
+  {
+    "day": "2017-7-7",
     "start": "22:00",
     "startInt": 2200,
     "end": "22:30",
@@ -1889,6 +1999,17 @@
     "stage": "Latino",
     "title": "Desiguales",
     "id": "P51",
+    "error": false
+  },
+  {
+    "day": "2017-7-7",
+    "start": "22:30",
+    "startInt": 2230,
+    "end": "23:00",
+    "endInt": 2300,
+    "stage": "Latino",
+    "title": "Dancing Bejbs",
+    "id": "P52",
     "error": false
   },
   {
@@ -1904,6 +2025,17 @@
   },
   {
     "day": "2017-7-7",
+    "start": "23:40",
+    "startInt": 2340,
+    "end": "00:30",
+    "endInt": 10030,
+    "stage": "Latino",
+    "title": "Latin Sweets",
+    "id": "P54",
+    "error": false
+  },
+  {
+    "day": "2017-7-7",
     "start": "00:00",
     "startInt": 10000,
     "end": "00:00",
@@ -1911,6 +2043,17 @@
     "stage": "Latino",
     "title": "DJ Yezuz",
     "id": "P55",
+    "error": false
+  },
+  {
+    "day": "2017-7-7",
+    "start": "00:30",
+    "startInt": 10030,
+    "end": "02:00",
+    "endInt": 10200,
+    "stage": "Latino",
+    "title": "DJ Sesha",
+    "id": "P56",
     "error": false
   },
   {
@@ -2168,10 +2311,10 @@
   },
   {
     "day": "2017-7-7",
-    "start": "21:15",
-    "startInt": 2115,
-    "end": "22:49",
-    "endInt": 2249,
+    "start": "22:00",
+    "startInt": 2200,
+    "end": "23:34",
+    "endInt": 2334,
     "stage": "Cinema",
     "title": "Trainspotting",
     "id": "P80",
@@ -2179,12 +2322,12 @@
   },
   {
     "day": "2017-7-7",
-    "start": "23:15",
-    "startInt": 2315,
-    "end": "00:52",
-    "endInt": 10052,
+    "start": "01:00",
+    "startInt": 10100,
+    "end": "02:58",
+    "endInt": 10258,
     "stage": "Cinema",
-    "title": "20,000 Days on Earth",
+    "title": "This Must Be the Place",
     "id": "P81",
     "error": false
   },
@@ -2267,6 +2410,17 @@
   },
   {
     "day": "2017-7-7",
+    "start": "20:45",
+    "startInt": 2045,
+    "end": "21:15",
+    "endInt": 2115,
+    "stage": "Future Shock",
+    "title": "Uzemljenje",
+    "id": "P89",
+    "error": false
+  },
+  {
+    "day": "2017-7-7",
     "start": "21:30",
     "startInt": 2130,
     "end": "22:05",
@@ -2333,6 +2487,17 @@
   },
   {
     "day": "2017-7-7",
+    "start": "02:50",
+    "startInt": 10250,
+    "end": "03:30",
+    "endInt": 10330,
+    "stage": "Future Shock",
+    "title": "Helem Nejse",
+    "id": "P96",
+    "error": false
+  },
+  {
+    "day": "2017-7-7",
     "start": "23:00",
     "startInt": 2300,
     "end": "00:00",
@@ -2373,6 +2538,17 @@
     "stage": "Beats & Bass",
     "title": "Riga Dri",
     "id": "P100",
+    "error": false
+  },
+  {
+    "day": "2017-7-7",
+    "start": "02:30",
+    "startInt": 10230,
+    "end": "03:45",
+    "endInt": 10345,
+    "stage": "Beats & Bass",
+    "title": "Gežin 808 Mafia",
+    "id": "P101",
     "error": false
   },
   {
@@ -2536,7 +2712,7 @@
     "end": "04:00",
     "endInt": 10400,
     "stage": "Tunnel",
-    "title": "Pushta G",
+    "title": "PustaG",
     "id": "P116",
     "error": false
   },
@@ -2544,10 +2720,10 @@
     "day": "2017-7-8",
     "start": "20:00",
     "startInt": 2000,
-    "end": "22:00",
-    "endInt": 2200,
+    "end": "20:30",
+    "endInt": 2030,
     "stage": "Main Stage",
-    "title": "Radio emsija Oradija i eFM radija",
+    "title": "Sputñik",
     "id": "S1",
     "error": false
   },
@@ -3422,24 +3598,13 @@
   },
   {
     "day": "2017-7-8",
-    "start": "21:15",
-    "startInt": 2115,
-    "end": "23:12",
-    "endInt": 2312,
+    "start": "22:00",
+    "startInt": 2200,
+    "end": "23:57",
+    "endInt": 2357,
     "stage": "Cinema",
     "title": "T2 Trainspotting",
     "id": "S81",
-    "error": false
-  },
-  {
-    "day": "2017-7-8",
-    "start": "23:15",
-    "startInt": 2315,
-    "end": "01:13",
-    "endInt": 10113,
-    "stage": "Cinema",
-    "title": "This Must Be the Place",
-    "id": "S82",
     "error": false
   },
   {
@@ -3450,7 +3615,7 @@
     "endInt": 2030,
     "stage": "Pachamama zone",
     "title": "Anika, Silvana, Mirjana",
-    "id": "S83",
+    "id": "S82",
     "error": false
   },
   {
@@ -3461,7 +3626,7 @@
     "endInt": 2130,
     "stage": "Pachamama zone",
     "title": "Branko + Anika",
-    "id": "S84",
+    "id": "S83",
     "error": false
   },
   {
@@ -3472,7 +3637,7 @@
     "endInt": 2230,
     "stage": "Pachamama zone",
     "title": "Afrodizijak",
-    "id": "S85",
+    "id": "S84",
     "error": false
   },
   {
@@ -3483,7 +3648,7 @@
     "endInt": 2300,
     "stage": "Pachamama zone",
     "title": "Anika, Silvana, Mirjana",
-    "id": "S86",
+    "id": "S85",
     "error": false
   },
   {
@@ -3494,7 +3659,7 @@
     "endInt": 10000,
     "stage": "Pachamama zone",
     "title": "Pepe Danza",
-    "id": "S87",
+    "id": "S86",
     "error": false
   },
   {
@@ -3505,6 +3670,17 @@
     "endInt": 2030,
     "stage": "Future Shock",
     "title": "Irvas",
+    "id": "S87",
+    "error": false
+  },
+  {
+    "day": "2017-7-8",
+    "start": "20:45",
+    "startInt": 2045,
+    "end": "21:20",
+    "endInt": 2120,
+    "stage": "Future Shock",
+    "title": "Norveška šuma",
     "id": "S88",
     "error": false
   },
@@ -3516,7 +3692,7 @@
     "endInt": 2215,
     "stage": "Future Shock",
     "title": "Slow Motion Suicide",
-    "id": "S90",
+    "id": "S89",
     "error": false
   },
   {
@@ -3527,7 +3703,7 @@
     "endInt": 2305,
     "stage": "Future Shock",
     "title": "Viva Vops",
-    "id": "S91",
+    "id": "S90",
     "error": false
   },
   {
@@ -3538,7 +3714,7 @@
     "endInt": 2355,
     "stage": "Future Shock",
     "title": "Sputñik",
-    "id": "S92",
+    "id": "S91",
     "error": false
   },
   {
@@ -3549,7 +3725,7 @@
     "endInt": 10050,
     "stage": "Future Shock",
     "title": "Cao Portoroz",
-    "id": "S93",
+    "id": "S92",
     "error": false
   },
   {
@@ -3560,6 +3736,17 @@
     "endInt": 10140,
     "stage": "Future Shock",
     "title": "Maika",
+    "id": "S93",
+    "error": false
+  },
+  {
+    "day": "2017-7-8",
+    "start": "01:55",
+    "startInt": 10155,
+    "end": "02:30",
+    "endInt": 10230,
+    "stage": "Future Shock",
+    "title": "Cincila",
     "id": "S94",
     "error": false
   },
@@ -3571,7 +3758,7 @@
     "endInt": 10330,
     "stage": "Future Shock",
     "title": "Grashoper",
-    "id": "S96",
+    "id": "S95",
     "error": false
   },
   {
@@ -3582,7 +3769,7 @@
     "endInt": 10000,
     "stage": "Beats & Bass",
     "title": "Janchezz",
-    "id": "S97",
+    "id": "S96",
     "error": false
   },
   {
@@ -3593,7 +3780,7 @@
     "endInt": 10100,
     "stage": "Beats & Bass",
     "title": "Vrh",
-    "id": "S98",
+    "id": "S97",
     "error": false
   },
   {
@@ -3604,7 +3791,7 @@
     "endInt": 10230,
     "stage": "Beats & Bass",
     "title": "Vatra",
-    "id": "S99",
+    "id": "S98",
     "error": false
   },
   {
@@ -3615,7 +3802,7 @@
     "endInt": 10315,
     "stage": "Beats & Bass",
     "title": "Kuku$",
-    "id": "S100",
+    "id": "S99",
     "error": false
   },
   {
@@ -3626,7 +3813,7 @@
     "endInt": 10400,
     "stage": "Beats & Bass",
     "title": "Klika",
-    "id": "S101",
+    "id": "S100",
     "error": false
   },
   {
@@ -3637,7 +3824,7 @@
     "endInt": 10500,
     "stage": "Beats & Bass",
     "title": "Rasheed & Yeah Left",
-    "id": "S102",
+    "id": "S101",
     "error": false
   },
   {
@@ -3648,7 +3835,7 @@
     "endInt": 2200,
     "stage": "World Chill-Inn",
     "title": "DJ One",
-    "id": "S103",
+    "id": "S102",
     "error": false
   },
   {
@@ -3659,7 +3846,7 @@
     "endInt": 2330,
     "stage": "World Chill-Inn",
     "title": "Haris Pilton",
-    "id": "S104",
+    "id": "S103",
     "error": false
   },
   {
@@ -3670,7 +3857,7 @@
     "endInt": 10100,
     "stage": "World Chill-Inn",
     "title": "Kosta Kostov",
-    "id": "S105",
+    "id": "S104",
     "error": false
   },
   {
@@ -3681,7 +3868,7 @@
     "endInt": 10230,
     "stage": "World Chill-Inn",
     "title": "Killo Killo DJ/MC set",
-    "id": "S106",
+    "id": "S105",
     "error": false
   },
   {
@@ -3692,7 +3879,7 @@
     "endInt": 10400,
     "stage": "World Chill-Inn",
     "title": "DJ Pozor",
-    "id": "S107",
+    "id": "S106",
     "error": false
   },
   {
@@ -3703,7 +3890,7 @@
     "endInt": 2000,
     "stage": "Fusion Pub",
     "title": "TBC",
-    "id": "S108",
+    "id": "S107",
     "error": false
   },
   {
@@ -3714,7 +3901,7 @@
     "endInt": 2055,
     "stage": "Fusion Pub",
     "title": "TBC",
-    "id": "S109",
+    "id": "S108",
     "error": false
   },
   {
@@ -3725,7 +3912,7 @@
     "endInt": 2045,
     "stage": "Planetarium",
     "title": "David Knezevic - Terraforming Mars (popular science lecture)",
-    "id": "S110",
+    "id": "S109",
     "error": false
   },
   {
@@ -3736,7 +3923,7 @@
     "endInt": 2131,
     "stage": "Planetarium",
     "title": "From Earth to the Universe (dome movie)",
-    "id": "S111",
+    "id": "S110",
     "error": false
   },
   {
@@ -3747,7 +3934,7 @@
     "endInt": 2238,
     "stage": "Planetarium",
     "title": "Dark Matter Mystery (dome movie)",
-    "id": "S112",
+    "id": "S111",
     "error": false
   },
   {
@@ -3758,7 +3945,7 @@
     "endInt": 2327,
     "stage": "Planetarium",
     "title": "Cosmic Origin Spectrograph (dome movie)",
-    "id": "S113",
+    "id": "S112",
     "error": false
   },
   {
@@ -3769,7 +3956,7 @@
     "endInt": 10000,
     "stage": "Tunnel",
     "title": "Eeprom",
-    "id": "S114",
+    "id": "S113",
     "error": false
   },
   {
@@ -3780,7 +3967,7 @@
     "endInt": 10200,
     "stage": "Tunnel",
     "title": "Dark Angel",
-    "id": "S115",
+    "id": "S114",
     "error": false
   },
   {
@@ -3791,17 +3978,17 @@
     "endInt": 10400,
     "stage": "Tunnel",
     "title": "Stjeban",
-    "id": "S116",
+    "id": "S115",
     "error": false
   },
   {
     "day": "2017-7-9",
     "start": "20:00",
     "startInt": 2000,
-    "end": "22:00",
-    "endInt": 2200,
+    "end": "20:40",
+    "endInt": 2040,
     "stage": "Main Stage",
-    "title": "Radio emsija Oradija i eFM radija",
+    "title": "Stray Dogg",
     "id": "N1",
     "error": false
   },
@@ -4038,6 +4225,17 @@
   },
   {
     "day": "2017-7-9",
+    "start": "21:50",
+    "startInt": 2150,
+    "end": "22:25",
+    "endInt": 2225,
+    "stage": "Explosive",
+    "title": "Full of Hell",
+    "id": "N23",
+    "error": false
+  },
+  {
+    "day": "2017-7-9",
     "start": "22:50",
     "startInt": 2250,
     "end": "00:05",
@@ -4111,6 +4309,17 @@
     "stage": "Reggae",
     "title": "DJ Shesha",
     "id": "N30",
+    "error": false
+  },
+  {
+    "day": "2017-7-9",
+    "start": "21:30",
+    "startInt": 2130,
+    "end": "23:30",
+    "endInt": 2330,
+    "stage": "Reggae",
+    "title": "Samity",
+    "id": "N31",
     "error": false
   },
   {
@@ -4313,6 +4522,17 @@
   },
   {
     "day": "2017-7-9",
+    "start": "22:30",
+    "startInt": 2230,
+    "end": "23:00",
+    "endInt": 2300,
+    "stage": "Latino",
+    "title": "Desiguales",
+    "id": "N50",
+    "error": false
+  },
+  {
+    "day": "2017-7-9",
     "start": "23:00",
     "startInt": 2300,
     "end": "00:00",
@@ -4331,6 +4551,17 @@
     "stage": "Latino",
     "title": "Senzala Capoeira",
     "id": "N52",
+    "error": false
+  },
+  {
+    "day": "2017-7-9",
+    "start": "00:30",
+    "startInt": 10030,
+    "end": "02:00",
+    "endInt": 10200,
+    "stage": "Latino",
+    "title": "DJ Sesha",
+    "id": "N53",
     "error": false
   },
   {
@@ -4610,10 +4841,10 @@
   },
   {
     "day": "2017-7-9",
-    "start": "21:15",
-    "startInt": 2115,
-    "end": "23:31",
-    "endInt": 2331,
+    "start": "22:00",
+    "startInt": 2200,
+    "end": "00:16",
+    "endInt": 10016,
     "stage": "Cinema",
     "title": "Guardians of the Galaxy Vol. 2",
     "id": "N79",
@@ -4621,10 +4852,10 @@
   },
   {
     "day": "2017-7-9",
-    "start": "23:15",
-    "startInt": 2315,
-    "end": "01:03",
-    "endInt": 10103,
+    "start": "01:00",
+    "startInt": 10100,
+    "end": "02:48",
+    "endInt": 10248,
     "stage": "Cinema",
     "title": "Gimme Danger",
     "id": "N80",
@@ -4753,6 +4984,17 @@
   },
   {
     "day": "2017-7-9",
+    "start": "00:55",
+    "startInt": 10055,
+    "end": "01:45",
+    "endInt": 10145,
+    "stage": "Future Shock",
+    "title": "Gift",
+    "id": "N92",
+    "error": false
+  },
+  {
+    "day": "2017-7-9",
     "start": "01:00",
     "startInt": 10100,
     "end": "01:40",
@@ -4760,6 +5002,17 @@
     "stage": "Future Shock",
     "title": "TBC",
     "id": "N93",
+    "error": false
+  },
+  {
+    "day": "2017-7-9",
+    "start": "01:55",
+    "startInt": 10155,
+    "end": "02:35",
+    "endInt": 10235,
+    "stage": "Future Shock",
+    "title": "Yokono",
+    "id": "N94",
     "error": false
   },
   {

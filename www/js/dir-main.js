@@ -1,6 +1,6 @@
 (function(){
 
-  exited.directive('exMain', function MainDirective(Prefs, Data, DbService, LsService, LSKEYS){
+  exited.directive('exMain', function MainDirective(Prefs, Data, DbService, LsService, LSKEYS, $interval){
     return function(scope){
 
       // STORAGE
@@ -53,13 +53,65 @@
         scope.filteredEvents = data.events.filter(function(event){
           return event.day === scope.prefs.selectedDay && event.stage === scope.prefs.selectedStage;
         });
+        calculateEventsPosition();
+        markEventsInProgress(scope.filteredEvents);
       }
 
       function filterFavs(){
         scope.filteredFavs = data.events.filter(function(event){
           return event.day === scope.prefs.selectedDay && scope.favs.hasOwnProperty(event.id);
         });
-        console.log(scope.filteredFavs);
+        scope.filteredFavs.sort(function(a, b){
+          if(a.startInt < b.startInt){
+            return -1;
+          }
+          if(a.startInt > b.startInt){
+            return 1;
+          }
+          return 0;
+        });
+        markEventsInProgress(scope.filteredFavs);
+      }
+
+      function calculateEventsPosition(){
+        scope.filteredEvents.forEach(function(event){
+          var minsStart = getMinutesFromProgrameStart(event.start);
+          var minsEnd = getMinutesFromProgrameStart(event.end);
+          event.top = minsStart / 5 * 4;
+          event.height = minsEnd / 5 * 4 - event.top + 1;
+        });
+      }
+
+      function markEventsInProgress(array){
+        array.forEach(function(event){
+          var minsStart = getMinutesFromProgrameStart(event.start);
+          var minsEnd = getMinutesFromProgrameStart(event.end);
+          if(
+            minsStart <= scope.currentTime &&
+            scope.currentTime <= minsEnd
+            //scope.prefs.selectedDay === scope.prefs.currentDay
+          ){
+            event.inProgress = true;
+          }else{
+            event.inProgress = false;
+          }
+        });
+      }
+
+      function calculateCurrentTime(){
+        var now = new Date();
+        var hours = now.getHours();
+        var mins = now.getMinutes();
+        if(hours >= 19 || hours <= 6){
+          if(hours < 19){
+            hours += 5;
+          }else{
+            hours -= 19;
+          }
+          scope.currentTime = hours * 60 + mins;
+        }else{
+          scope.currentTime = undefined;
+        }
       }
 
       function setTheme(){
@@ -102,15 +154,27 @@
         return today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
       }
 
+      function getMinutesFromProgrameStart(sTime){
+        var aTime = sTime.split(':');
+        var hours = aTime[0].toInt();
+        if(hours < 19){
+          hours += 5;
+        }else{
+          hours -= 19;
+        }
+        return hours * 60 + aTime[1].toInt();
+      }
+
       // INIT
 
       scope.stages = data.stages;
       scope.days = data.days;
       scope.filteredEvents = [];
       scope.filteredFavs = [];
+      calculateCurrentTime();
 
       // TODO remove hardcoded days
-      var days = ['2017-7-6', '2017-7-7', '2017-7-8', '2017-7-9'];
+      var days = ['2017-7-5', '2017-7-6', '2017-7-7', '2017-7-8', '2017-7-9'];
       var currentDay = generateDateStamp();
       var currentDayIndex = days.indexOf(currentDay);
       if(currentDayIndex > -1){
@@ -140,6 +204,12 @@
           console.error('getLatestData: error', error);
         }
       );
+
+      $interval(function(){
+        calculateCurrentTime();
+        markEventsInProgress(scope.filteredEvents);
+        markEventsInProgress(scope.filteredFavs);
+      }, 60000 * 1);
 
       window.model = Data;
 

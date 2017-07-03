@@ -55,20 +55,21 @@ var arrStages = [
 ];
 
 $('.performer_item').each(function(){
+  var jqItem = $(this);
   var jqTd = $(this).parent();
 
-  var combinedTitle = jqTd.find('.performer_link').text().trim();
-  var id = jqTd.find('.select_performer').attr('name').substr(1);
+  var combinedTitle = jqItem.find('.performer_link').text().trim();
+  var id = jqItem.find('.select_performer').attr('name').substr(1);
+  var jqHiddenInputs = jqItem.nextUntil('.performer_item');
+
   var data = {};
   var error = false;
   try{
-    data = JSON.parse(jqTd.find('[name="data' + id + '"]').attr('value'));
+    data = JSON.parse(jqHiddenInputs.eq(2).attr('value'));
   }catch(e){
     error = true;
     console.log('error', id, combinedTitle);
   }
-
-  var jqHiddenInputs = jqTd.children('input[type="hidden"]');
 
   var performerName = data['grupa' + id];
   var day = jqHiddenInputs.eq(1).attr('value').trim();
