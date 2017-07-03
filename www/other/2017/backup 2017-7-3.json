@@ -1,0 +1,3132 @@
+{
+  "days" : {
+    "2017-7-5" : {
+      "day" : "2017-7-5",
+      "formatted" : "Wed 5th July",
+      "index" : 0,
+      "name" : "Wed"
+    },
+    "2017-7-6" : {
+      "day" : "2017-7-6",
+      "formatted" : "Thu 6th July",
+      "index" : 1,
+      "name" : "Thu"
+    },
+    "2017-7-7" : {
+      "day" : "2017-7-7",
+      "formatted" : "Fir 7th July",
+      "index" : 2,
+      "name" : "Fri"
+    },
+    "2017-7-8" : {
+      "day" : "2017-7-8",
+      "formatted" : "Sat 8th July",
+      "index" : 3,
+      "name" : "Sat"
+    },
+    "2017-7-9" : {
+      "day" : "2017-7-9",
+      "formatted" : "Sun 9th July",
+      "index" : 4,
+      "name" : "Sun"
+    }
+  },
+  "events" : [ {
+    "day" : "2017-7-5",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "01",
+    "stage" : "Main",
+    "start" : "22:00",
+    "title" : "The Killers"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "20:45",
+    "error" : false,
+    "id" : "C3",
+    "stage" : "Main",
+    "start" : "20:00",
+    "title" : "RoadKillSoda"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "21:45",
+    "error" : false,
+    "id" : "C6",
+    "stage" : "Main",
+    "start" : "21:00",
+    "title" : "Repetitor"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "23:30",
+    "error" : false,
+    "id" : "C10",
+    "stage" : "Main",
+    "start" : "22:15",
+    "title" : "Bastille"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "01:30",
+    "error" : false,
+    "id" : "C18",
+    "stage" : "Main",
+    "start" : "00:00",
+    "title" : "Ellie Goulding"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "C27",
+    "stage" : "Main",
+    "start" : "02:00",
+    "title" : "Sigma DJ Set"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "03:30",
+    "error" : false,
+    "id" : "C31",
+    "stage" : "Main",
+    "start" : "03:00",
+    "title" : "Ms Dynamite"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "04:45",
+    "error" : false,
+    "id" : "C32",
+    "stage" : "Main",
+    "start" : "03:30",
+    "title" : "DJ Hype"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "06:00",
+    "error" : false,
+    "id" : "C36",
+    "stage" : "Main",
+    "start" : "04:45",
+    "title" : "Sub Zero"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "22:30",
+    "error" : false,
+    "id" : "C7",
+    "stage" : "Dance Arena",
+    "start" : "21:00",
+    "title" : "Divolly & Markward"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "23:45",
+    "error" : false,
+    "id" : "C11",
+    "stage" : "Dance Arena",
+    "start" : "22:30",
+    "title" : "Rosske"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "00:45",
+    "error" : false,
+    "id" : "C15",
+    "stage" : "Dance Arena",
+    "start" : "23:45",
+    "title" : "Gil Glaze"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "01:45",
+    "error" : false,
+    "id" : "C19",
+    "stage" : "Dance Arena",
+    "start" : "00:45",
+    "title" : "Kris Kross Amsterdam"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "C23",
+    "stage" : "Dance Arena",
+    "start" : "01:45",
+    "title" : "Dimitri Vegas & Like Mike"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "C33",
+    "stage" : "Dance Arena",
+    "start" : "03:00",
+    "title" : "Disciples"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "05:00",
+    "error" : false,
+    "id" : "C37",
+    "stage" : "Dance Arena",
+    "start" : "04:00",
+    "title" : "James Zabiela"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "07:00",
+    "error" : false,
+    "id" : "C40",
+    "stage" : "Dance Arena",
+    "start" : "05:00",
+    "title" : "Solomun"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "08:00",
+    "error" : false,
+    "id" : "C42",
+    "stage" : "Dance Arena",
+    "start" : "07:00",
+    "title" : "Teenage Techno Punks"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "20:00",
+    "error" : false,
+    "id" : "C1",
+    "stage" : "Fusion",
+    "start" : "19:30",
+    "title" : "Jasna Jovicevic Flow Vertical"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "21:00",
+    "error" : false,
+    "id" : "C4",
+    "stage" : "Fusion",
+    "start" : "20:20",
+    "title" : "Ti"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "22:15",
+    "error" : false,
+    "id" : "C8",
+    "stage" : "Fusion",
+    "start" : "21:30",
+    "title" : "My Baby"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "23:40",
+    "error" : false,
+    "id" : "C12",
+    "stage" : "Fusion",
+    "start" : "22:45",
+    "title" : "The Black Heart Rebellion"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "01:00",
+    "error" : false,
+    "id" : "C20",
+    "stage" : "Fusion",
+    "start" : "00:00",
+    "title" : "Nova Heart"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "02:00",
+    "error" : false,
+    "id" : "C24",
+    "stage" : "Fusion",
+    "start" : "01:20",
+    "title" : "Gooral"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "03:15",
+    "error" : false,
+    "id" : "C28",
+    "stage" : "Fusion",
+    "start" : "02:15",
+    "title" : "Urban & 4"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "04:25",
+    "error" : false,
+    "id" : "C34",
+    "stage" : "Fusion",
+    "start" : "03:35",
+    "title" : "ZAA"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "05:30",
+    "error" : false,
+    "id" : "C38",
+    "stage" : "Fusion",
+    "start" : "04:45",
+    "title" : "Obojeni Program"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "20:10",
+    "error" : false,
+    "id" : "C2",
+    "stage" : "Explosive",
+    "start" : "19:30",
+    "title" : "Hund"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "21:00",
+    "error" : false,
+    "id" : "C5",
+    "stage" : "Explosive",
+    "start" : "20:25",
+    "title" : "Punkreas"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "21:55",
+    "error" : false,
+    "id" : "C9",
+    "stage" : "Explosive",
+    "start" : "21:15",
+    "title" : "The Socks"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "22:50",
+    "error" : false,
+    "id" : "C13",
+    "stage" : "Explosive",
+    "start" : "22:05",
+    "title" : "Mitesers"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "C16",
+    "stage" : "Explosive",
+    "start" : "23:10",
+    "title" : "The Rumjacks"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "01:35",
+    "error" : false,
+    "id" : "C21",
+    "stage" : "Explosive",
+    "start" : "00:20",
+    "title" : "Anti-Flag"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "02:20",
+    "error" : false,
+    "id" : "C25",
+    "stage" : "Explosive",
+    "start" : "01:50",
+    "title" : "Fast As We Go Far"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "03:05",
+    "error" : false,
+    "id" : "C29",
+    "stage" : "Explosive",
+    "start" : "02:30",
+    "title" : "Vox Populi"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "C35",
+    "stage" : "Explosive",
+    "start" : "03:20",
+    "title" : "Kolaps"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "23:00",
+    "error" : false,
+    "id" : "C14",
+    "stage" : "Novi Sad",
+    "start" : "22:00",
+    "title" : "Cameron Jack"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "C17",
+    "stage" : "Novi Sad",
+    "start" : "23:00",
+    "title" : "Comrade Winston"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "01:00",
+    "error" : false,
+    "id" : "C22",
+    "stage" : "Novi Sad",
+    "start" : "00:00",
+    "title" : "Klaus"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "02:30",
+    "error" : false,
+    "id" : "C26",
+    "stage" : "Novi Sad",
+    "start" : "01:00",
+    "title" : "Tijana T"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "04:30",
+    "error" : false,
+    "id" : "C30",
+    "stage" : "Novi Sad",
+    "start" : "02:30",
+    "title" : "Rebolledo"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "06:30",
+    "error" : false,
+    "id" : "C39",
+    "stage" : "Novi Sad",
+    "start" : "04:30",
+    "title" : "The Hacker"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "08:00",
+    "error" : false,
+    "id" : "C41",
+    "stage" : "Novi Sad",
+    "start" : "06:30",
+    "title" : "DJ Fra"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "20:00",
+    "error" : false,
+    "id" : "C43",
+    "stage" : "Future Shock",
+    "start" : "19:30",
+    "title" : "Acid Father"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "20:45",
+    "error" : false,
+    "id" : "C46",
+    "stage" : "Future Shock",
+    "start" : "20:15",
+    "title" : "Inconsistencies"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "21:30",
+    "error" : false,
+    "id" : "C47",
+    "stage" : "Future Shock",
+    "start" : "20:55",
+    "title" : "Random"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "22:15",
+    "error" : false,
+    "id" : "C50",
+    "stage" : "Future Shock",
+    "start" : "21:45",
+    "title" : "Nadja"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "23:10",
+    "error" : false,
+    "id" : "C55",
+    "stage" : "Future Shock",
+    "start" : "22:30",
+    "title" : "Dreambirds"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "00:15",
+    "error" : false,
+    "id" : "C60",
+    "stage" : "Future Shock",
+    "start" : "23:25",
+    "title" : "Svemirci"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "01:15",
+    "error" : false,
+    "id" : "C63",
+    "stage" : "Future Shock",
+    "start" : "00:30",
+    "title" : "Vrane Kamene"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "02:15",
+    "error" : false,
+    "id" : "C67",
+    "stage" : "Future Shock",
+    "start" : "01:30",
+    "title" : "M.U.D.A."
+  }, {
+    "day" : "2017-7-6",
+    "end" : "03:15",
+    "error" : false,
+    "id" : "C71",
+    "stage" : "Future Shock",
+    "start" : "02:30",
+    "title" : "Ensh"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "20:00",
+    "error" : false,
+    "id" : "C44",
+    "stage" : "Urban Bug",
+    "start" : "19:00",
+    "title" : "Pimpfingers DJ's"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "21:20",
+    "error" : false,
+    "id" : "C48",
+    "stage" : "Urban Bug",
+    "start" : "20:00",
+    "title" : "Lazzaro b2b Bocho b2b Lesha"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "22:40",
+    "error" : false,
+    "id" : "C51",
+    "stage" : "Urban Bug",
+    "start" : "21:20",
+    "title" : "Migazz b2b Zepa b2b Nikolai"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "C56",
+    "stage" : "Urban Bug",
+    "start" : "22:40",
+    "title" : "Mark Myself b2b Glasskeeperz"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "01:20",
+    "error" : false,
+    "id" : "C64",
+    "stage" : "Urban Bug",
+    "start" : "00:00",
+    "title" : "Toma Tek b2b Adwarf b2b SooT"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "02:40",
+    "error" : false,
+    "id" : "C68",
+    "stage" : "Urban Bug",
+    "start" : "01:20",
+    "title" : "Ascaloon b2b Chrono b2b Kohajda"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "C72",
+    "stage" : "Urban Bug",
+    "start" : "02:40",
+    "title" : "John Belk b2b Kid Kimi b2b Robert Johnson"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "05:20",
+    "error" : false,
+    "id" : "C77",
+    "stage" : "Urban Bug",
+    "start" : "04:00",
+    "title" : "Lea Dobricic b2b Markyz b2b Nic Lawyer"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "06:40",
+    "error" : false,
+    "id" : "C81",
+    "stage" : "Urban Bug",
+    "start" : "05:20",
+    "title" : "Ilija Djokovic b2b TKNO b2b Milos Vujovic"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "08:00",
+    "error" : false,
+    "id" : "C82",
+    "stage" : "Urban Bug",
+    "start" : "06:40",
+    "title" : "Kibz b2b DFNDR b2b Minimalistic"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "22:30",
+    "error" : false,
+    "id" : "C52",
+    "stage" : "Trance",
+    "start" : "21:00",
+    "title" : "Zarma DJ set"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "C57",
+    "stage" : "Trance",
+    "start" : "22:30",
+    "title" : "Pura & Manda DJ set"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "01:00",
+    "error" : false,
+    "id" : "C65",
+    "stage" : "Trance",
+    "start" : "00:00",
+    "title" : "AntHill Live"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "02:00",
+    "error" : false,
+    "id" : "C69",
+    "stage" : "Trance",
+    "start" : "01:00",
+    "title" : "Kala Live"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "C73",
+    "stage" : "Trance",
+    "start" : "02:00",
+    "title" : "Yudhisthira Live"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "04:30",
+    "error" : false,
+    "id" : "C76",
+    "stage" : "Trance",
+    "start" : "03:00",
+    "title" : "Mozza & DaPEACE DJ set"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "06:00",
+    "error" : false,
+    "id" : "C78",
+    "stage" : "Trance",
+    "start" : "04:30",
+    "title" : "Imba Live"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "21:00",
+    "error" : false,
+    "id" : "C45",
+    "stage" : "Reggae",
+    "start" : "19:00",
+    "title" : "Superstar Selectah"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "22:00",
+    "error" : false,
+    "id" : "C53",
+    "stage" : "Reggae",
+    "start" : "21:00",
+    "title" : "BODABOO"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "23:00",
+    "error" : false,
+    "id" : "C58",
+    "stage" : "Reggae",
+    "start" : "22:00",
+    "title" : "GIGATRON SELECTAH"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "00:30",
+    "error" : false,
+    "id" : "C61",
+    "stage" : "Reggae",
+    "start" : "23:00",
+    "title" : "CHAY NELLE"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "02:00",
+    "error" : false,
+    "id" : "C66",
+    "stage" : "Reggae",
+    "start" : "00:30",
+    "title" : "BUSH MAD SQUAD"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "C74",
+    "stage" : "Reggae",
+    "start" : "02:00",
+    "title" : "DJ Shone Alcapone &Tommy T - Coupled Up Movement, Ital Vision & Special Guest: Unknown Mizery, Jahmessenjah Sound System"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "05:30",
+    "error" : false,
+    "id" : "C79",
+    "stage" : "Reggae",
+    "start" : "04:00",
+    "title" : "Wenti Wadada Music"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "21:00",
+    "error" : false,
+    "id" : "C49",
+    "stage" : "Radio AS FM",
+    "start" : "20:00",
+    "title" : "AS FM Intro Mix"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "22:00",
+    "error" : false,
+    "id" : "C54",
+    "stage" : "Radio AS FM",
+    "start" : "21:00",
+    "title" : "Milos Stankic"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "23:00",
+    "error" : false,
+    "id" : "C59",
+    "stage" : "Radio AS FM",
+    "start" : "22:00",
+    "title" : "DJ Vladow"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "01:00",
+    "error" : false,
+    "id" : "C62",
+    "stage" : "Radio AS FM",
+    "start" : "23:30",
+    "title" : "DJ Morning Indian"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "02:30",
+    "error" : false,
+    "id" : "C70",
+    "stage" : "Radio AS FM",
+    "start" : "01:00",
+    "title" : "DJ Marco"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "C75",
+    "stage" : "Radio AS FM",
+    "start" : "02:30",
+    "title" : "DJ Conte"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "06:00",
+    "error" : false,
+    "id" : "C80",
+    "stage" : "Radio AS FM",
+    "start" : "04:00",
+    "title" : "DJ Groover"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "21:00",
+    "error" : false,
+    "id" : "C83",
+    "stage" : "Latino",
+    "start" : "20:00",
+    "title" : "MC Choma"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "21:30",
+    "error" : false,
+    "id" : "C84",
+    "stage" : "Latino",
+    "start" : "21:00",
+    "title" : "DJ Ice"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "22:00",
+    "error" : false,
+    "id" : "C85",
+    "stage" : "Latino",
+    "start" : "21:30",
+    "title" : "Zumba Babes"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "23:00",
+    "error" : false,
+    "id" : "C88",
+    "stage" : "Latino",
+    "start" : "22:00",
+    "title" : "Dance Studio"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "C90",
+    "stage" : "Latino",
+    "start" : "23:00",
+    "title" : "Desiguales & DJ Mega"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "01:00",
+    "error" : false,
+    "id" : "C92",
+    "stage" : "Latino",
+    "start" : "00:00",
+    "title" : "Baila C&C"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "02:00",
+    "error" : false,
+    "id" : "C94",
+    "stage" : "Latino",
+    "start" : "01:00",
+    "title" : "La Sed Gitana"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "C97",
+    "stage" : "Latino",
+    "start" : "02:00",
+    "title" : "Tito & Lisel"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "C98",
+    "stage" : "Latino",
+    "start" : "03:00",
+    "title" : "DJ Frank"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "05:00",
+    "error" : false,
+    "id" : "C100",
+    "stage" : "Latino",
+    "start" : "04:00",
+    "title" : "DJ Sesha"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "23:00",
+    "error" : false,
+    "id" : "C86",
+    "stage" : "Disko",
+    "start" : "21:00",
+    "title" : "Mr. Fanatik"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "01:00",
+    "error" : false,
+    "id" : "C91",
+    "stage" : "Disko",
+    "start" : "23:00",
+    "title" : "Xsalex"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "C95",
+    "stage" : "Disko",
+    "start" : "01:00",
+    "title" : "Happy Days Crew"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "05:00",
+    "error" : false,
+    "id" : "C99",
+    "stage" : "Disko",
+    "start" : "03:00",
+    "title" : "Dima"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "22:30",
+    "error" : false,
+    "id" : "C87",
+    "stage" : "Chill-Inn",
+    "start" : "21:00",
+    "title" : "Nektarija"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "C89",
+    "stage" : "Chill-Inn",
+    "start" : "22:30",
+    "title" : "Dub Duba"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "01:30",
+    "error" : false,
+    "id" : "C93",
+    "stage" : "Chill-Inn",
+    "start" : "00:00",
+    "title" : "DJ Tito"
+  }, {
+    "day" : "2017-7-6",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "C96",
+    "stage" : "Chill-Inn",
+    "start" : "01:30",
+    "title" : "Dortmund Rudie"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "20:45",
+    "error" : false,
+    "id" : "P3",
+    "stage" : "Main",
+    "start" : "20:00",
+    "title" : "Bitipatibi"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "22:00",
+    "error" : false,
+    "id" : "P6",
+    "stage" : "Main",
+    "start" : "21:00",
+    "title" : "Irie FM"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "P10",
+    "stage" : "Main",
+    "start" : "22:30",
+    "title" : "George Clinton"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "02:00",
+    "error" : false,
+    "id" : "P20",
+    "stage" : "Main",
+    "start" : "00:30",
+    "title" : "David Guetta"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "03:45",
+    "error" : false,
+    "id" : "P26",
+    "stage" : "Main",
+    "start" : "02:30",
+    "title" : "Wilkinson DJ Set feat. MC AD-APT"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "05:00",
+    "error" : false,
+    "id" : "P31",
+    "stage" : "Main",
+    "start" : "03:45",
+    "title" : "Congo Natty"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "06:00",
+    "error" : false,
+    "id" : "P36",
+    "stage" : "Main",
+    "start" : "05:00",
+    "title" : "Sarah Farina"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "22:15",
+    "error" : false,
+    "id" : "P7",
+    "stage" : "Dance Arena",
+    "start" : "21:00",
+    "title" : "Calavera & Manya"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "23:30",
+    "error" : false,
+    "id" : "P11",
+    "stage" : "Dance Arena",
+    "start" : "22:15",
+    "title" : "John Belk"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "01:00",
+    "error" : false,
+    "id" : "P16",
+    "stage" : "Dance Arena",
+    "start" : "23:30",
+    "title" : "MANT"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "02:30",
+    "error" : false,
+    "id" : "P22",
+    "stage" : "Dance Arena",
+    "start" : "01:00",
+    "title" : "Jackmaster"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "P27",
+    "stage" : "Dance Arena",
+    "start" : "02:30",
+    "title" : "Mind Against"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "06:00",
+    "error" : false,
+    "id" : "P33",
+    "stage" : "Dance Arena",
+    "start" : "04:00",
+    "title" : "Maceo Plex"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "08:00",
+    "error" : false,
+    "id" : "P37",
+    "stage" : "Dance Arena",
+    "start" : "06:00",
+    "title" : "Hernan Cattaneo b2b Henry Saiz"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "20:00",
+    "error" : false,
+    "id" : "P1",
+    "stage" : "Fusion",
+    "start" : "19:30",
+    "title" : "S.K.A."
+  }, {
+    "day" : "2017-7-7",
+    "end" : "20:45",
+    "error" : false,
+    "id" : "P4",
+    "stage" : "Fusion",
+    "start" : "20:15",
+    "title" : "Consecration"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "21:40",
+    "error" : false,
+    "id" : "P8",
+    "stage" : "Fusion",
+    "start" : "21:00",
+    "title" : "Buslav"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "22:55",
+    "error" : false,
+    "id" : "P12",
+    "stage" : "Fusion",
+    "start" : "22:10",
+    "title" : "Kensington"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "00:15",
+    "error" : false,
+    "id" : "P17",
+    "stage" : "Fusion",
+    "start" : "23:25",
+    "title" : "Borghesia"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "01:30",
+    "error" : false,
+    "id" : "P21",
+    "stage" : "Fusion",
+    "start" : "00:30",
+    "title" : "Božo Vrećo & Halka"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "03:05",
+    "error" : false,
+    "id" : "P28",
+    "stage" : "Fusion",
+    "start" : "02:00",
+    "title" : "Kultur Shock feat. Edo Maajka"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "04:25",
+    "error" : false,
+    "id" : "P32",
+    "stage" : "Fusion",
+    "start" : "03:25",
+    "title" : "Ritam Nereda"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "05:30",
+    "error" : false,
+    "id" : "P34",
+    "stage" : "Fusion",
+    "start" : "04:40",
+    "title" : "Bad Copy"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "20:10",
+    "error" : false,
+    "id" : "P2",
+    "stage" : "Explosive",
+    "start" : "19:30",
+    "title" : "Implant Pentru Refuz"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "20:55",
+    "error" : false,
+    "id" : "P5",
+    "stage" : "Explosive",
+    "start" : "20:25",
+    "title" : "Few Reasons Why"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "21:45",
+    "error" : false,
+    "id" : "P9",
+    "stage" : "Explosive",
+    "start" : "21:10",
+    "title" : "Gloves Off"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "22:35",
+    "error" : false,
+    "id" : "P13",
+    "stage" : "Explosive",
+    "start" : "22:00",
+    "title" : "First Flame"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "23:35",
+    "error" : false,
+    "id" : "P14",
+    "stage" : "Explosive",
+    "start" : "22:50",
+    "title" : "Born From Pain"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "00:50",
+    "error" : false,
+    "id" : "P18",
+    "stage" : "Explosive",
+    "start" : "23:50",
+    "title" : "Raised Fist"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "01:40",
+    "error" : false,
+    "id" : "P23",
+    "stage" : "Explosive",
+    "start" : "01:05",
+    "title" : "Thimble"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "02:35",
+    "error" : false,
+    "id" : "P24",
+    "stage" : "Explosive",
+    "start" : "01:55",
+    "title" : "Flatline"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "03:30",
+    "error" : false,
+    "id" : "P29",
+    "stage" : "Explosive",
+    "start" : "02:50",
+    "title" : "Violent Chapter"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "23:30",
+    "error" : false,
+    "id" : "P15",
+    "stage" : "Novi Sad",
+    "start" : "22:00",
+    "title" : "Filip Xavi"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "01:00",
+    "error" : false,
+    "id" : "P19",
+    "stage" : "Novi Sad",
+    "start" : "23:30",
+    "title" : "Regen"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "02:30",
+    "error" : false,
+    "id" : "P25",
+    "stage" : "Novi Sad",
+    "start" : "01:00",
+    "title" : "Dasha Rush"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "04:30",
+    "error" : false,
+    "id" : "P30",
+    "stage" : "Novi Sad",
+    "start" : "02:30",
+    "title" : "Moritz von Oswald"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "06:00",
+    "error" : false,
+    "id" : "P35",
+    "stage" : "Novi Sad",
+    "start" : "04:30",
+    "title" : "Zadig"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "08:00",
+    "error" : false,
+    "id" : "P38",
+    "stage" : "Novi Sad",
+    "start" : "06:00",
+    "title" : "Psyk"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "20:10",
+    "error" : false,
+    "id" : "P39",
+    "stage" : "Future Shock",
+    "start" : "19:30",
+    "title" : "Clyde"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "21:00",
+    "error" : false,
+    "id" : "P42",
+    "stage" : "Future Shock",
+    "start" : "20:25",
+    "title" : "Ne tamo"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "22:00",
+    "error" : false,
+    "id" : "P45",
+    "stage" : "Future Shock",
+    "start" : "21:15",
+    "title" : "WHAI"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "22:55",
+    "error" : false,
+    "id" : "P50",
+    "stage" : "Future Shock",
+    "start" : "22:15",
+    "title" : "Anarhiv"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "23:50",
+    "error" : false,
+    "id" : "P54",
+    "stage" : "Future Shock",
+    "start" : "23:10",
+    "title" : "Don't Touch Anything"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "00:50",
+    "error" : false,
+    "id" : "P57",
+    "stage" : "Future Shock",
+    "start" : "00:05",
+    "title" : "Bend Iza"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "01:45",
+    "error" : false,
+    "id" : "P61",
+    "stage" : "Future Shock",
+    "start" : "01:05",
+    "title" : "Crveni Vetar"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "02:40",
+    "error" : false,
+    "id" : "P65",
+    "stage" : "Future Shock",
+    "start" : "02:00",
+    "title" : "Cardinal Point"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "03:30",
+    "error" : false,
+    "id" : "P66",
+    "stage" : "Future Shock",
+    "start" : "02:50",
+    "title" : "Siempre Peligroso"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "20:00",
+    "error" : false,
+    "id" : "P40",
+    "stage" : "Urban Bug",
+    "start" : "19:00",
+    "title" : "Vanyano b2b MANTON b2b Una Andrea"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "21:20",
+    "error" : false,
+    "id" : "P43",
+    "stage" : "Urban Bug",
+    "start" : "20:00",
+    "title" : "The Playbrothers b2b Easy A"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "22:40",
+    "error" : false,
+    "id" : "P46",
+    "stage" : "Urban Bug",
+    "start" : "21:20",
+    "title" : "Shoomadisko b2b Petrovitz Yugoslavija b2b GoranCHE"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "P51",
+    "stage" : "Urban Bug",
+    "start" : "22:40",
+    "title" : "Milan Živanov b2b Besuu b2b Kyuzovic"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "01:20",
+    "error" : false,
+    "id" : "P58",
+    "stage" : "Urban Bug",
+    "start" : "00:00",
+    "title" : "Dusan Nikolic b2b Orange b2b Babarogic"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "02:40",
+    "error" : false,
+    "id" : "P62",
+    "stage" : "Urban Bug",
+    "start" : "01:20",
+    "title" : "Bojan Ribic b2b White b2b Theanilo"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "P67",
+    "stage" : "Urban Bug",
+    "start" : "02:40",
+    "title" : "After Affair b2b Dejan Milicevic"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "05:20",
+    "error" : false,
+    "id" : "P71",
+    "stage" : "Urban Bug",
+    "start" : "04:00",
+    "title" : "Wet Dreams"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "06:40",
+    "error" : false,
+    "id" : "P75",
+    "stage" : "Urban Bug",
+    "start" : "05:20",
+    "title" : "Nikolica b2b Nelly b2b Simone"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "08:00",
+    "error" : false,
+    "id" : "P76",
+    "stage" : "Urban Bug",
+    "start" : "06:40",
+    "title" : "Battric b2b MiVu b2b MENE"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "22:30",
+    "error" : false,
+    "id" : "P47",
+    "stage" : "Trance",
+    "start" : "21:00",
+    "title" : "Dash Live"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "P52",
+    "stage" : "Trance",
+    "start" : "22:30",
+    "title" : "Zyce Live"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "01:30",
+    "error" : false,
+    "id" : "P59",
+    "stage" : "Trance",
+    "start" : "00:00",
+    "title" : "Ticon Live"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "P63",
+    "stage" : "Trance",
+    "start" : "01:30",
+    "title" : "Vitor Falabella DJ set"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "04:30",
+    "error" : false,
+    "id" : "P70",
+    "stage" : "Trance",
+    "start" : "03:00",
+    "title" : "Max DJ set"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "06:00",
+    "error" : false,
+    "id" : "P72",
+    "stage" : "Trance",
+    "start" : "04:30",
+    "title" : "Stole & Vlada DJ set"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "21:00",
+    "error" : false,
+    "id" : "P41",
+    "stage" : "Reggae",
+    "start" : "19:00",
+    "title" : "Butchaa"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "23:00",
+    "error" : false,
+    "id" : "P48",
+    "stage" : "Reggae",
+    "start" : "21:00",
+    "title" : "Mak Floss"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "00:30",
+    "error" : false,
+    "id" : "P55",
+    "stage" : "Reggae",
+    "start" : "23:00",
+    "title" : "Deepstoned"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "02:00",
+    "error" : false,
+    "id" : "P60",
+    "stage" : "Reggae",
+    "start" : "00:30",
+    "title" : "Joy Mack, Clair Angel"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "P68",
+    "stage" : "Reggae",
+    "start" : "02:00",
+    "title" : "Devon Star, TrueMendous, Wacko Adam (MadRed) & DJ Janchezz"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "06:00",
+    "error" : false,
+    "id" : "P73",
+    "stage" : "Reggae",
+    "start" : "04:00",
+    "title" : "Wenti Wadada Music"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "21:00",
+    "error" : false,
+    "id" : "P44",
+    "stage" : "Radio AS FM",
+    "start" : "20:00",
+    "title" : "AS FM Intro Mix"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "22:00",
+    "error" : false,
+    "id" : "P49",
+    "stage" : "Radio AS FM",
+    "start" : "21:00",
+    "title" : "DJ Rale Vukovic"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "23:30",
+    "error" : false,
+    "id" : "P53",
+    "stage" : "Radio AS FM",
+    "start" : "22:00",
+    "title" : "GENTS"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "01:00",
+    "error" : false,
+    "id" : "P56",
+    "stage" : "Radio AS FM",
+    "start" : "23:30",
+    "title" : "Oli Leslie"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "02:30",
+    "error" : false,
+    "id" : "P64",
+    "stage" : "Radio AS FM",
+    "start" : "01:00",
+    "title" : "DJ Dale"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "P69",
+    "stage" : "Radio AS FM",
+    "start" : "02:30",
+    "title" : "RI5E & 5HINE"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "06:00",
+    "error" : false,
+    "id" : "P74",
+    "stage" : "Radio AS FM",
+    "start" : "04:00",
+    "title" : "DJ WD87"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "21:00",
+    "error" : false,
+    "id" : "P77",
+    "stage" : "Latino",
+    "start" : "20:00",
+    "title" : "Opening"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "21:30",
+    "error" : false,
+    "id" : "P78",
+    "stage" : "Latino",
+    "start" : "21:00",
+    "title" : "DJ Tender"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "22:00",
+    "error" : false,
+    "id" : "P79",
+    "stage" : "Latino",
+    "start" : "21:30",
+    "title" : "Borrachos & Locas"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "23:00",
+    "error" : false,
+    "id" : "P82",
+    "stage" : "Latino",
+    "start" : "22:00",
+    "title" : "Capoeira NS"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "P84",
+    "stage" : "Latino",
+    "start" : "23:00",
+    "title" : "Mantock Aruena & Ritmo Latino"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "01:00",
+    "error" : false,
+    "id" : "P86",
+    "stage" : "Latino",
+    "start" : "00:00",
+    "title" : "Amigos"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "02:00",
+    "error" : false,
+    "id" : "P88",
+    "stage" : "Latino",
+    "start" : "01:00",
+    "title" : "Alex El Loco & Casanova"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "P91",
+    "stage" : "Latino",
+    "start" : "02:00",
+    "title" : "DJ Arceo"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "P92",
+    "stage" : "Latino",
+    "start" : "03:00",
+    "title" : "MC Choma"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "05:00",
+    "error" : false,
+    "id" : "P94",
+    "stage" : "Latino",
+    "start" : "04:00",
+    "title" : "DJ Arceo"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "23:00",
+    "error" : false,
+    "id" : "P80",
+    "stage" : "Disko",
+    "start" : "21:00",
+    "title" : "ShoomaDisco"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "01:00",
+    "error" : false,
+    "id" : "P85",
+    "stage" : "Disko",
+    "start" : "23:00",
+    "title" : "Safe - T"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "P89",
+    "stage" : "Disko",
+    "start" : "01:00",
+    "title" : "Mr. Fanatik"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "05:00",
+    "error" : false,
+    "id" : "P93",
+    "stage" : "Disko",
+    "start" : "03:00",
+    "title" : "Shi Cu"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "22:30",
+    "error" : false,
+    "id" : "P81",
+    "stage" : "Chill-Inn",
+    "start" : "21:00",
+    "title" : "Rashomon & Bumbass selektaz"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "P83",
+    "stage" : "Chill-Inn",
+    "start" : "22:30",
+    "title" : "Fokus"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "01:30",
+    "error" : false,
+    "id" : "P87",
+    "stage" : "Chill-Inn",
+    "start" : "00:00",
+    "title" : "Boris Viande"
+  }, {
+    "day" : "2017-7-7",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "P90",
+    "stage" : "Chill-Inn",
+    "start" : "01:30",
+    "title" : "DJ Pozor"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "21:00",
+    "error" : false,
+    "id" : "S3",
+    "stage" : "Main",
+    "start" : "20:00",
+    "title" : "Killo Killo Banda"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "22:15",
+    "error" : false,
+    "id" : "S6",
+    "stage" : "Main",
+    "start" : "21:00",
+    "title" : "Tinariwen"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "23:30",
+    "error" : false,
+    "id" : "S10",
+    "stage" : "Main",
+    "start" : "22:30",
+    "title" : "Disciplin A Kitschme"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "01:30",
+    "error" : false,
+    "id" : "S18",
+    "stage" : "Main",
+    "start" : "00:00",
+    "title" : "The Vaccines"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "S25",
+    "stage" : "Main",
+    "start" : "02:00",
+    "title" : "Modestep DJ Set"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "S29",
+    "stage" : "Main",
+    "start" : "03:00",
+    "title" : "Ivy Lab"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "05:00",
+    "error" : false,
+    "id" : "S33",
+    "stage" : "Main",
+    "start" : "04:00",
+    "title" : "Rene LaVice"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "06:00",
+    "error" : false,
+    "id" : "S37",
+    "stage" : "Main",
+    "start" : "05:00",
+    "title" : "Teddy Killerz"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "22:30",
+    "error" : false,
+    "id" : "S7",
+    "stage" : "Dance Arena",
+    "start" : "21:00",
+    "title" : "La Costa"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "S11",
+    "stage" : "Dance Arena",
+    "start" : "22:30",
+    "title" : "The Beatshakers"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "01:30",
+    "error" : false,
+    "id" : "S19",
+    "stage" : "Dance Arena",
+    "start" : "00:00",
+    "title" : "Sam Feldt"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "S21",
+    "stage" : "Dance Arena",
+    "start" : "01:30",
+    "title" : "Nicky Romero"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "04:30",
+    "error" : false,
+    "id" : "S30",
+    "stage" : "Dance Arena",
+    "start" : "03:00",
+    "title" : "Robin Schulz"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "06:00",
+    "error" : false,
+    "id" : "S34",
+    "stage" : "Dance Arena",
+    "start" : "04:30",
+    "title" : "Feder"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "08:00",
+    "error" : false,
+    "id" : "S38",
+    "stage" : "Dance Arena",
+    "start" : "06:00",
+    "title" : "Hot Since 82"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "20:00",
+    "error" : false,
+    "id" : "S1",
+    "stage" : "Fusion",
+    "start" : "19:30",
+    "title" : "Flat Bit"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "20:50",
+    "error" : false,
+    "id" : "S4",
+    "stage" : "Fusion",
+    "start" : "20:15",
+    "title" : "Billy Andol"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "22:00",
+    "error" : false,
+    "id" : "S8",
+    "stage" : "Fusion",
+    "start" : "21:10",
+    "title" : "Balkanika"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "23:00",
+    "error" : false,
+    "id" : "S12",
+    "stage" : "Fusion",
+    "start" : "22:20",
+    "title" : "Graham Candy"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "00:45",
+    "error" : false,
+    "id" : "S15",
+    "stage" : "Fusion",
+    "start" : "23:30",
+    "title" : "Cock Sparrer"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "02:15",
+    "error" : false,
+    "id" : "S22",
+    "stage" : "Fusion",
+    "start" : "01:15",
+    "title" : "Dub Pistols"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "03:15",
+    "error" : false,
+    "id" : "S26",
+    "stage" : "Fusion",
+    "start" : "02:35",
+    "title" : "Iskaz"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "04:15",
+    "error" : false,
+    "id" : "S31",
+    "stage" : "Fusion",
+    "start" : "03:30",
+    "title" : "Lollobrigida"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "05:30",
+    "error" : false,
+    "id" : "S35",
+    "stage" : "Fusion",
+    "start" : "04:30",
+    "title" : "Atheist Rap"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "20:00",
+    "error" : false,
+    "id" : "S2",
+    "stage" : "Explosive",
+    "start" : "19:30",
+    "title" : "Counter Ignition"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "20:50",
+    "error" : false,
+    "id" : "S5",
+    "stage" : "Explosive",
+    "start" : "20:15",
+    "title" : "Xaon"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "21:45",
+    "error" : false,
+    "id" : "S9",
+    "stage" : "Explosive",
+    "start" : "21:05",
+    "title" : "Deathronation"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "22:40",
+    "error" : false,
+    "id" : "S13",
+    "stage" : "Explosive",
+    "start" : "22:00",
+    "title" : "Dead Jocker"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "23:45",
+    "error" : false,
+    "id" : "S16",
+    "stage" : "Explosive",
+    "start" : "23:00",
+    "title" : "Sear Bliss"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "01:30",
+    "error" : false,
+    "id" : "S20",
+    "stage" : "Explosive",
+    "start" : "00:15",
+    "title" : "Paradise Lost"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "02:25",
+    "error" : false,
+    "id" : "S23",
+    "stage" : "Explosive",
+    "start" : "01:45",
+    "title" : "Tibia"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "03:20",
+    "error" : false,
+    "id" : "S27",
+    "stage" : "Explosive",
+    "start" : "02:40",
+    "title" : "Downstroy"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "04:15",
+    "error" : false,
+    "id" : "S32",
+    "stage" : "Explosive",
+    "start" : "03:35",
+    "title" : "Stim"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "23:30",
+    "error" : false,
+    "id" : "S14",
+    "stage" : "Novi Sad",
+    "start" : "22:00",
+    "title" : "Vegim & Flekitza"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "01:00",
+    "error" : false,
+    "id" : "S17",
+    "stage" : "Novi Sad",
+    "start" : "23:30",
+    "title" : "Lag"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "02:00",
+    "error" : false,
+    "id" : "S24",
+    "stage" : "Novi Sad",
+    "start" : "01:00",
+    "title" : "Shlømo"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "S28",
+    "stage" : "Novi Sad",
+    "start" : "02:00",
+    "title" : "Antigone"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "06:00",
+    "error" : false,
+    "id" : "S36",
+    "stage" : "Novi Sad",
+    "start" : "04:00",
+    "title" : "Tommy Four Seven"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "08:00",
+    "error" : false,
+    "id" : "S39",
+    "stage" : "Novi Sad",
+    "start" : "06:00",
+    "title" : "François X"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "20:00",
+    "error" : false,
+    "id" : "S40",
+    "stage" : "Future Shock",
+    "start" : "19:30",
+    "title" : "Crveni Karton"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "20:45",
+    "error" : false,
+    "id" : "S43",
+    "stage" : "Future Shock",
+    "start" : "20:10",
+    "title" : "Dara Project"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "21:25",
+    "error" : false,
+    "id" : "S44",
+    "stage" : "Future Shock",
+    "start" : "20:55",
+    "title" : "Antifrizz"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "22:15",
+    "error" : false,
+    "id" : "S47",
+    "stage" : "Future Shock",
+    "start" : "21:40",
+    "title" : "Shoplifters"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "23:20",
+    "error" : false,
+    "id" : "S52",
+    "stage" : "Future Shock",
+    "start" : "22:30",
+    "title" : "Guitar Gangsters"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "00:15",
+    "error" : false,
+    "id" : "S56",
+    "stage" : "Future Shock",
+    "start" : "23:35",
+    "title" : "Neron"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "01:10",
+    "error" : false,
+    "id" : "S60",
+    "stage" : "Future Shock",
+    "start" : "00:30",
+    "title" : "Koala Voice"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "02:10",
+    "error" : false,
+    "id" : "S64",
+    "stage" : "Future Shock",
+    "start" : "01:25",
+    "title" : "Brainswitch"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "03:10",
+    "error" : false,
+    "id" : "S67",
+    "stage" : "Future Shock",
+    "start" : "02:25",
+    "title" : "Degeneza"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "20:00",
+    "error" : false,
+    "id" : "S41",
+    "stage" : "Urban Bug",
+    "start" : "19:00",
+    "title" : "W. a.k.a. Wizzard b2b Layzie b2b Milanko Trifuncevic"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "21:20",
+    "error" : false,
+    "id" : "S45",
+    "stage" : "Urban Bug",
+    "start" : "20:00",
+    "title" : "Trips & Tics b2b Miozz"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "22:40",
+    "error" : false,
+    "id" : "S48",
+    "stage" : "Urban Bug",
+    "start" : "21:20",
+    "title" : "A.Dot b2b Goran Emkic b2b Goran Begicevic"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "S53",
+    "stage" : "Urban Bug",
+    "start" : "22:40",
+    "title" : "Runy b2b Tijana Kabic b2b Underboki"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "01:20",
+    "error" : false,
+    "id" : "S61",
+    "stage" : "Urban Bug",
+    "start" : "00:00",
+    "title" : "Slobodan Zivanovic b2b Aleksa Asanin b2b Sam Luda"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "02:40",
+    "error" : false,
+    "id" : "S65",
+    "stage" : "Urban Bug",
+    "start" : "01:20",
+    "title" : "Milovan Stojanovic b2b Kristijan Sajkovic b2b Dusan Lazovic"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "S68",
+    "stage" : "Urban Bug",
+    "start" : "02:40",
+    "title" : "Yacine Benaissa b2b Sid Vaga b2b Kirri Cornwell"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "05:20",
+    "error" : false,
+    "id" : "S73",
+    "stage" : "Urban Bug",
+    "start" : "04:00",
+    "title" : "Marko Vukovic b2b Bokee b2b P.S."
+  }, {
+    "day" : "2017-7-8",
+    "end" : "06:40",
+    "error" : false,
+    "id" : "S76",
+    "stage" : "Urban Bug",
+    "start" : "05:20",
+    "title" : "Gemini DJ's b2b Timika"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "08:00",
+    "error" : false,
+    "id" : "S77",
+    "stage" : "Urban Bug",
+    "start" : "06:40",
+    "title" : "Luka Vukovic b2b Ivan Radojevic b2b Depra"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "22:30",
+    "error" : false,
+    "id" : "S49",
+    "stage" : "Trance",
+    "start" : "21:00",
+    "title" : "Cheda DJ set"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "23:30",
+    "error" : false,
+    "id" : "S54",
+    "stage" : "Trance",
+    "start" : "22:30",
+    "title" : "HardyVeles Live"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "01:30",
+    "error" : false,
+    "id" : "S57",
+    "stage" : "Trance",
+    "start" : "23:30",
+    "title" : "Bee&Pseehaw DJ set"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "S66",
+    "stage" : "Trance",
+    "start" : "01:30",
+    "title" : "XSI & Striker Live"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "04:30",
+    "error" : false,
+    "id" : "S71",
+    "stage" : "Trance",
+    "start" : "03:00",
+    "title" : "Aquapipe DJ set"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "06:00",
+    "error" : false,
+    "id" : "S74",
+    "stage" : "Trance",
+    "start" : "04:30",
+    "title" : "Djantrix Live"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "21:00",
+    "error" : false,
+    "id" : "S42",
+    "stage" : "Reggae",
+    "start" : "19:00",
+    "title" : "Martinees"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "23:00",
+    "error" : false,
+    "id" : "S50",
+    "stage" : "Reggae",
+    "start" : "21:00",
+    "title" : "Pushta G"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "00:30",
+    "error" : false,
+    "id" : "S58",
+    "stage" : "Reggae",
+    "start" : "23:00",
+    "title" : "POSITIVE VIBRATION MOVEMENT"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "02:00",
+    "error" : false,
+    "id" : "S62",
+    "stage" : "Reggae",
+    "start" : "00:30",
+    "title" : "Dada Selectah"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "S69",
+    "stage" : "Reggae",
+    "start" : "02:00",
+    "title" : "King Calypso Selectah, Speng Bond"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "06:00",
+    "error" : false,
+    "id" : "S75",
+    "stage" : "Reggae",
+    "start" : "04:00",
+    "title" : "Wenti Wadada Music"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "21:00",
+    "error" : false,
+    "id" : "S46",
+    "stage" : "Radio AS FM",
+    "start" : "20:00",
+    "title" : "AS FM Intro Mix"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "22:00",
+    "error" : false,
+    "id" : "S51",
+    "stage" : "Radio AS FM",
+    "start" : "21:00",
+    "title" : "DJ Filip Mitic"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "23:30",
+    "error" : false,
+    "id" : "S55",
+    "stage" : "Radio AS FM",
+    "start" : "22:00",
+    "title" : "DJ Marco"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "00:30",
+    "error" : false,
+    "id" : "S59",
+    "stage" : "Radio AS FM",
+    "start" : "23:30",
+    "title" : "Supertons"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "02:00",
+    "error" : false,
+    "id" : "S63",
+    "stage" : "Radio AS FM",
+    "start" : "00:30",
+    "title" : "House of Grooves Radio Show (Miss Kay Dee) / DJ WD87"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "S70",
+    "stage" : "Radio AS FM",
+    "start" : "02:00",
+    "title" : "Space Motion"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "06:00",
+    "error" : false,
+    "id" : "S72",
+    "stage" : "Radio AS FM",
+    "start" : "03:00",
+    "title" : "The Vibe Radio Show DJs (Pele Drezgic, Pezos, Dale, Dejan Matic)"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "21:00",
+    "error" : false,
+    "id" : "S78",
+    "stage" : "Latino",
+    "start" : "20:00",
+    "title" : "MC Choma"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "21:30",
+    "error" : false,
+    "id" : "S79",
+    "stage" : "Latino",
+    "start" : "21:00",
+    "title" : "DJ Tender"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "22:00",
+    "error" : false,
+    "id" : "S80",
+    "stage" : "Latino",
+    "start" : "21:30",
+    "title" : "Dance Studio"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "23:00",
+    "error" : false,
+    "id" : "S83",
+    "stage" : "Latino",
+    "start" : "22:00",
+    "title" : "Amigos"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "S85",
+    "stage" : "Latino",
+    "start" : "23:00",
+    "title" : "Mantock Aruena & Capoeira"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "01:00",
+    "error" : false,
+    "id" : "S87",
+    "stage" : "Latino",
+    "start" : "00:00",
+    "title" : "DJ Mega"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "02:00",
+    "error" : false,
+    "id" : "S89",
+    "stage" : "Latino",
+    "start" : "01:00",
+    "title" : "Seo Fernandez & Co."
+  }, {
+    "day" : "2017-7-8",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "S92",
+    "stage" : "Latino",
+    "start" : "02:00",
+    "title" : "Desiguales"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "S93",
+    "stage" : "Latino",
+    "start" : "03:00",
+    "title" : "DJ Arceo"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "05:00",
+    "error" : false,
+    "id" : "S95",
+    "stage" : "Latino",
+    "start" : "04:00",
+    "title" : "DJ Casanova"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "23:00",
+    "error" : false,
+    "id" : "S81",
+    "stage" : "Disko",
+    "start" : "21:00",
+    "title" : "Xsalex"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "01:00",
+    "error" : false,
+    "id" : "S86",
+    "stage" : "Disko",
+    "start" : "23:00",
+    "title" : "Safe - T"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "S90",
+    "stage" : "Disko",
+    "start" : "01:00",
+    "title" : "Luke Black DJ set"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "05:00",
+    "error" : false,
+    "id" : "S94",
+    "stage" : "Disko",
+    "start" : "03:00",
+    "title" : "Mr. Fanatik"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "22:30",
+    "error" : false,
+    "id" : "S82",
+    "stage" : "Chill-Inn",
+    "start" : "21:00",
+    "title" : "DJ One"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "S84",
+    "stage" : "Chill-Inn",
+    "start" : "22:30",
+    "title" : "DJ/MC Killo Killo"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "01:30",
+    "error" : false,
+    "id" : "S88",
+    "stage" : "Chill-Inn",
+    "start" : "00:00",
+    "title" : "GLOBAL DIGGERS"
+  }, {
+    "day" : "2017-7-8",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "S91",
+    "stage" : "Chill-Inn",
+    "start" : "01:30",
+    "title" : "Guapachosa Sound"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "21:40",
+    "error" : false,
+    "id" : "N3",
+    "stage" : "Main",
+    "start" : "20:05",
+    "title" : "Bassivity"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "22:40",
+    "error" : false,
+    "id" : "N9",
+    "stage" : "Main",
+    "start" : "22:00",
+    "title" : "Stormzy"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "00:20",
+    "error" : false,
+    "id" : "N14",
+    "stage" : "Main",
+    "start" : "23:00",
+    "title" : "Wiz Khalifa"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "02:30",
+    "error" : false,
+    "id" : "N23",
+    "stage" : "Main",
+    "start" : "01:00",
+    "title" : "The Prodigy"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "04:30",
+    "error" : false,
+    "id" : "N29",
+    "stage" : "Main",
+    "start" : "03:00",
+    "title" : "DJ Iron b2b JSTAR feat. Dynamite MC"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "06:00",
+    "error" : false,
+    "id" : "N34",
+    "stage" : "Main",
+    "start" : "04:35",
+    "title" : "Gramatik"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "22:00",
+    "error" : false,
+    "id" : "N6",
+    "stage" : "Dance Arena",
+    "start" : "21:00",
+    "title" : "Aleksandar Ivković"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "23:15",
+    "error" : false,
+    "id" : "N10",
+    "stage" : "Dance Arena",
+    "start" : "22:00",
+    "title" : "TKNO"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "00:30",
+    "error" : false,
+    "id" : "N15",
+    "stage" : "Dance Arena",
+    "start" : "23:15",
+    "title" : "Miss Sunshine a.k.a. Insolate"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "02:00",
+    "error" : false,
+    "id" : "N20",
+    "stage" : "Dance Arena",
+    "start" : "00:30",
+    "title" : "Fabio Florido"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "03:30",
+    "error" : false,
+    "id" : "N26",
+    "stage" : "Dance Arena",
+    "start" : "02:00",
+    "title" : "Richie Hawtin"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "04:45",
+    "error" : false,
+    "id" : "N30",
+    "stage" : "Dance Arena",
+    "start" : "03:30",
+    "title" : "Dave Clarke"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "06:15",
+    "error" : false,
+    "id" : "N35",
+    "stage" : "Dance Arena",
+    "start" : "04:45",
+    "title" : "Nina Kraviz"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "08:15",
+    "error" : false,
+    "id" : "N38",
+    "stage" : "Dance Arena",
+    "start" : "06:15",
+    "title" : "Marco Carola"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "20:00",
+    "error" : false,
+    "id" : "N1",
+    "stage" : "Fusion",
+    "start" : "19:30",
+    "title" : "Last Thrill"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "20:45",
+    "error" : false,
+    "id" : "N4",
+    "stage" : "Fusion",
+    "start" : "20:15",
+    "title" : "Jeremy"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "21:45",
+    "error" : false,
+    "id" : "N7",
+    "stage" : "Fusion",
+    "start" : "21:05",
+    "title" : "GRUBB"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "22:50",
+    "error" : false,
+    "id" : "N11",
+    "stage" : "Fusion",
+    "start" : "22:05",
+    "title" : "Tuber"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "23:55",
+    "error" : false,
+    "id" : "N16",
+    "stage" : "Fusion",
+    "start" : "23:05",
+    "title" : "Stray Dogg"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "01:25",
+    "error" : false,
+    "id" : "N21",
+    "stage" : "Fusion",
+    "start" : "00:25",
+    "title" : "Josipa Lisac"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "02:50",
+    "error" : false,
+    "id" : "N24",
+    "stage" : "Fusion",
+    "start" : "01:50",
+    "title" : "Silente"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "04:15",
+    "error" : false,
+    "id" : "N31",
+    "stage" : "Fusion",
+    "start" : "03:15",
+    "title" : "Werefox"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "05:30",
+    "error" : false,
+    "id" : "N36",
+    "stage" : "Fusion",
+    "start" : "04:30",
+    "title" : "Who See"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "20:00",
+    "error" : false,
+    "id" : "N2",
+    "stage" : "Explosive",
+    "start" : "19:30",
+    "title" : "Svartgren"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "20:45",
+    "error" : false,
+    "id" : "N5",
+    "stage" : "Explosive",
+    "start" : "20:15",
+    "title" : "War Engine"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "21:50",
+    "error" : false,
+    "id" : "N8",
+    "stage" : "Explosive",
+    "start" : "21:00",
+    "title" : "Bombarder"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "23:00",
+    "error" : false,
+    "id" : "N12",
+    "stage" : "Explosive",
+    "start" : "22:10",
+    "title" : "Toxic Holocaust"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "00:45",
+    "error" : false,
+    "id" : "N17",
+    "stage" : "Explosive",
+    "start" : "23:30",
+    "title" : "At the Gates"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "01:55",
+    "error" : false,
+    "id" : "N25",
+    "stage" : "Explosive",
+    "start" : "01:00",
+    "title" : "Negura Bunget"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "02:50",
+    "error" : false,
+    "id" : "N27",
+    "stage" : "Explosive",
+    "start" : "02:10",
+    "title" : "Norhod"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "03:45",
+    "error" : false,
+    "id" : "N32",
+    "stage" : "Explosive",
+    "start" : "03:05",
+    "title" : "Estwind"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "23:00",
+    "error" : false,
+    "id" : "N13",
+    "stage" : "Novi Sad",
+    "start" : "22:00",
+    "title" : "Lakmus Red (Live)"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "23:45",
+    "error" : false,
+    "id" : "N18",
+    "stage" : "Novi Sad",
+    "start" : "23:00",
+    "title" : "Kir (Live)"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "00:45",
+    "error" : false,
+    "id" : "N19",
+    "stage" : "Novi Sad",
+    "start" : "23:45",
+    "title" : "Campbell Irvine (Live)"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "02:15",
+    "error" : false,
+    "id" : "N22",
+    "stage" : "Novi Sad",
+    "start" : "00:45",
+    "title" : "Parrish Smith"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "N28",
+    "stage" : "Novi Sad",
+    "start" : "02:15",
+    "title" : "Powell"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "04:30",
+    "error" : false,
+    "id" : "N33",
+    "stage" : "Novi Sad",
+    "start" : "03:00",
+    "title" : "33.10.3402"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "06:15",
+    "error" : false,
+    "id" : "N37",
+    "stage" : "Novi Sad",
+    "start" : "04:30",
+    "title" : "Cassegrain"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "08:00",
+    "error" : false,
+    "id" : "N39",
+    "stage" : "Novi Sad",
+    "start" : "06:15",
+    "title" : "Laminat Kobermann"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "20:05",
+    "error" : false,
+    "id" : "N40",
+    "stage" : "Future Shock",
+    "start" : "19:30",
+    "title" : "D Zoo"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "20:50",
+    "error" : false,
+    "id" : "N43",
+    "stage" : "Future Shock",
+    "start" : "20:15",
+    "title" : "Komodo"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "21:40",
+    "error" : false,
+    "id" : "N46",
+    "stage" : "Future Shock",
+    "start" : "21:05",
+    "title" : "Pluto's Doubts"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "22:30",
+    "error" : false,
+    "id" : "N47",
+    "stage" : "Future Shock",
+    "start" : "21:55",
+    "title" : "Deep Steady"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "23:25",
+    "error" : false,
+    "id" : "N52",
+    "stage" : "Future Shock",
+    "start" : "22:45",
+    "title" : "Justins Johnson"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "00:25",
+    "error" : false,
+    "id" : "N56",
+    "stage" : "Future Shock",
+    "start" : "23:40",
+    "title" : "Kali Fat Dub"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "01:20",
+    "error" : false,
+    "id" : "N59",
+    "stage" : "Future Shock",
+    "start" : "00:40",
+    "title" : "Brutal Protest"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "02:15",
+    "error" : false,
+    "id" : "N64",
+    "stage" : "Future Shock",
+    "start" : "01:35",
+    "title" : "Kora"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "03:10",
+    "error" : false,
+    "id" : "N69",
+    "stage" : "Future Shock",
+    "start" : "02:30",
+    "title" : "BD Fuse"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "20:00",
+    "error" : false,
+    "id" : "N41",
+    "stage" : "Urban Bug",
+    "start" : "19:00",
+    "title" : "DjIX b2b TechR b2b Lost Document"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "21:20",
+    "error" : false,
+    "id" : "N44",
+    "stage" : "Urban Bug",
+    "start" : "20:00",
+    "title" : "SEEK & Malik b2b BigFill"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "22:40",
+    "error" : false,
+    "id" : "N48",
+    "stage" : "Urban Bug",
+    "start" : "21:20",
+    "title" : "Novak b2b Daniel Fritz b2b Danijel Savic"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "N53",
+    "stage" : "Urban Bug",
+    "start" : "22:40",
+    "title" : "Angry EggS b2b Nikola M"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "01:20",
+    "error" : false,
+    "id" : "N60",
+    "stage" : "Urban Bug",
+    "start" : "00:00",
+    "title" : "DJ Ura b2b DJ Lili b2b DJ Mandic"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "02:40",
+    "error" : false,
+    "id" : "N65",
+    "stage" : "Urban Bug",
+    "start" : "01:20",
+    "title" : "Zwein b2b Vuk Smiljanic"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "N70",
+    "stage" : "Urban Bug",
+    "start" : "02:40",
+    "title" : "Alternativa b2b Nemanja Vanovic"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "05:20",
+    "error" : false,
+    "id" : "N74",
+    "stage" : "Urban Bug",
+    "start" : "04:00",
+    "title" : "Flooder b2b Ninno Mancini b2b Nennat Omen"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "06:40",
+    "error" : false,
+    "id" : "N78",
+    "stage" : "Urban Bug",
+    "start" : "05:20",
+    "title" : "Mancha b2b Mark Panic b2b Dovla"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "08:00",
+    "error" : false,
+    "id" : "N79",
+    "stage" : "Urban Bug",
+    "start" : "06:40",
+    "title" : "Goya b2b Misho Kerkez b2b Sima"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "22:30",
+    "error" : false,
+    "id" : "N49",
+    "stage" : "Trance",
+    "start" : "21:00",
+    "title" : "Manmachine Live"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "N54",
+    "stage" : "Trance",
+    "start" : "22:30",
+    "title" : "StarLab Live"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "01:30",
+    "error" : false,
+    "id" : "N61",
+    "stage" : "Trance",
+    "start" : "00:00",
+    "title" : "E Clip Live"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "N66",
+    "stage" : "Trance",
+    "start" : "01:30",
+    "title" : "Relative Live"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "04:30",
+    "error" : false,
+    "id" : "N73",
+    "stage" : "Trance",
+    "start" : "03:00",
+    "title" : "Martian Arts Live"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "06:00",
+    "error" : false,
+    "id" : "N75",
+    "stage" : "Trance",
+    "start" : "04:30",
+    "title" : "Imaginarium Live"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "21:00",
+    "error" : false,
+    "id" : "N42",
+    "stage" : "Reggae",
+    "start" : "19:00",
+    "title" : "SKADAM"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "23:00",
+    "error" : false,
+    "id" : "N50",
+    "stage" : "Reggae",
+    "start" : "21:00",
+    "title" : "Prenos fudbala - Finale"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "N57",
+    "stage" : "Reggae",
+    "start" : "23:00",
+    "title" : "J Star"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "01:00",
+    "error" : false,
+    "id" : "N62",
+    "stage" : "Reggae",
+    "start" : "00:00",
+    "title" : "UNITY SOUND"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "02:00",
+    "error" : false,
+    "id" : "N67",
+    "stage" : "Reggae",
+    "start" : "01:00",
+    "title" : "Zgoobi Dan"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "N71",
+    "stage" : "Reggae",
+    "start" : "02:00",
+    "title" : "Shanti Force, Midnite Kush"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "05:30",
+    "error" : false,
+    "id" : "N76",
+    "stage" : "Reggae",
+    "start" : "04:00",
+    "title" : "Wenti Wadada Music"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "21:00",
+    "error" : false,
+    "id" : "N45",
+    "stage" : "Radio AS FM",
+    "start" : "20:00",
+    "title" : "AS FM Intro Mix"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "22:00",
+    "error" : false,
+    "id" : "N51",
+    "stage" : "Radio AS FM",
+    "start" : "21:00",
+    "title" : "Groove Amigo"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "23:30",
+    "error" : false,
+    "id" : "N55",
+    "stage" : "Radio AS FM",
+    "start" : "22:00",
+    "title" : "Tim URBANYA"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "00:30",
+    "error" : false,
+    "id" : "N58",
+    "stage" : "Radio AS FM",
+    "start" : "23:30",
+    "title" : "DJ Moooka"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "01:30",
+    "error" : false,
+    "id" : "N63",
+    "stage" : "Radio AS FM",
+    "start" : "00:30",
+    "title" : "DJ Morning Indian"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "02:30",
+    "error" : false,
+    "id" : "N68",
+    "stage" : "Radio AS FM",
+    "start" : "01:30",
+    "title" : "DJ Vanjanja"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "N72",
+    "stage" : "Radio AS FM",
+    "start" : "02:30",
+    "title" : "DJ WD87"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "06:00",
+    "error" : false,
+    "id" : "N77",
+    "stage" : "Radio AS FM",
+    "start" : "04:00",
+    "title" : "DJ Marco"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "21:00",
+    "error" : false,
+    "id" : "N80",
+    "stage" : "Latino",
+    "start" : "20:00",
+    "title" : "MC Choma"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "21:30",
+    "error" : false,
+    "id" : "N81",
+    "stage" : "Latino",
+    "start" : "21:00",
+    "title" : "DJ Frank"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "22:00",
+    "error" : false,
+    "id" : "N82",
+    "stage" : "Latino",
+    "start" : "21:30",
+    "title" : "Borrachos & Locas"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "23:00",
+    "error" : false,
+    "id" : "N85",
+    "stage" : "Latino",
+    "start" : "22:00",
+    "title" : "Baila C&C"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "N87",
+    "stage" : "Latino",
+    "start" : "23:00",
+    "title" : "Ritmo Latino & Tito & Lisel"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "01:00",
+    "error" : false,
+    "id" : "N89",
+    "stage" : "Latino",
+    "start" : "00:00",
+    "title" : "DJ Sesha"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "02:00",
+    "error" : false,
+    "id" : "N91",
+    "stage" : "Latino",
+    "start" : "01:00",
+    "title" : "Gilito & Su Clave"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "N94",
+    "stage" : "Latino",
+    "start" : "02:00",
+    "title" : "Desiguales"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "04:00",
+    "error" : false,
+    "id" : "N95",
+    "stage" : "Latino",
+    "start" : "03:00",
+    "title" : "DJ Sesha"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "05:00",
+    "error" : false,
+    "id" : "N97",
+    "stage" : "Latino",
+    "start" : "04:00",
+    "title" : "DJ Mega"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "23:00",
+    "error" : false,
+    "id" : "N83",
+    "stage" : "Disko",
+    "start" : "21:00",
+    "title" : "Xsalex"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "01:00",
+    "error" : false,
+    "id" : "N88",
+    "stage" : "Disko",
+    "start" : "23:00",
+    "title" : "Just Kenedy"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "N92",
+    "stage" : "Disko",
+    "start" : "01:00",
+    "title" : "Laura 2000 DJ set"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "05:00",
+    "error" : false,
+    "id" : "N96",
+    "stage" : "Disko",
+    "start" : "03:00",
+    "title" : "Dark Angel"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "22:30",
+    "error" : false,
+    "id" : "N84",
+    "stage" : "Chill-Inn",
+    "start" : "21:00",
+    "title" : "DJ Shi & Kuf Selecta"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "00:00",
+    "error" : false,
+    "id" : "N86",
+    "stage" : "Chill-Inn",
+    "start" : "22:30",
+    "title" : "Government 4000"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "01:30",
+    "error" : false,
+    "id" : "N90",
+    "stage" : "Chill-Inn",
+    "start" : "00:00",
+    "title" : "Katja Kubikova"
+  }, {
+    "day" : "2017-7-9",
+    "end" : "03:00",
+    "error" : false,
+    "id" : "N93",
+    "stage" : "Chill-Inn",
+    "start" : "01:30",
+    "title" : "Haris Pilton"
+  } ],
+  "stages" : [ "Main", "Dance Arena", "Fusion", "Explosive", "Novi Sad", "Future Shock", "Urban Bug", "Trance", "Reggae", "Radio AS FM", "Latino", "Silent Disco", "Disko", "Chill-inn" ]
+}
