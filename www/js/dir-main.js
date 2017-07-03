@@ -88,8 +88,8 @@
           var minsEnd = getMinutesFromProgrameStart(event.end);
           if(
             minsStart <= scope.currentTime &&
-            scope.currentTime <= minsEnd
-            //scope.prefs.selectedDay === scope.prefs.currentDay
+            scope.currentTime <= minsEnd &&
+            scope.prefs.selectedDay === scope.prefs.currentDay
           ){
             event.inProgress = true;
           }else{
