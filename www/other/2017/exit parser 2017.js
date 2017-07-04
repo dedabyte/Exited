@@ -12,7 +12,7 @@ var mapStageToStage = {
   'Main Stage': 'Main Stage',
   'mts Dance Arena': 'Dance Arena',
   'No Sleep Novi Sad': 'No Sleep NS',
-  'Fusion Stage powered by Addiko Bank': 'Fusion',
+  'Addiko Fusion Stage': 'Fusion',
   'Explosive Stage': 'Explosive',
   'Jaffa Reggae Stage dedicated to Wenti Wadada': 'Reggae',
   'Gaia Experiment Trance Stage': 'Trance',
@@ -21,14 +21,14 @@ var mapStageToStage = {
   'Radio AS FM stage powered by Guarana': 'Radio AS FM',
   'Disko Zone': 'Disko Zone',
   'Silent Disco': 'Silent Disco',
-  'Cinema stage': 'Cinema',
-  'Pachamama zone': 'Pachamama zone',
+  'Arena Cineplex Open Air by Chipsy': 'Cinema',
+  'Pachamama Zone': 'Pachamama zone',
   'Noizz Future Shock Stage': 'Future Shock',
   'Cockta Beats & Bass': 'Beats & Bass',
-  'World Chill-Inn stage': 'World Chill-Inn',
-  'Fusion Pub': 'Fusion Pub',
+  'World Chill-Inn Stage': 'World Chill-Inn',
+  'Fusion Beerplanet Pub': 'Fusion Pub',
   'Stargate @Adnos Planetarium': 'Planetarium',
-  'Tunnel': 'Tunnel'
+  'Tunnel Stage': 'Tunnel'
 };
 
 var arrStages = [
@@ -74,6 +74,10 @@ $('.performer_item').each(function(){
   var performerName = data['grupa' + id];
   var day = jqHiddenInputs.eq(1).attr('value').trim();
   var stage = data['bina' + id];
+
+  if(!mapStageToStage.hasOwnProperty(stage)){
+    console.log('stage missing:', stage);
+  }
 
   var start = data['od' + id];
   var startInt = parseInt(start.replace(':', ''));

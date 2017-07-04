@@ -530,10 +530,10 @@
         },
         {
           "day": "2017-7-6",
-          "start": "00:25",
-          "startInt": 10025,
-          "end": "01:35",
-          "endInt": 10135,
+          "start": "00:30",
+          "startInt": 10030,
+          "end": "01:45",
+          "endInt": 10145,
           "stage": "Explosive",
           "title": "Samael",
           "id": "C28",
@@ -1302,10 +1302,10 @@
           "day": "2017-7-6",
           "start": "00:00",
           "startInt": 10000,
-          "end": "00:00",
-          "endInt": 10000,
+          "end": "01:00",
+          "endInt": 10100,
           "stage": "Beats & Bass",
-          "title": "MC Bo Jah",
+          "title": "Leol / Drop Sensei",
           "id": "C98",
           "error": false
         },
@@ -1426,8 +1426,30 @@
           "end": "20:55",
           "endInt": 2055,
           "stage": "Fusion Pub",
-          "title": "Gospodjo, bate!",
+          "title": "Plavi pticic",
           "id": "C109",
+          "error": false
+        },
+        {
+          "day": "2017-7-6",
+          "start": "22:30",
+          "startInt": 2230,
+          "end": "22:55",
+          "endInt": 2255,
+          "stage": "Fusion Pub",
+          "title": "Plavi pticic",
+          "id": "C110",
+          "error": false
+        },
+        {
+          "day": "2017-7-6",
+          "start": "23:45",
+          "startInt": 2345,
+          "end": "00:10",
+          "endInt": 10010,
+          "stage": "Fusion Pub",
+          "title": "Gospodjo, bate!",
+          "id": "C111",
           "error": false
         },
         {
@@ -1438,7 +1460,7 @@
           "endInt": 2045,
           "stage": "Planetarium",
           "title": "Tijana Prodanovic - Little Green Man: Science and Fiction (popular science lecture)",
-          "id": "C110",
+          "id": "C112",
           "error": false
         },
         {
@@ -1449,7 +1471,7 @@
           "endInt": 2131,
           "stage": "Planetarium",
           "title": "From Earth to the Universe (dome movie)",
-          "id": "C111",
+          "id": "C113",
           "error": false
         },
         {
@@ -1460,7 +1482,7 @@
           "endInt": 2238,
           "stage": "Planetarium",
           "title": "Dark Matter Mystery (dome movie)",
-          "id": "C112",
+          "id": "C114",
           "error": false
         },
         {
@@ -1471,7 +1493,7 @@
           "endInt": 2327,
           "stage": "Planetarium",
           "title": "Cosmic Origin Spectrograph (dome movie)",
-          "id": "C113",
+          "id": "C115",
           "error": false
         },
         {
@@ -1482,7 +1504,7 @@
           "endInt": 10000,
           "stage": "Tunnel",
           "title": "Rudhaman",
-          "id": "C114",
+          "id": "C116",
           "error": false
         },
         {
@@ -1493,7 +1515,7 @@
           "endInt": 10200,
           "stage": "Tunnel",
           "title": "Janchezz",
-          "id": "C115",
+          "id": "C117",
           "error": false
         },
         {
@@ -1504,7 +1526,7 @@
           "endInt": 10400,
           "stage": "Tunnel",
           "title": "Branko Vukovic b2b Marko Miletic",
-          "id": "C116",
+          "id": "C118",
           "error": false
         },
         {
@@ -2697,8 +2719,8 @@
         },
         {
           "day": "2017-7-7",
-          "start": "20:15",
-          "startInt": 2015,
+          "start": "20:00",
+          "startInt": 2000,
           "end": "20:55",
           "endInt": 2055,
           "stage": "Fusion Pub",
@@ -2974,8 +2996,8 @@
           "day": "2017-7-8",
           "start": "23:30",
           "startInt": 2330,
-          "end": "00:40",
-          "endInt": 10040,
+          "end": "00:45",
+          "endInt": 10045,
           "stage": "Fusion",
           "title": "Zabranjeno pušenje",
           "id": "S18",
@@ -2983,10 +3005,10 @@
         },
         {
           "day": "2017-7-8",
-          "start": "01:10",
-          "startInt": 10110,
-          "end": "02:00",
-          "endInt": 10200,
+          "start": "01:15",
+          "startInt": 10115,
+          "end": "02:15",
+          "endInt": 10215,
           "stage": "Fusion",
           "title": "Kralj Cacka",
           "id": "S19",
@@ -3005,8 +3027,8 @@
         },
         {
           "day": "2017-7-8",
-          "start": "03:35",
-          "startInt": 10335,
+          "start": "03:30",
+          "startInt": 10330,
           "end": "04:20",
           "endInt": 10420,
           "stage": "Fusion",
@@ -3797,24 +3819,13 @@
         },
         {
           "day": "2017-7-8",
-          "start": "01:05",
-          "startInt": 10105,
-          "end": "01:40",
-          "endInt": 10140,
-          "stage": "Future Shock",
-          "title": "Maika",
-          "id": "S93",
-          "error": false
-        },
-        {
-          "day": "2017-7-8",
           "start": "01:55",
           "startInt": 10155,
           "end": "02:30",
           "endInt": 10230,
           "stage": "Future Shock",
           "title": "Cincila",
-          "id": "S94",
+          "id": "S93",
           "error": false
         },
         {
@@ -3825,7 +3836,7 @@
           "endInt": 10330,
           "stage": "Future Shock",
           "title": "Grashoper",
-          "id": "S95",
+          "id": "S94",
           "error": false
         },
         {
@@ -3836,7 +3847,7 @@
           "endInt": 10000,
           "stage": "Beats & Bass",
           "title": "Janchezz",
-          "id": "S96",
+          "id": "S95",
           "error": false
         },
         {
@@ -3847,7 +3858,7 @@
           "endInt": 10100,
           "stage": "Beats & Bass",
           "title": "Vrh",
-          "id": "S97",
+          "id": "S96",
           "error": false
         },
         {
@@ -3858,7 +3869,7 @@
           "endInt": 10230,
           "stage": "Beats & Bass",
           "title": "Vatra",
-          "id": "S98",
+          "id": "S97",
           "error": false
         },
         {
@@ -3869,7 +3880,7 @@
           "endInt": 10315,
           "stage": "Beats & Bass",
           "title": "Kuku$",
-          "id": "S99",
+          "id": "S98",
           "error": false
         },
         {
@@ -3880,7 +3891,7 @@
           "endInt": 10400,
           "stage": "Beats & Bass",
           "title": "Klika",
-          "id": "S100",
+          "id": "S99",
           "error": false
         },
         {
@@ -3891,7 +3902,7 @@
           "endInt": 10500,
           "stage": "Beats & Bass",
           "title": "Rasheed & Yeah Left",
-          "id": "S101",
+          "id": "S100",
           "error": false
         },
         {
@@ -3902,7 +3913,7 @@
           "endInt": 2200,
           "stage": "World Chill-Inn",
           "title": "DJ One",
-          "id": "S102",
+          "id": "S101",
           "error": false
         },
         {
@@ -3913,7 +3924,7 @@
           "endInt": 2330,
           "stage": "World Chill-Inn",
           "title": "Haris Pilton",
-          "id": "S103",
+          "id": "S102",
           "error": false
         },
         {
@@ -3924,7 +3935,7 @@
           "endInt": 10100,
           "stage": "World Chill-Inn",
           "title": "Kosta Kostov",
-          "id": "S104",
+          "id": "S103",
           "error": false
         },
         {
@@ -3935,7 +3946,7 @@
           "endInt": 10230,
           "stage": "World Chill-Inn",
           "title": "Killo Killo DJ/MC set",
-          "id": "S105",
+          "id": "S104",
           "error": false
         },
         {
@@ -3946,7 +3957,7 @@
           "endInt": 10400,
           "stage": "World Chill-Inn",
           "title": "DJ Pozor",
-          "id": "S106",
+          "id": "S105",
           "error": false
         },
         {
@@ -3957,7 +3968,7 @@
           "endInt": 2000,
           "stage": "Fusion Pub",
           "title": "TBC",
-          "id": "S107",
+          "id": "S106",
           "error": false
         },
         {
@@ -3968,7 +3979,7 @@
           "endInt": 2055,
           "stage": "Fusion Pub",
           "title": "TBC",
-          "id": "S108",
+          "id": "S107",
           "error": false
         },
         {
@@ -3979,7 +3990,7 @@
           "endInt": 2045,
           "stage": "Planetarium",
           "title": "David Knezevic - Terraforming Mars (popular science lecture)",
-          "id": "S109",
+          "id": "S108",
           "error": false
         },
         {
@@ -3990,7 +4001,7 @@
           "endInt": 2131,
           "stage": "Planetarium",
           "title": "From Earth to the Universe (dome movie)",
-          "id": "S110",
+          "id": "S109",
           "error": false
         },
         {
@@ -4001,7 +4012,7 @@
           "endInt": 2238,
           "stage": "Planetarium",
           "title": "Dark Matter Mystery (dome movie)",
-          "id": "S111",
+          "id": "S110",
           "error": false
         },
         {
@@ -4012,7 +4023,7 @@
           "endInt": 2327,
           "stage": "Planetarium",
           "title": "Cosmic Origin Spectrograph (dome movie)",
-          "id": "S112",
+          "id": "S111",
           "error": false
         },
         {
@@ -4023,7 +4034,7 @@
           "endInt": 10000,
           "stage": "Tunnel",
           "title": "Eeprom",
-          "id": "S113",
+          "id": "S112",
           "error": false
         },
         {
@@ -4034,7 +4045,7 @@
           "endInt": 10200,
           "stage": "Tunnel",
           "title": "Dark Angel",
-          "id": "S114",
+          "id": "S113",
           "error": false
         },
         {
@@ -4045,7 +4056,7 @@
           "endInt": 10400,
           "stage": "Tunnel",
           "title": "Stjeban",
-          "id": "S115",
+          "id": "S114",
           "error": false
         },
         {
@@ -5133,7 +5144,7 @@
           "end": "02:00",
           "endInt": 10200,
           "stage": "Beats & Bass",
-          "title": "Drop Sensei",
+          "title": "Bozne b2b Rokster / Drop Sensei",
           "id": "N99",
           "error": false
         },

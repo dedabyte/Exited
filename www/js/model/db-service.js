@@ -32,7 +32,7 @@
         return $http.get(getUrl('data')).then(
           function(response){
             var data = response.data;
-            LsService.set(LSKEYS.data, data);
+            // LsService.set(LSKEYS.data, data);
 
             return $q.resolve(data);
           },

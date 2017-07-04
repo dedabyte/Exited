@@ -133,6 +133,12 @@
         LsService.set(LSKEYS.favs, scope.favs);
       }
 
+      function clearFavs(){
+        scope.favs = {};
+        scope.filteredFavs = [];
+        LsService.remove(LSKEYS.favs);
+      }
+
       function getDaysCount(){
         return Object.keys(data.days).length;
       }
@@ -193,9 +199,11 @@
             data = latestData;
             scope.stages = data.stages;
             scope.days = data.days;
-            //saveData(); data saved in model DbService
+
+            saveData();
             filterEvents();
-            filterFavs();
+            // filterFavs();
+            clearFavs();
           }else{
             console.log('getLatestData: no new data.');
           }
