@@ -59,7 +59,7 @@
 
       function filterFavs(){
         scope.filteredFavs = data.events.filter(function(event){
-          return event.day === scope.prefs.selectedDay && scope.favs.hasOwnProperty(event.id);
+          return event.day === scope.prefs.selectedDay && scope.favs.hasOwnProperty(event.title);
         });
         scope.filteredFavs.sort(function(a, b){
           if(a.startInt < b.startInt){
@@ -202,8 +202,7 @@
 
             saveData();
             filterEvents();
-            // filterFavs();
-            clearFavs();
+            filterFavs();
           }else{
             console.log('getLatestData: no new data.');
           }
