@@ -184,8 +184,8 @@
       var currentDay = generateDateStamp();
       var currentDayIndex = days.indexOf(currentDay);
       if(currentDayIndex > -1){
-        scope.prefs.selectedDay = currentDayIndex;
-        scope.prefs.currentDay = currentDayIndex;
+        scope.prefs.selectedDay = days[currentDayIndex];
+        scope.prefs.currentDay = days[currentDayIndex];
       }
 
       saveData();
