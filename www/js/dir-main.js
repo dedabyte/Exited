@@ -45,15 +45,33 @@
       function setDay(day){
         scope.prefs.selectedDay = day;
         savePrefs(); // TODO maybe not?
+        filterAll();
         filterEvents();
         filterFavs();
+      }
+
+      function filterAll(){
+        var eventsInDay = data.events.filter(function(event){
+          return event.day === scope.prefs.selectedDay;
+        });
+        calculateEventsPosition(eventsInDay);
+        markEventsInProgress(eventsInDay);
+
+        scope.filteredAll = [];
+        scope.stages.forEach(function(stage){
+          scope.filteredAll.push(
+            eventsInDay.filter(function(event){
+              return event.stage === stage;
+            })
+          );
+        });
       }
 
       function filterEvents(){
         scope.filteredEvents = data.events.filter(function(event){
           return event.day === scope.prefs.selectedDay && event.stage === scope.prefs.selectedStage;
         });
-        calculateEventsPosition();
+        calculateEventsPosition(scope.filteredEvents);
         markEventsInProgress(scope.filteredEvents);
       }
 
@@ -73,8 +91,8 @@
         markEventsInProgress(scope.filteredFavs);
       }
 
-      function calculateEventsPosition(){
-        scope.filteredEvents.forEach(function(event){
+      function calculateEventsPosition(array){
+        array.forEach(function(event){
           var minsStart = getMinutesFromProgrameStart(event.start);
           var minsEnd = getMinutesFromProgrameStart(event.end);
           event.top = minsStart / 5 * 4;
@@ -88,8 +106,10 @@
           var minsEnd = getMinutesFromProgrameStart(event.end);
           if(
             minsStart <= scope.currentTime &&
-            scope.currentTime <= minsEnd &&
-            scope.prefs.selectedDay === scope.prefs.currentDay
+            scope.currentTime <= minsEnd
+            //minsStart <= scope.currentTime &&
+            //scope.currentTime <= minsEnd &&
+            //scope.prefs.selectedDay === scope.prefs.currentDay
           ){
             event.inProgress = true;
           }else{
@@ -186,6 +206,8 @@
       if(currentDayIndex > -1){
         scope.prefs.selectedDay = days[currentDayIndex];
         scope.prefs.currentDay = days[currentDayIndex];
+      }else{
+        scope.prefs.currentDay = null;
       }
 
       saveData();

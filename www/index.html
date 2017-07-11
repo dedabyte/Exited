@@ -10,8 +10,11 @@
   <div class="main" ex-main ng-class="prefs.theme">
 
     <div class="header-wrap">
-      <div class="header-title">EXITED 2017</div>
+      <div class="header-title">EXITED 2018</div>
       <div class="header-tabs-wrap">
+        <div class="header-tab"
+             ng-tap="methods.setTab('all')"
+             ng-class="{ selected: prefs.selectedTab === 'all' }">all</div>
         <div class="header-tab"
              ng-tap="methods.setTab('timeline')"
              ng-class="{ selected: prefs.selectedTab === 'timeline' }">timeline</div>
@@ -23,6 +26,7 @@
     </div>
 
     <div class="contents-wrap">
+      <div ex-tab-all ng-show="prefs.selectedTab === 'all'"></div>
       <div ex-tab-schedule ng-show="prefs.selectedTab === 'timeline'"></div>
       <div ex-tab-favs ng-show="prefs.selectedTab === 'favs'"></div>
     </div>
@@ -47,6 +51,7 @@
   <script src="js/tab-schedule/dir-schedule-event.js"></script>
   <script src="js/tab-schedule/dir-current-time-1.js"></script>
   <script src="js/tab-favs/dir-favs.js"></script>
+  <script src="js/tab-all/dir-all.js"></script>
 
 
   <script src="cordova.js"></script>

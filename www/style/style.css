@@ -258,6 +258,54 @@ b {
     background-size: 18px;
     background-image: url(assets/trash-b.svg); }
 
+.all {
+  background: #dfdfdf; }
+
+.all-top {
+  position: relative;
+  height: calc(100% - 42px);
+  background: #dfdfdf;
+  overflow: auto;
+  display: flex; }
+  .all-top .all-stages {
+    width: 100px;
+    display: flex;
+    flex-direction: column; }
+  .all-top .all-stage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px; }
+  .all-top .all-timeline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background: white; }
+  .all-top .all-lane {
+    flex: 1;
+    position: relative; }
+  .all-top .all-event-wrap {
+    height: 100%; }
+  .all-top .all-event {
+    margin-left: 0;
+    font-size: 10px;
+    padding: 0 0 0 3px;
+    display: flex;
+    align-items: center; }
+    .all-top .all-event span {
+      font-size: 10px; }
+
+.all-bottom {
+  height: 42px;
+  margin-left: 100px; }
+
+.all-tabs {
+  height: 100%;
+  width: 100%; }
+
 .dark .header-tab.selected {
   background-color: rgba(0, 0, 0, 0.2); }
   .dark .header-tab.selected:after {

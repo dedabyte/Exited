@@ -351,6 +351,68 @@ b {
   }
 }
 
+.all {
+  background: #dfdfdf;
+}
+.all-top {
+  position: relative;
+  height: calc(100% - #{$height--day-cards});
+  background: #dfdfdf;
+  overflow: auto;
+  display: flex;
+
+  .all-stages {
+    width: $width--stage-cards;
+    display: flex;
+    flex-direction: column;
+  }
+  .all-stage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  .all-timeline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background: white;
+  }
+  .all-lane {
+    flex: 1;
+    //border-bottom: 1px solid silver;
+    position: relative;
+  }
+  .all-event-wrap {
+    height: 100%;
+  }
+  .all-event {
+    margin-left: 0;
+    font-size: 10px;
+    padding: 0 0 0 3px;
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 10px;
+    }
+  }
+
+}
+.all-bottom {
+  height: $height--day-cards;
+  margin-left: $width--stage-cards;
+}
+.all-tabs {
+  height: 100%;
+  width: 100%;
+}
+
+
 .dark {
 
   .header-tab {

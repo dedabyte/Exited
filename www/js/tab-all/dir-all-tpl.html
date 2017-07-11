@@ -1,0 +1,37 @@
+<div class="content all">
+  <div class="all-top">
+    <div class="all-stages">
+      <div class="all-stage" ng-repeat="stage in stages" ng-bind="stage"></div>
+    </div>
+    <div class="all-timeline">
+      <div class="all-lane" ng-repeat="stageLane in filteredAll">
+        <div class="event-wrap all-event-wrap"
+             ng-repeat="event in stageLane"
+             ng-style="{ left: event.top * 4 + 'px', width: event.height * 4 - 4 + 'px' }"
+             ng-class="{ 'fav': favs.hasOwnProperty(event.title), 'in-progress': event.inProgress }"
+             ng-tap="methods.setFav(event.title)">
+          <div class="event all-event">
+            <div class="title"><span ng-bind="event.start"></span> <b ng-bind="event.title"></b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="all-bottom">
+    <div class="all-tabs">
+      <table class="cards">
+        <tbody>
+        <tr>
+          <td ng-repeat="(day, dayObj) in days"
+              class="day"
+              ng-tap="methods.setDay(day)"
+              ng-class="{ selected: prefs.selectedDay === day }"
+              ng-style="{ width: 100/methods.getDaysCount() + '%' }">
+            <small>day</small> {{dayObj.index}}<br><small>{{dayObj.name}}</small>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
