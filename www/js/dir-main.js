@@ -171,26 +171,41 @@
         return hours * 60 + aTime[1].toInt();
       }
 
+      function setCurrentDayAndPreselectSelectedDayIfNeeded(){
+        var currentDay = generateDateStamp();
+        // var currentDay = '2018-7-13'; // for testing...
+        scope.prefs.currentDay = currentDay;
+
+        var days = Object.keys(data.days).sort();
+        var currentDayIndex = days.indexOf(currentDay);
+        if(currentDayIndex > -1){
+          scope.prefs.selectedDay = days[currentDayIndex];
+        }
+      }
+
       // INIT
 
       scope.stages = data.stages;
       scope.days = data.days;
       scope.filteredEvents = [];
       scope.filteredFavs = [];
-      calculateCurrentTime();
 
-      // TODO remove hardcoded days
-      var days = ['2017-7-5', '2017-7-6', '2017-7-7', '2017-7-8', '2017-7-9'];
-      var currentDay = generateDateStamp();
-      var currentDayIndex = days.indexOf(currentDay);
-      if(currentDayIndex > -1){
-        scope.prefs.selectedDay = days[currentDayIndex];
-        scope.prefs.currentDay = days[currentDayIndex];
-      }
-
+      setCurrentDayAndPreselectSelectedDayIfNeeded();
       saveData();
       filterEvents();
       filterFavs();
+
+      calculateCurrentTime();
+      markEventsInProgress(scope.filteredEvents);
+      markEventsInProgress(scope.filteredFavs);
+
+      $interval(function(){
+        calculateCurrentTime();
+        markEventsInProgress(scope.filteredEvents);
+        markEventsInProgress(scope.filteredFavs);
+      }, 60000 * 1);
+
+
 
       DbService.getLatestData().then(
         function(latestData){
@@ -200,9 +215,14 @@
             scope.stages = data.stages;
             scope.days = data.days;
 
+            setCurrentDayAndPreselectSelectedDayIfNeeded();
             saveData();
             filterEvents();
             filterFavs();
+
+            calculateCurrentTime();
+            markEventsInProgress(scope.filteredEvents);
+            markEventsInProgress(scope.filteredFavs);
           }else{
             console.log('getLatestData: no new data.');
           }
@@ -211,14 +231,6 @@
           console.error('getLatestData: error', error);
         }
       );
-
-      $interval(function(){
-        calculateCurrentTime();
-        markEventsInProgress(scope.filteredEvents);
-        markEventsInProgress(scope.filteredFavs);
-      }, 60000 * 1);
-
-      window.model = Data;
 
     }
 

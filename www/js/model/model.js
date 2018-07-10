@@ -15,25 +15,25 @@
           "2018-7-12": {
             "day": "2018-7-12",
             "name": "Thu",
-            "index": 0,
+            "index": 1,
             "formatted": "Thu 12th July"
           },
           "2018-7-13": {
             "day": "2018-7-13",
             "name": "Fri",
-            "index": 1,
+            "index": 2,
             "formatted": "Fir 13th July"
           },
           "2018-7-14": {
             "day": "2018-7-14",
             "name": "Sat",
-            "index": 2,
+            "index": 3,
             "formatted": "Sat 14th July"
           },
           "2018-7-15": {
             "day": "2018-7-15",
             "name": "Sun",
-            "index": 3,
+            "index": 4,
             "formatted": "Sun 15th July"
           }
         },
