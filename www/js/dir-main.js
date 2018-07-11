@@ -131,6 +131,7 @@
         }
         filterFavs();
         LsService.set(LSKEYS.favs, scope.favs);
+        notify();
       }
 
       function clearFavs(){
@@ -231,6 +232,24 @@
           console.error('getLatestData: error', error);
         }
       );
+
+
+      var not = null;
+      function notify(){
+        if(!not){
+          return;
+        }
+
+        not.schedule({
+          title: 'My first notification',
+          text: 'Thats pretty easy...',
+          foreground: true
+        });
+      }
+
+      document.addEventListener('deviceready', function () {
+        not = cordova.plugins.notification.local;
+      }, false);
 
     }
 

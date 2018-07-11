@@ -46,6 +46,7 @@
         A list of available plugins are available at https://build.phonegap.com/docs/plugins
     -->
     <plugin name="cordova-plugin-statusbar" source="npm" spec="2.4.2" />
+    <plugin name="cordova-plugin-local-notification" source="npm" />
     <plugin name="cordova-plugin-whitelist" version="1" />
 
     <!-- Define app icon for each platform. -->
