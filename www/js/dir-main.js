@@ -365,9 +365,10 @@
           id: favTimestamp,
           title: '[' + fav.stage + '] ' + fav.title,
           text: 'Starts in 15 mins! ' + fav.start + ' - ' + fav.end,
+          foreground: true,
           vibrate: true,
           led: { color: '#DC051E', on: 500, off: 500 },
-          priority: 5,
+          priority: 1,
           // trigger: { at: getNotificationTime(fav.day, fav.startInt) }
           trigger: { in: 15, unit: 'second' } // for testing...
         });
