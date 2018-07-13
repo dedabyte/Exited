@@ -6,8 +6,8 @@
   <title>Exited 2018</title>
   <link href="style/style.css" rel="stylesheet">
 </head>
-<body ng-app="app">
-  <div class="main" ex-main ng-class="prefs.theme">
+<body>
+  <ex-main class="main" ng-class="prefs.theme">
 
     <div class="header-wrap">
       <div class="header-title">EXITED 2018</div>
@@ -27,7 +27,7 @@
       <div ex-tab-favs ng-show="prefs.selectedTab === 'favs'"></div>
     </div>
 
-  </div>
+  </ex-main>
 
 
 
@@ -37,16 +37,18 @@
   <script src="lib/jquery.js"></script>
   <script src="lib/angular.js"></script>
 
-  <script src="js/app.js"></script>
-  <script src="js/dir-ng-tap.js"></script>
-  <script src="js/model/model.js"></script>
-  <script src="js/model/ls-service.js"></script>
-  <script src="js/model/db-service.js"></script>
-  <script src="js/dir-main.js"></script>
-  <script src="js/tab-schedule/dir-schedule.js"></script>
-  <script src="js/tab-schedule/dir-schedule-event.js"></script>
-  <script src="js/tab-schedule/dir-current-time-1.js"></script>
-  <script src="js/tab-favs/dir-favs.js"></script>
+  <script src="lib/require.js" data-main="js/app"></script>
+
+  <!--<script src="ts/app.js"></script>-->
+  <!--<script src="ts/dir-ng-tap.js"></script>-->
+  <!--<script src="ts/model/model.js"></script>-->
+  <!--<script src="ts/model/ls-service.js"></script>-->
+  <!--<script src="ts/model/db-service.js"></script>-->
+  <!--<script src="ts/dir-main.js"></script>-->
+  <!--<script src="ts/tab-schedule/dir-schedule.js"></script>-->
+  <!--<script src="ts/tab-schedule/dir-schedule-event.js"></script>-->
+  <!--<script src="ts/tab-schedule/dir-current-time-1.js"></script>-->
+  <!--<script src="ts/tab-favs/dir-favs.js"></script>-->
 
 
   <script src="cordova.js"></script>

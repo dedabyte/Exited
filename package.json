@@ -1,0 +1,23 @@
+{
+  "name": "info.igordedic.exited",
+  "version": "1.2018.2",
+  "description": "Get Exited! Exit 2018 timeline.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dedabyte/Exited.git"
+  },
+  "author": "dedabyte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dedabyte/Exited/issues"
+  },
+  "homepage": "https://github.com/dedabyte/Exited#readme",
+  "devDependencies": {
+    "@types/angular": "^1.6.45",
+    "typescript": "~2.8.0"
+  }
+}

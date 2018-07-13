@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "removeComments": true,
+    "target": "es5",
+    "module": "amd",
+    "allowJs": true,
+    "sourceMap": true,
+    "outFile": "www/js/app.js"
+  },
+  "include": [
+    "www/ts/**/*"
+  ]
+}
