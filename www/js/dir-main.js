@@ -57,7 +57,7 @@
       }
 
       /**
-       * Sats active state in timeline tab, saves prefs.
+       * Sats active stage in timeline tab, saves prefs.
        * Filters events for that stage (and day).
        * @param {string} stage - name/id of the stage
        */
@@ -77,6 +77,15 @@
         savePrefsLS(); // TODO maybe not?
         filterEvents();
         filterFavs();
+      }
+
+      /**
+       * Sats tab to timeline, sets active stage in timeline tab, saves prefs.
+       * @param {string} stage
+       */
+      function gotoStageFromFavs(stage){
+        scope.prefs.selectedTab = 'timeline';
+        setStage(stage);
       }
 
       /**
@@ -227,7 +236,8 @@
         setDay: setDay,
         setFav: setFav,
         setTheme: setTheme,
-        getDaysCount: getDaysCount
+        getDaysCount: getDaysCount,
+        gotoStageFromFavs: gotoStageFromFavs
       };
 
       // UTILS
