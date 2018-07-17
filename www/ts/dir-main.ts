@@ -47,7 +47,8 @@ export class Main {
       setDay: this.setDay.bind(this),
       setFav: this.setFav.bind(this),
       setTheme: this.setTheme.bind(this),
-      getDaysCount: this.getDaysCount.bind(this)
+      getDaysCount: this.getDaysCount.bind(this),
+      gotoStageFromFavs: this.gotoStageFromFavs.bind(this)
     };
 
     this.not = null;
@@ -145,7 +146,7 @@ export class Main {
   }
 
   /**
-   * Sats active state in timeline tab, saves prefs.
+   * Sats active stage in timeline tab, saves prefs.
    * Filters events for that stage (and day).
    * @param {string} stage - name/id of the stage
    */
@@ -166,6 +167,16 @@ export class Main {
     this.filterEvents();
     this.filterFavs();
   }
+
+  /**
+   * Sats tab to timeline, sets active stage in timeline tab, saves prefs.
+   * @param {string} stage
+   */
+  private gotoStageFromFavs(stage: string){
+    this.vm.prefs.selectedTab = Tab.timeline;
+    this.setStage(stage);
+  }
+
 
   /**
    * Filters events for selected day and stage.

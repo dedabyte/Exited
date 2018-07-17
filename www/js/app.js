@@ -1,23 +1,3 @@
-define("types", ["require", "exports"], function (require, exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    var Tab;
-    (function (Tab) {
-        Tab["timeline"] = "timeline";
-        Tab["favs"] = "favs";
-    })(Tab = exports.Tab || (exports.Tab = {}));
-    var Theme;
-    (function (Theme) {
-        Theme["light"] = "light";
-        Theme["dark"] = "dark";
-    })(Theme = exports.Theme || (exports.Theme = {}));
-});
-String.prototype.toInt = function () {
-    return parseInt(this);
-};
-Number.prototype.toInt = function () {
-    return parseInt(this);
-};
 define("dir-ng-tap", ["require", "exports"], function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
@@ -150,6 +130,20 @@ define("model/db-service", ["require", "exports"], function (require, exports) {
         return DbService;
     }());
     exports.DbService = DbService;
+});
+define("types", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    var Tab;
+    (function (Tab) {
+        Tab["timeline"] = "timeline";
+        Tab["favs"] = "favs";
+    })(Tab = exports.Tab || (exports.Tab = {}));
+    var Theme;
+    (function (Theme) {
+        Theme["light"] = "light";
+        Theme["dark"] = "dark";
+    })(Theme = exports.Theme || (exports.Theme = {}));
 });
 define("model/model", ["require", "exports", "types"], function (require, exports, types_1) {
     "use strict";
@@ -5055,7 +5049,8 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
                 setDay: this.setDay.bind(this),
                 setFav: this.setFav.bind(this),
                 setTheme: this.setTheme.bind(this),
-                getDaysCount: this.getDaysCount.bind(this)
+                getDaysCount: this.getDaysCount.bind(this),
+                gotoStageFromFavs: this.gotoStageFromFavs.bind(this)
             };
             this.not = null;
             document.addEventListener('deviceready', function () {
@@ -5126,6 +5121,10 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
             this.savePrefsLS();
             this.filterEvents();
             this.filterFavs();
+        };
+        Main.prototype.gotoStageFromFavs = function (stage) {
+            this.vm.prefs.selectedTab = types_2.Tab.timeline;
+            this.setStage(stage);
         };
         Main.prototype.filterEvents = function () {
             var _this = this;
@@ -5337,4 +5336,10 @@ define("app", ["require", "exports", "dir-ng-tap", "model/ls-service", "model/db
     angular
         .bootstrap(document.documentElement, ['app']);
 });
+String.prototype.toInt = function () {
+    return parseInt(this);
+};
+Number.prototype.toInt = function () {
+    return parseInt(this);
+};
 //# sourceMappingURL=app.js.map
