@@ -23,7 +23,7 @@ export class Main {
     private $window: IWindowService,
     private $rootScope: IRootScopeService,
   ) {
-    this.mockNow = '2018-07-13T00:55';  // for testing
+    // this.mockNow = '2018-07-13T00:55';  // for testing
 
     this.vm = this.$rootScope as IVM;
 

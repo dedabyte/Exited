@@ -5029,7 +5029,6 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
             this.$rootScope = $rootScope;
             this.midnightIntConstant = 10000;
             this.notificationReminederMins = 15;
-            this.mockNow = '2018-07-13T00:55';
             this.vm = this.$rootScope;
             var prefs = this.LsService.get(this.LSKEYS.prefs);
             if (prefs) {
