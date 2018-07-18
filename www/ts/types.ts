@@ -63,4 +63,6 @@ export interface IEvt {
   top?: number;
   height?: number;
   inProgress?: boolean;
+  relativeTime?: string;
+  relativeTimeUrgent?: boolean;
 }

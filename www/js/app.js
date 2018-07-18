@@ -5027,6 +5027,9 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
             this.$interval = $interval;
             this.$window = $window;
             this.$rootScope = $rootScope;
+            this.midnightIntConstant = 10000;
+            this.notificationReminederMins = 15;
+            this.mockNow = '2018-07-13T00:55';
             this.vm = this.$rootScope;
             var prefs = this.LsService.get(this.LSKEYS.prefs);
             if (prefs) {
@@ -5064,16 +5067,18 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
             this.vm.stages = this.data.stages;
             this.vm.days = this.data.days;
             this.setCurrentDayAndPreselectSelectedDayIfNeeded();
+            this.calculateCurrentTime();
             this.saveDataLS();
             this.filterEvents();
             this.filterFavs();
-            this.calculateCurrentTime();
             this.markEventsInProgress(this.vm.filteredEvents);
             this.markEventsInProgress(this.vm.filteredFavs);
+            this.setEventsRelativeTime(this.vm.filteredFavs);
             this.$interval(function () {
                 _this.calculateCurrentTime();
                 _this.markEventsInProgress(_this.vm.filteredEvents);
                 _this.markEventsInProgress(_this.vm.filteredFavs);
+                _this.setEventsRelativeTime(_this.vm.filteredFavs);
             }, 60000 * 1);
             this.DbService.getLatestData().then(function (latestData) {
                 if (latestData) {
@@ -5082,14 +5087,15 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
                     _this.vm.stages = _this.data.stages;
                     _this.vm.days = _this.data.days;
                     _this.setCurrentDayAndPreselectSelectedDayIfNeeded();
+                    _this.calculateCurrentTime();
                     _this.saveDataLS();
                     _this.filterEvents();
                     _this.cleanupFavs();
                     _this.filterFavs();
                     _this.recheduleAllNotifications();
-                    _this.calculateCurrentTime();
                     _this.markEventsInProgress(_this.vm.filteredEvents);
                     _this.markEventsInProgress(_this.vm.filteredFavs);
+                    _this.setEventsRelativeTime(_this.vm.filteredFavs);
                 }
                 else {
                     console.log('getLatestData: no new data.');
@@ -5149,6 +5155,7 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
                 return 0;
             });
             this.markEventsInProgress(this.vm.filteredFavs);
+            this.setEventsRelativeTime(this.vm.filteredFavs);
         };
         Main.prototype.cleanupFavs = function () {
             var _this = this;
@@ -5187,8 +5194,31 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
                 }
             });
         };
+        Main.prototype.setEventsRelativeTime = function (array) {
+            var _this = this;
+            array.forEach(function (event) {
+                var minsStart = _this.getMinutesFromProgrameStart(event.start);
+                if (event.inProgress || _this.vm.prefs.selectedDay !== _this.vm.prefs.currentDay || minsStart <= (_this.vm.currentTime || 0)) {
+                    event.relativeTime = '';
+                    event.relativeTimeUrgent = false;
+                }
+                else {
+                    var eventDate = new Date(event.day + ' ' + event.start);
+                    if (event.startInt >= _this.midnightIntConstant) {
+                        eventDate.setDate(eventDate.getDate() + 1);
+                    }
+                    var eventStart = Math.floor(eventDate.getTime() / 60000);
+                    var now = Math.floor(_this.date().getTime() / 60000);
+                    var diff = eventStart - now;
+                    var diffHours = Math.floor(diff / 60);
+                    var diffMins = diff - diffHours * 60;
+                    event.relativeTime = '~ in ' + (diffHours > 0 ? diffHours + 'h ' : '') + diffMins + 'm';
+                    event.relativeTimeUrgent = diff <= _this.notificationReminederMins;
+                }
+            });
+        };
         Main.prototype.calculateCurrentTime = function () {
-            var now = new Date();
+            var now = this.date();
             var hours = now.getHours();
             var mins = now.getMinutes();
             if (hours >= 19 || hours <= 6) {
@@ -5232,8 +5262,15 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
         Main.prototype.getDaysCount = function () {
             return Object.keys(this.data.days).length;
         };
+        Main.prototype.date = function () {
+            if (this.mockNow) {
+                return new Date(this.mockNow);
+            }
+            return new Date();
+        };
         Main.prototype.generateDateStamp = function () {
-            var now = Date.now() - 8 * 60 * 60 * 1000;
+            var eightHours = 8 * 60 * 60 * 1000;
+            var now = this.date().getTime() - eightHours;
             var today = new Date(now);
             return today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
         };
@@ -5263,12 +5300,12 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
                 return parseInt(str);
             });
             var date = new Date(splitted[0], splitted[1] - 1, splitted[2]);
-            if (startInt >= 10000) {
+            if (startInt >= this.midnightIntConstant) {
                 date.setDate(date.getDate() + 1);
-                startInt -= 10000;
+                startInt -= this.midnightIntConstant;
             }
             date.setHours(Math.floor(startInt / 100));
-            date.setMinutes((startInt % 100) - 15);
+            date.setMinutes((startInt % 100) - this.notificationReminederMins);
             return date;
         };
         Main.prototype.scheduleNotification = function (fav, favTimestamp) {
@@ -5278,7 +5315,7 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
             this.not.schedule({
                 id: favTimestamp,
                 title: '[' + fav.stage + '] ' + fav.title,
-                text: 'Starts in 15 mins! ' + fav.start + ' - ' + fav.end,
+                text: 'Starts in ' + this.notificationReminederMins + ' mins! ' + fav.start + ' - ' + fav.end,
                 foreground: true,
                 vibrate: true,
                 led: { color: '#DC051E', on: 500, off: 500 },

@@ -331,9 +331,18 @@ b {
     }
   }
 
-  .fav-start-end {
+  .fav-start-end,
+  .fav-relative {
     padding: 3px 0 2px;
     color: #666;
+  }
+
+  .fav-relative {
+    margin-left: 8px;
+
+    &.urgent {
+      color: $mainColor !important;
+    }
   }
 
   .fav-trash {

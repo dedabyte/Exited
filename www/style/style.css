@@ -243,9 +243,14 @@ b {
     border-radius: 2px; }
     .fav-wrap .fav-stage.in-progress {
       background: rgba(220, 5, 30, 0.8) !important; }
-  .fav-wrap .fav-start-end {
+  .fav-wrap .fav-start-end,
+  .fav-wrap .fav-relative {
     padding: 3px 0 2px;
     color: #666; }
+  .fav-wrap .fav-relative {
+    margin-left: 8px; }
+    .fav-wrap .fav-relative.urgent {
+      color: #dc051e !important; }
   .fav-wrap .fav-trash {
     position: absolute;
     width: 32px;
