@@ -5,7 +5,7 @@ export class Prefs implements IPrefs {
   selectedTab = Tab.timeline;
   selectedStage = 'Main Stage';
   selectedDay = '2018-7-12';
-  currentDay: null;
+  currentDay = null;
 }
 
 export class Data implements IData {
@@ -52,7 +52,7 @@ export class Data implements IData {
     "Beats & Bass",
     "Pachamama chill",
     "Craft Street"
-    ];
+  ];
 
   events = [
     {

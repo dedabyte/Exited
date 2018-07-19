@@ -2,14 +2,12 @@ import {IIntervalService, IRootScopeService, IWindowService} from 'angular';
 import {Data, Prefs} from './model/model';
 import {DbService} from './model/db-service';
 import {LSKEYS, LsService} from './model/ls-service';
-import {IData, IEvt, IVM, Tab, Theme} from './types';
+import {IData, IEvt, IFavs, IPrefs, IVM, Tab, Theme} from './types';
+import NotificationsService from './model/notifications-service';
 
 export class Main {
   private vm: IVM;
   private data: IData;
-  private not: any;
-  private midnightIntConstant = 10000;
-  private notificationReminederMins = 15;
 
   private mockNow: string; // for testing
 
@@ -19,54 +17,18 @@ export class Main {
     private DbService: DbService,
     private LsService: LsService,
     private LSKEYS: LSKEYS,
+    private NotificationsService: NotificationsService,
     private $interval: IIntervalService,
     private $window: IWindowService,
     private $rootScope: IRootScopeService,
   ) {
     // this.mockNow = '2018-07-13T00:55';  // for testing
-
     this.vm = this.$rootScope as IVM;
 
-    // load saved user prefs
-    let prefs = this.LsService.get(this.LSKEYS.prefs);
-    if (prefs) {
-      this.vm.prefs = prefs;
-    } else {
-      this.vm.prefs = this.Prefs;
-    }
+    this.data = this.LsService.get(this.LSKEYS.data) as IData || this.Data;
 
-    // load saved favs
-    let favs = this.LsService.get(this.LSKEYS.favs);
-    if (favs) {
-      this.vm.favs = favs;
-    } else {
-      this.vm.favs = {};
-    }
-
-    // load data
-    this.data = this.LsService.get(this.LSKEYS.data) || this.Data;
-
-    // public access
-    this.vm.methods = {
-      setTab: this.setTab.bind(this),
-      setStage: this.setStage.bind(this),
-      setDay: this.setDay.bind(this),
-      setFav: this.setFav.bind(this),
-      setTheme: this.setTheme.bind(this),
-      getDaysCount: this.getDaysCount.bind(this),
-      gotoStageFromFavs: this.gotoStageFromFavs.bind(this)
-    };
-
-    this.not = null;
-    document.addEventListener('deviceready', () => {
-      try {
-        this.not = this.$window.cordova.plugins.notification.local;
-      } catch (error) {
-        console.error('notificaions plugin error', error);
-      }
-    }, false);
-
-    // INIT
+    this.vm.prefs = this.LsService.get(this.LSKEYS.prefs) as IPrefs || this.Prefs;
+    this.vm.favs = this.LsService.get(this.LSKEYS.favs) as IFavs || {};
 
     this.vm.stages = this.data.stages;
     this.vm.days = this.data.days;
@@ -89,7 +51,6 @@ export class Main {
       this.setEventsRelativeTime(this.vm.filteredFavs);
     }, 60000 * 1);
 
-
     this.DbService.getLatestData().then(
       (latestData: IData) => {
         if (latestData) {
@@ -106,7 +67,7 @@ export class Main {
           this.filterEvents();
           this.cleanupFavs();
           this.filterFavs();
-          this.recheduleAllNotifications();
+          this.NotificationsService.recheduleAllNotifications(this.vm.favs, this.data.events);
 
           this.markEventsInProgress(this.vm.filteredEvents);
           this.markEventsInProgress(this.vm.filteredFavs);
@@ -119,6 +80,19 @@ export class Main {
         console.error('getLatestData: error', error);
       }
     );
+
+
+    // method access via view
+
+    this.vm.methods = {
+      setTab: this.setTab.bind(this),
+      setStage: this.setStage.bind(this),
+      setDay: this.setDay.bind(this),
+      setFav: this.setFav.bind(this),
+      setTheme: this.setTheme.bind(this),
+      getDaysCount: this.getDaysCount.bind(this),
+      gotoStageFromFavs: this.gotoStageFromFavs.bind(this)
+    };
   }
 
   // METHODS
@@ -278,7 +252,7 @@ export class Main {
       } else {
         let eventDate = new Date(event.day + ' ' + event.start);
         // if event starts after midnight
-        if (event.startInt >= this.midnightIntConstant) {
+        if (event.startInt >= midnightIntConstant) {
           eventDate.setDate(eventDate.getDate() + 1);
         }
         let eventStart = Math.floor(eventDate.getTime() / 60000); // convert event start to mins
@@ -289,7 +263,7 @@ export class Main {
         let diffMins = diff - diffHours * 60;
 
         event.relativeTime = '~ in ' + (diffHours > 0 ? diffHours + 'h ' : '') + diffMins + 'm';
-        event.relativeTimeUrgent = diff <= this.notificationReminederMins;
+        event.relativeTimeUrgent = diff <= notificationReminederMins;
       }
     });
   }
@@ -336,11 +310,11 @@ export class Main {
     if (this.vm.favs.hasOwnProperty(eventId)) {
       favTimestamp = this.vm.favs[eventId];
       delete this.vm.favs[eventId];
-      this.cancelNotification(favTimestamp);
+      this.NotificationsService.cancelNotification(favTimestamp);
     } else {
       favTimestamp = Date.now();
       this.vm.favs[eventId] = favTimestamp;
-      this.scheduleNotification(fav, favTimestamp);
+      this.NotificationsService.scheduleNotification(fav, favTimestamp);
     }
     this.filterFavs();
     this.saveFavsLS();
@@ -404,89 +378,6 @@ export class Main {
     }
 
     this.savePrefsLS();
-  }
-
-  // NOTIFICATIONS
-
-  /**
-   * Gets datetime when notificaion should be triggered.
-   * @param {string} dateStamp - date/day stamp
-   * @param {number} startInt - start of the concert in number representation
-   * @returns {Date}
-   */
-  private getNotificationTime(dateStamp: string, startInt: number) {
-    let splitted = dateStamp.split('-').map((str) => {
-      return parseInt(str);
-    });
-    let date = new Date(splitted[0], splitted[1] - 1, splitted[2]);
-    if (startInt >= this.midnightIntConstant) { // starts after midnight
-      date.setDate(date.getDate() + 1);
-      startInt -= this.midnightIntConstant;
-    }
-    date.setHours(Math.floor(startInt / 100));
-    date.setMinutes((startInt % 100) - this.notificationReminederMins); // show notification X mins before start of the concert
-    return date;
-  }
-
-  /**
-   * Schedules the notificaion.
-   * @param {Event} fav - event which is fav
-   * @param {number} favTimestamp - fav timestamp, used as id for notificaion
-   */
-  private scheduleNotification(fav: IEvt, favTimestamp: number) {
-    if (!this.not) {
-      return;
-    }
-
-    this.not.schedule({
-      id: favTimestamp,
-      title: '[' + fav.stage + '] ' + fav.title,
-      text: 'Starts in ' + this.notificationReminederMins + ' mins! ' + fav.start + ' - ' + fav.end,
-      foreground: true,
-      vibrate: true,
-      led: {color: '#DC051E', on: 500, off: 500},
-      priority: 1,
-      trigger: {at: this.getNotificationTime(fav.day, fav.startInt)}
-      // trigger: { in: 15, unit: 'second' } // for testing...
-    });
-  }
-
-  /**
-   * Cancels the notificaion.
-   * @param {number} favTimestamp - fav timestamp, used as id for notificaion
-   */
-  private cancelNotification(favTimestamp: number) {
-    if (!this.not) {
-      return;
-    }
-
-    this.not.cancel(favTimestamp);
-  }
-
-  /**
-   * Cancels all notificaions and schedules creates new notificaions.
-   * Expects that favs are cleaned up (`cleanupFavs()` method).
-   * Should be used when new data is available from server.
-   */
-  private recheduleAllNotifications() {
-    if (!this.not) {
-      return;
-    }
-
-    this.not.cancelAll();
-
-    let allFavIds = Object.keys(this.vm.favs);
-
-    allFavIds.forEach((favId) => {
-      for (let i = 0; i < this.data.events.length; i++) {
-        let event = this.data.events[i];
-        if (event.title === favId) {
-          let favTimestamp = this.vm.favs[favId];
-          this.scheduleNotification(event, favTimestamp);
-          break;
-        }
-      }
-    });
   }
 
 }

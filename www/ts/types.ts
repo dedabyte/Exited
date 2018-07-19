@@ -1,22 +1,5 @@
 import {IRootScopeService} from 'angular';
 
-export interface IVM extends IRootScopeService {
-  currentTime: number;
-  prefs: IPrefs;
-  favs: {
-    [eventId: string]: number
-  };
-  filteredEvents: IEvt[];
-  filteredFavs: IEvt[];
-  methods: {
-    [methodName: string]: Function
-  };
-  days: {
-    [day: string]: IDay;
-  };
-  stages: string[];
-}
-
 export enum Tab {
   timeline = 'timeline',
   favs = 'favs'
@@ -27,6 +10,23 @@ export enum Theme {
   dark = 'dark'
 }
 
+export interface IVM extends IRootScopeService {
+  currentTime: number;
+  prefs: IPrefs;
+  favs: IFavs;
+  filteredEvents: IEvt[];
+  filteredFavs: IEvt[];
+  methods: {
+    [methodName: string]: Function
+  };
+  days: IDays;
+  stages: string[];
+}
+
+export interface IFavs {
+  [eventId: string]: number;
+}
+
 export interface IDay {
   day: string;
   name: string;
@@ -34,10 +34,12 @@ export interface IDay {
   formatted: string;
 }
 
+export interface IDays {
+  [day: string]: IDay;
+}
+
 export interface IData {
-  days: {
-    [day: string]: IDay;
-  };
+  days: IDays;
   stages: string[];
   events: IEvt[];
 }
