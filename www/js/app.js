@@ -4989,7 +4989,7 @@ define("model/notifications-service", ["require", "exports"], function (require,
                 startInt -= midnightIntConstant;
             }
             date.setHours(Math.floor(startInt / 100));
-            date.setMinutes((startInt % 100) - notificationReminederMins);
+            date.setMinutes((startInt % 100) - notificationReminderMins);
             return date;
         };
         NotificationsService.prototype.scheduleNotification = function (fav, favTimestamp) {
@@ -4999,7 +4999,7 @@ define("model/notifications-service", ["require", "exports"], function (require,
             this.notificationPlugin.schedule({
                 id: favTimestamp,
                 title: '[' + fav.stage + '] ' + fav.title,
-                text: 'Starts in ' + notificationReminederMins + ' mins! ' + fav.start + ' - ' + fav.end,
+                text: 'Starts in ' + notificationReminderMins + ' mins! ' + fav.start + ' - ' + fav.end,
                 foreground: true,
                 vibrate: true,
                 led: { color: '#DC051E', on: 500, off: 500 },
@@ -5263,7 +5263,7 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
                     var diffHours = Math.floor(diff / 60);
                     var diffMins = diff - diffHours * 60;
                     event.relativeTime = '~ in ' + (diffHours > 0 ? diffHours + 'h ' : '') + diffMins + 'm';
-                    event.relativeTimeUrgent = diff <= notificationReminederMins;
+                    event.relativeTimeUrgent = diff <= notificationReminderMins;
                 }
             });
         };
@@ -5378,4 +5378,6 @@ String.prototype.toInt = function () {
 Number.prototype.toInt = function () {
     return parseInt(this);
 };
+var midnightIntConstant = 10000;
+var notificationReminderMins = 15;
 //# sourceMappingURL=app.js.map

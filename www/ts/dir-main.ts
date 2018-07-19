@@ -263,7 +263,7 @@ export class Main {
         let diffMins = diff - diffHours * 60;
 
         event.relativeTime = '~ in ' + (diffHours > 0 ? diffHours + 'h ' : '') + diffMins + 'm';
-        event.relativeTimeUrgent = diff <= notificationReminederMins;
+        event.relativeTimeUrgent = diff <= notificationReminderMins;
       }
     });
   }

@@ -32,7 +32,7 @@ export default class NotificationsService {
       startInt -= midnightIntConstant;
     }
     date.setHours(Math.floor(startInt / 100));
-    date.setMinutes((startInt % 100) - notificationReminederMins); // show notification X mins before start of the concert
+    date.setMinutes((startInt % 100) - notificationReminderMins); // show notification X mins before start of the concert
     return date;
   }
 
@@ -49,7 +49,7 @@ export default class NotificationsService {
     this.notificationPlugin.schedule({
       id: favTimestamp,
       title: '[' + fav.stage + '] ' + fav.title,
-      text: 'Starts in ' + notificationReminederMins + ' mins! ' + fav.start + ' - ' + fav.end,
+      text: 'Starts in ' + notificationReminderMins + ' mins! ' + fav.start + ' - ' + fav.end,
       foreground: true,
       vibrate: true,
       led: {color: '#DC051E', on: 500, off: 500},
