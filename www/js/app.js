@@ -4963,57 +4963,6 @@ define("model/model", ["require", "exports", "types"], function (require, export
     }());
     exports.Data = Data;
 });
-define("tab-favs/dir-favs", ["require", "exports"], function (require, exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    function exTabFavs() {
-        return {
-            replace: true,
-            templateUrl: '../www/ts/tab-favs/dir-favs-tpl.html'
-        };
-    }
-    exports.default = exTabFavs;
-});
-define("tab-schedule/dir-current-time-1", ["require", "exports"], function (require, exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    function exCurrentTime1() {
-        return function (scope, element) {
-            scope.$watch('currentTime', currentTimePosition);
-            function currentTimePosition() {
-                if (scope.currentTime) {
-                    element.addClass('current-time-1').css('top', (scope.currentTime / 5 * 4).toInt());
-                }
-                else {
-                    element.removeClass('current-time-1');
-                }
-            }
-        };
-    }
-    exports.default = exCurrentTime1;
-});
-define("tab-schedule/dir-schedule", ["require", "exports"], function (require, exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    function exTabSchedule() {
-        return {
-            replace: true,
-            templateUrl: '../www/ts/tab-schedule/dir-schedule-tpl.html'
-        };
-    }
-    exports.default = exTabSchedule;
-});
-define("tab-schedule/dir-schedule-event", ["require", "exports"], function (require, exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    function exScheduleEvent() {
-        return {
-            replace: true,
-            templateUrl: '../www/ts/tab-schedule/dir-schedule-event-tpl.html'
-        };
-    }
-    exports.default = exScheduleEvent;
-});
 define("model/notifications-service", ["require", "exports"], function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
@@ -5085,6 +5034,57 @@ define("model/notifications-service", ["require", "exports"], function (require,
         return NotificationsService;
     }());
     exports.default = NotificationsService;
+});
+define("tab-favs/dir-favs", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    function exTabFavs() {
+        return {
+            replace: true,
+            templateUrl: '../www/ts/tab-favs/dir-favs-tpl.html'
+        };
+    }
+    exports.default = exTabFavs;
+});
+define("tab-schedule/dir-current-time-1", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    function exCurrentTime1() {
+        return function (scope, element) {
+            scope.$watch('currentTime', currentTimePosition);
+            function currentTimePosition() {
+                if (scope.currentTime) {
+                    element.addClass('current-time-1').css('top', (scope.currentTime / 5 * 4).toInt());
+                }
+                else {
+                    element.removeClass('current-time-1');
+                }
+            }
+        };
+    }
+    exports.default = exCurrentTime1;
+});
+define("tab-schedule/dir-schedule", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    function exTabSchedule() {
+        return {
+            replace: true,
+            templateUrl: '../www/ts/tab-schedule/dir-schedule-tpl.html'
+        };
+    }
+    exports.default = exTabSchedule;
+});
+define("tab-schedule/dir-schedule-event", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    function exScheduleEvent() {
+        return {
+            replace: true,
+            templateUrl: '../www/ts/tab-schedule/dir-schedule-event-tpl.html'
+        };
+    }
+    exports.default = exScheduleEvent;
 });
 define("dir-main", ["require", "exports", "types"], function (require, exports, types_2) {
     "use strict";
@@ -5353,7 +5353,7 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
     };
     exports.default = exMain;
 });
-define("app", ["require", "exports", "dir-ng-tap", "model/ls-service", "model/db-service", "model/model", "tab-favs/dir-favs", "tab-schedule/dir-current-time-1", "tab-schedule/dir-schedule", "tab-schedule/dir-schedule-event", "dir-main"], function (require, exports, dir_ng_tap_1, ls_service_1, db_service_1, model_1, dir_favs_1, dir_current_time_1_1, dir_schedule_1, dir_schedule_event_1, dir_main_1) {
+define("app", ["require", "exports", "dir-ng-tap", "model/ls-service", "model/db-service", "model/model", "model/notifications-service", "tab-favs/dir-favs", "tab-schedule/dir-current-time-1", "tab-schedule/dir-schedule", "tab-schedule/dir-schedule-event", "dir-main"], function (require, exports, dir_ng_tap_1, ls_service_1, db_service_1, model_1, notifications_service_1, dir_favs_1, dir_current_time_1_1, dir_schedule_1, dir_schedule_event_1, dir_main_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     angular.module('app', [])
@@ -5362,6 +5362,7 @@ define("app", ["require", "exports", "dir-ng-tap", "model/ls-service", "model/db
         .service('LsService', ls_service_1.LsService)
         .constant('LSKEYS', new ls_service_1.LSKEYS())
         .service('DbService', db_service_1.DbService)
+        .service('NotificationsService', notifications_service_1.default)
         .directive('ngTap', dir_ng_tap_1.default)
         .directive('exTabFavs', dir_favs_1.default)
         .directive('exCurrentTime1', dir_current_time_1_1.default)

@@ -6,10 +6,10 @@ interface Number {
   toInt(): number;
 }
 
-String.prototype.toInt = function(){
+String.prototype.toInt = function () {
   return parseInt(this);
 };
 
-Number.prototype.toInt = function(){
+Number.prototype.toInt = function () {
   return parseInt(this);
 };

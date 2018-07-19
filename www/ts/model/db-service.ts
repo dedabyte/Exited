@@ -12,19 +12,19 @@ export class DbService {
     private $q: IQService,
     private LsService: LsService,
     private LSKEYS: LSKEYS
-  ){
+  ) {
 
   }
 
-  private getUrl(path, params?){
+  private getUrl(path, params?) {
     let url = this.baseUrl + path + '.json?auth=' + this.auth;
-    if(params){
+    if (params) {
       url += params;
     }
     return url;
   }
 
-  private getVersion(){
+  private getVersion() {
     return this.$http.get(this.getUrl('version')).then(
       (response) => {
         return this.$q.resolve(response.data);
@@ -35,7 +35,7 @@ export class DbService {
     );
   }
 
-  private getData(){
+  private getData() {
     return this.$http.get(this.getUrl('data')).then(
       (response) => {
         let data = response.data;
@@ -49,19 +49,19 @@ export class DbService {
     );
   }
 
-  getLatestData(){
+  getLatestData() {
     return this.getVersion().then(
       (version: any) => {
         //TODO
         //if(version.favs > favsVersion){
         //
         //}
-        if(version.db > this.dbVersion){
+        if (version.db > this.dbVersion) {
           this.dbVersion = version.db;
           this.LsService.set(this.LSKEYS.dbVersion, this.dbVersion);
 
           return this.getData();
-        }else{
+        } else {
           return this.$q.resolve(false);
         }
       },
