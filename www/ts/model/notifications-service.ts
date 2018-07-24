@@ -55,7 +55,7 @@ export default class NotificationsService {
       led: {color: '#DC051E', on: 500, off: 500},
       priority: 1,
       // trigger: {at: this.getNotificationTime(fav.day, fav.startInt)}
-      trigger: { in: 15, unit: 'second' } // for testing...
+      trigger: {in: 15, unit: 'second'} // for testing...
     });
   }
 

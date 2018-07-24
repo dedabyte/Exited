@@ -86,7 +86,6 @@ define("model/db-service", ["require", "exports"], function (require, exports) {
             this.auth = 'gTf2SKTXTQY24DnT8bV0eVaaoYyfOc6455oLtyWC';
             this.baseUrl = 'https://exited-f73b2.firebaseio.com/';
             this.dbVersion = this.LsService.get(this.LSKEYS.dbVersion) || 0;
-            this.favsVersion = this.LsService.get(this.LSKEYS.favsVersion) || 0;
         }
         DbService.prototype.getUrl = function (path, params) {
             var url = this.baseUrl + path + '.json?auth=' + this.auth;
@@ -106,8 +105,7 @@ define("model/db-service", ["require", "exports"], function (require, exports) {
         DbService.prototype.getData = function () {
             var _this = this;
             return this.$http.get(this.getUrl('data')).then(function (response) {
-                var data = response.data;
-                return _this.$q.resolve(data);
+                return _this.$q.resolve(response.data);
             }, function (error) {
                 return _this.$q.reject(error);
             });
