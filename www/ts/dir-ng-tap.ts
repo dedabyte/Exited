@@ -21,5 +21,10 @@ export default function ngTap() {
       element.removeClass('active');
       scope.$apply(attrs['ngTap']);
     });
+
+    scope.$on('long-tap', () => {
+      cancelEvent = true;
+      element.removeClass('active');
+    });
   };
 }

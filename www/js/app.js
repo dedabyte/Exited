@@ -19,9 +19,46 @@ define("dir-ng-tap", ["require", "exports"], function (require, exports) {
                 element.removeClass('active');
                 scope.$apply(attrs['ngTap']);
             });
+            scope.$on('long-tap', function () {
+                cancelEvent = true;
+                element.removeClass('active');
+            });
         };
     }
     exports.default = ngTap;
+});
+define("dir-ng-long-tap", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    function ngLongTap($timeout) {
+        return function (scope, element, attrs) {
+            var longtapIsInvoked = false;
+            var longtapTime = 299;
+            var longtapTO;
+            element.on('touchstart', function () {
+                longtapIsInvoked = false;
+                longtapTO = $timeout(invokeCallback, longtapTime);
+            });
+            element.on('touchmove', function () {
+                cancel();
+            });
+            element.on('touchend', function (e) {
+                cancel();
+                if (longtapIsInvoked) {
+                    e.preventDefault();
+                }
+            });
+            function cancel() {
+                $timeout.cancel(longtapTO);
+            }
+            function invokeCallback() {
+                scope.$broadcast('long-tap');
+                scope.$apply(attrs['ngLongTap']);
+                longtapIsInvoked = true;
+            }
+        };
+    }
+    exports.default = ngLongTap;
 });
 define("model/ls-service", ["require", "exports"], function (require, exports) {
     "use strict";
@@ -5084,6 +5121,17 @@ define("tab-schedule/dir-schedule-event", ["require", "exports"], function (requ
     }
     exports.default = exScheduleEvent;
 });
+define("over/dir-event-contextmenu", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    function exEventContextmenu() {
+        return {
+            replace: true,
+            templateUrl: '../www/ts/over/dir-event-contextmenu-tpl.html'
+        };
+    }
+    exports.default = exEventContextmenu;
+});
 define("dir-main", ["require", "exports", "types"], function (require, exports, types_2) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
@@ -5099,7 +5147,12 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
             this.$interval = $interval;
             this.$window = $window;
             this.$rootScope = $rootScope;
+            this.mockNow = '2018-07-12T20:30';
             this.vm = this.$rootScope;
+            this.vm.eventContextmenu = {
+                show: false,
+                event: null
+            };
             this.data = this.LsService.get(this.LSKEYS.data) || this.Data;
             this.vm.prefs = this.LsService.get(this.LSKEYS.prefs) || this.Prefs;
             this.vm.favs = this.LsService.get(this.LSKEYS.favs) || {};
@@ -5119,37 +5172,18 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
                 _this.markEventsInProgress(_this.vm.filteredFavs);
                 _this.setEventsRelativeTime(_this.vm.filteredFavs);
             }, 60000 * 1);
-            this.DbService.getLatestData().then(function (latestData) {
-                if (latestData) {
-                    console.log('getLatestData: new data available!', latestData);
-                    _this.data = latestData;
-                    _this.vm.stages = _this.data.stages;
-                    _this.vm.days = _this.data.days;
-                    _this.setCurrentDayAndPreselectSelectedDayIfNeeded();
-                    _this.calculateCurrentTime();
-                    _this.saveDataLS();
-                    _this.filterEvents();
-                    _this.cleanupFavs();
-                    _this.filterFavs();
-                    _this.NotificationsService.recheduleAllNotifications(_this.vm.favs, _this.data.events);
-                    _this.markEventsInProgress(_this.vm.filteredEvents);
-                    _this.markEventsInProgress(_this.vm.filteredFavs);
-                    _this.setEventsRelativeTime(_this.vm.filteredFavs);
-                }
-                else {
-                    console.log('getLatestData: no new data.');
-                }
-            }, function (error) {
-                console.error('getLatestData: error', error);
-            });
             this.vm.methods = {
                 setTab: this.setTab.bind(this),
                 setStage: this.setStage.bind(this),
                 setDay: this.setDay.bind(this),
                 setFav: this.setFav.bind(this),
+                isFav: this.isFav.bind(this),
                 setTheme: this.setTheme.bind(this),
                 getDaysCount: this.getDaysCount.bind(this),
-                gotoStageFromFavs: this.gotoStageFromFavs.bind(this)
+                gotoStageFromFavs: this.gotoStageFromFavs.bind(this),
+                openEventContextmenu: this.openEventContextmenu.bind(this),
+                searchWikipediaInDefaultBrowser: this.searchWikipediaInDefaultBrowser.bind(this),
+                searchGoogleInDefaultBrowser: this.searchGoogleInDefaultBrowser.bind(this)
             };
         }
         Main.prototype.savePrefsLS = function () {
@@ -5307,6 +5341,23 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
             this.filterFavs();
             this.saveFavsLS();
         };
+        Main.prototype.isFav = function (fav) {
+            if (!fav) {
+                return false;
+            }
+            var eventId = fav.title;
+            return this.vm.favs.hasOwnProperty(eventId);
+        };
+        Main.prototype.openEventContextmenu = function (evt) {
+            this.vm.eventContextmenu.show = true;
+            this.vm.eventContextmenu.event = evt;
+        };
+        Main.prototype.searchWikipediaInDefaultBrowser = function (term) {
+            window.open('https://en.wikipedia.org/wiki/Special:Search/' + term, '_blank');
+        };
+        Main.prototype.searchGoogleInDefaultBrowser = function (term) {
+            window.open('https://www.google.com/search?q=' + term, '_blank');
+        };
         Main.prototype.getDaysCount = function () {
             return Object.keys(this.data.days).length;
         };
@@ -5351,7 +5402,7 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
     };
     exports.default = exMain;
 });
-define("app", ["require", "exports", "dir-ng-tap", "model/ls-service", "model/db-service", "model/model", "model/notifications-service", "tab-favs/dir-favs", "tab-schedule/dir-current-time-1", "tab-schedule/dir-schedule", "tab-schedule/dir-schedule-event", "dir-main"], function (require, exports, dir_ng_tap_1, ls_service_1, db_service_1, model_1, notifications_service_1, dir_favs_1, dir_current_time_1_1, dir_schedule_1, dir_schedule_event_1, dir_main_1) {
+define("app", ["require", "exports", "dir-ng-tap", "dir-ng-long-tap", "model/ls-service", "model/db-service", "model/model", "model/notifications-service", "tab-favs/dir-favs", "tab-schedule/dir-current-time-1", "tab-schedule/dir-schedule", "tab-schedule/dir-schedule-event", "over/dir-event-contextmenu", "dir-main"], function (require, exports, dir_ng_tap_1, dir_ng_long_tap_1, ls_service_1, db_service_1, model_1, notifications_service_1, dir_favs_1, dir_current_time_1_1, dir_schedule_1, dir_schedule_event_1, dir_event_contextmenu_1, dir_main_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     angular.module('app', [])
@@ -5362,10 +5413,12 @@ define("app", ["require", "exports", "dir-ng-tap", "model/ls-service", "model/db
         .service('DbService', db_service_1.DbService)
         .service('NotificationsService', notifications_service_1.default)
         .directive('ngTap', dir_ng_tap_1.default)
+        .directive('ngLongTap', dir_ng_long_tap_1.default)
         .directive('exTabFavs', dir_favs_1.default)
         .directive('exCurrentTime1', dir_current_time_1_1.default)
         .directive('exTabSchedule', dir_schedule_1.default)
         .directive('exScheduleEvent', dir_schedule_event_1.default)
+        .directive('exEventContextmenu', dir_event_contextmenu_1.default)
         .component('exMain', dir_main_1.default);
     angular
         .bootstrap(document.documentElement, ['app']);

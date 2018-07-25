@@ -21,6 +21,10 @@ export interface IVM extends IRootScopeService {
   };
   days: IDays;
   stages: string[];
+  eventContextmenu: {
+    show: boolean;
+    event: IEvt
+  }
 }
 
 export interface IFavs {

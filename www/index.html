@@ -27,6 +27,10 @@
       <div ex-tab-favs ng-show="prefs.selectedTab === 'favs'"></div>
     </div>
 
+    <div class="over-wrap" ng-style="{ display: eventContextmenu.show ? 'block' : 'none' }">
+      <div ex-event-contextmenu></div>
+    </div>
+
   </ex-main>
 
 

@@ -1,4 +1,4 @@
-import {IIntervalService, IRootScopeService, IWindowService} from 'angular';
+import {IAngularEvent, IIntervalService, IRootScopeService, IWindowService} from 'angular';
 import {Data, Prefs} from './model/model';
 import {DbService} from './model/db-service';
 import {LSKEYS, LsService} from './model/ls-service';
@@ -22,8 +22,12 @@ export class Main {
     private $window: IWindowService,
     private $rootScope: IRootScopeService,
   ) {
-    // this.mockNow = '2018-07-13T00:55';  // for testing
+    this.mockNow = '2018-07-12T20:30';  // for testing
     this.vm = this.$rootScope as IVM;
+    this.vm.eventContextmenu = {
+      show: false,
+      event: null
+    };
 
     this.data = this.LsService.get(this.LSKEYS.data) as IData || this.Data;
 
@@ -51,35 +55,35 @@ export class Main {
       this.setEventsRelativeTime(this.vm.filteredFavs);
     }, 60000 * 1);
 
-    this.DbService.getLatestData().then(
-      (latestData: IData) => {
-        if (latestData) {
-          console.log('getLatestData: new data available!', latestData);
-
-          this.data = latestData;
-          this.vm.stages = this.data.stages;
-          this.vm.days = this.data.days;
-
-          this.setCurrentDayAndPreselectSelectedDayIfNeeded();
-          this.calculateCurrentTime();
-          this.saveDataLS();
-
-          this.filterEvents();
-          this.cleanupFavs();
-          this.filterFavs();
-          this.NotificationsService.recheduleAllNotifications(this.vm.favs, this.data.events);
-
-          this.markEventsInProgress(this.vm.filteredEvents);
-          this.markEventsInProgress(this.vm.filteredFavs);
-          this.setEventsRelativeTime(this.vm.filteredFavs);
-        } else {
-          console.log('getLatestData: no new data.');
-        }
-      },
-      (error) => {
-        console.error('getLatestData: error', error);
-      }
-    );
+    // this.DbService.getLatestData().then(
+    //   (latestData: IData) => {
+    //     if (latestData) {
+    //       console.log('getLatestData: new data available!', latestData);
+    //
+    //       this.data = latestData;
+    //       this.vm.stages = this.data.stages;
+    //       this.vm.days = this.data.days;
+    //
+    //       this.setCurrentDayAndPreselectSelectedDayIfNeeded();
+    //       this.calculateCurrentTime();
+    //       this.saveDataLS();
+    //
+    //       this.filterEvents();
+    //       this.cleanupFavs();
+    //       this.filterFavs();
+    //       this.NotificationsService.recheduleAllNotifications(this.vm.favs, this.data.events);
+    //
+    //       this.markEventsInProgress(this.vm.filteredEvents);
+    //       this.markEventsInProgress(this.vm.filteredFavs);
+    //       this.setEventsRelativeTime(this.vm.filteredFavs);
+    //     } else {
+    //       console.log('getLatestData: no new data.');
+    //     }
+    //   },
+    //   (error) => {
+    //     console.error('getLatestData: error', error);
+    //   }
+    // );
 
 
     // method access via view
@@ -89,9 +93,13 @@ export class Main {
       setStage: this.setStage.bind(this),
       setDay: this.setDay.bind(this),
       setFav: this.setFav.bind(this),
+      isFav: this.isFav.bind(this),
       setTheme: this.setTheme.bind(this),
       getDaysCount: this.getDaysCount.bind(this),
-      gotoStageFromFavs: this.gotoStageFromFavs.bind(this)
+      gotoStageFromFavs: this.gotoStageFromFavs.bind(this),
+      openEventContextmenu: this.openEventContextmenu.bind(this),
+      searchWikipediaInDefaultBrowser: this.searchWikipediaInDefaultBrowser.bind(this),
+      searchGoogleInDefaultBrowser: this.searchGoogleInDefaultBrowser.bind(this)
     };
   }
 
@@ -318,6 +326,27 @@ export class Main {
     }
     this.filterFavs();
     this.saveFavsLS();
+  }
+
+  private isFav(fav: IEvt) {
+    if(!fav) {
+      return false;
+    }
+    let eventId = fav.title;
+    return this.vm.favs.hasOwnProperty(eventId);
+  }
+
+  private openEventContextmenu(evt: IEvt) {
+    this.vm.eventContextmenu.show = true;
+    this.vm.eventContextmenu.event = evt;
+  }
+
+  private searchWikipediaInDefaultBrowser(term: string){
+    window.open('https://en.wikipedia.org/wiki/Special:Search/' + term, '_blank');
+  }
+
+  private searchGoogleInDefaultBrowser(term: string){
+    window.open('https://www.google.com/search?q=' + term, '_blank');
   }
 
   /**

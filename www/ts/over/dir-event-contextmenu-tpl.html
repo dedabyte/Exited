@@ -1,0 +1,10 @@
+<div class="window">
+  <div class="window-header">
+    <p class="window-event-title" ng-bind="eventContextmenu.event.title"></p>
+    <p><span class="window-stage in-progress" ng-show="eventContextmenu.event.inProgress">live!</span><span class="window-stage" ng-bind="eventContextmenu.event.stage" ng-tap="methods.gotoStageFromFavs(eventContextmenu.event.stage)"></span><span class="window-start-end" ng-bind="eventContextmenu.event.start + ' - ' + eventContextmenu.event.end"></span><span class="window-relative" ng-show="eventContextmenu.event.relativeTime" ng-bind="eventContextmenu.event.relativeTime" ng-class="{ urgent: eventContextmenu.event.relativeTimeUrgent }"></span></p>
+  </div>
+  <div class="window-action" ng-tap="methods.setFav(eventContextmenu.event)">{{ methods.isFav(eventContextmenu.event) ? 'Remove from Favs' : 'Add to Favs' }}</div>
+  <div class="window-action" ng-tap="methods.searchGoogleInDefaultBrowser(eventContextmenu.event.title)">Search Google</div>
+  <div class="window-action" ng-tap="methods.searchWikipediaInDefaultBrowser(eventContextmenu.event.title)">Search Wikipedia</div>
+  <div class="window-action" ng-tap="eventContextmenu.show = false">Close</div>
+</div>
