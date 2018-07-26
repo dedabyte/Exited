@@ -5361,10 +5361,10 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
             this.vm.eventContextmenu.event = evt;
         };
         Main.prototype.searchWikipediaInDefaultBrowser = function (term) {
-            this.$window.open('https://en.wikipedia.org/wiki/Special:Search/' + term, this.openIn);
+            this.$window.open('https://en.wikipedia.org/wiki/Special:Search/' + term, this.openIn, this.openOptions);
         };
         Main.prototype.searchGoogleInDefaultBrowser = function (term) {
-            this.$window.open('https://www.google.com/search?q=' + term, this.openIn);
+            this.$window.open('https://www.google.com/search?q=' + term, this.openIn, this.openOptions);
         };
         Main.prototype.getDaysCount = function () {
             return Object.keys(this.data.days).length;

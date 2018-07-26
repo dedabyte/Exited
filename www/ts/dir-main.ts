@@ -9,6 +9,7 @@ export class Main {
   private vm: IVM;
   private data: IData;
   private openIn: '_system';
+  private openOptions: 'location=yes,zoom=no';
 
   private mockNow: string; // for testing
 
@@ -353,11 +354,11 @@ export class Main {
   }
 
   private searchWikipediaInDefaultBrowser(term: string){
-    this.$window.open('https://en.wikipedia.org/wiki/Special:Search/' + term, this.openIn);
+    this.$window.open('https://en.wikipedia.org/wiki/Special:Search/' + term, this.openIn, this.openOptions);
   }
 
   private searchGoogleInDefaultBrowser(term: string){
-    this.$window.open('https://www.google.com/search?q=' + term, this.openIn);
+    this.$window.open('https://www.google.com/search?q=' + term, this.openIn, this.openOptions);
   }
 
   /**
