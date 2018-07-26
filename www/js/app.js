@@ -5185,6 +5185,14 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
                 searchWikipediaInDefaultBrowser: this.searchWikipediaInDefaultBrowser.bind(this),
                 searchGoogleInDefaultBrowser: this.searchGoogleInDefaultBrowser.bind(this)
             };
+            document.addEventListener('deviceready', function () {
+                try {
+                    _this.$window.open = _this.$window.cordova.InAppBrowser.open;
+                }
+                catch (error) {
+                    console.error('notificaions plugin error', error);
+                }
+            }, false);
         }
         Main.prototype.savePrefsLS = function () {
             this.LsService.set(this.LSKEYS.prefs, this.vm.prefs);
@@ -5353,10 +5361,10 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
             this.vm.eventContextmenu.event = evt;
         };
         Main.prototype.searchWikipediaInDefaultBrowser = function (term) {
-            window.open('https://en.wikipedia.org/wiki/Special:Search/' + term, '_blank');
+            this.$window.open('https://en.wikipedia.org/wiki/Special:Search/' + term, this.openIn);
         };
         Main.prototype.searchGoogleInDefaultBrowser = function (term) {
-            window.open('https://www.google.com/search?q=' + term, '_blank');
+            this.$window.open('https://www.google.com/search?q=' + term, this.openIn);
         };
         Main.prototype.getDaysCount = function () {
             return Object.keys(this.data.days).length;

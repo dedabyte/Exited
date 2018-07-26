@@ -8,6 +8,7 @@ import NotificationsService from './model/notifications-service';
 export class Main {
   private vm: IVM;
   private data: IData;
+  private openIn: '_system';
 
   private mockNow: string; // for testing
 
@@ -101,6 +102,16 @@ export class Main {
       searchWikipediaInDefaultBrowser: this.searchWikipediaInDefaultBrowser.bind(this),
       searchGoogleInDefaultBrowser: this.searchGoogleInDefaultBrowser.bind(this)
     };
+
+
+
+    document.addEventListener('deviceready', () => {
+      try {
+        this.$window.open = this.$window.cordova.InAppBrowser.open;
+      } catch (error) {
+        console.error('notificaions plugin error', error);
+      }
+    }, false);
   }
 
   // METHODS
@@ -342,11 +353,11 @@ export class Main {
   }
 
   private searchWikipediaInDefaultBrowser(term: string){
-    window.open('https://en.wikipedia.org/wiki/Special:Search/' + term, '_blank');
+    this.$window.open('https://en.wikipedia.org/wiki/Special:Search/' + term, this.openIn);
   }
 
   private searchGoogleInDefaultBrowser(term: string){
-    window.open('https://www.google.com/search?q=' + term, '_blank');
+    this.$window.open('https://www.google.com/search?q=' + term, this.openIn);
   }
 
   /**
