@@ -1,0 +1,26 @@
+{
+  "2019-7-4": {
+    "day": "2019-7-4",
+    "formatted": "Thu 4th July",
+    "index": 1,
+    "name": "Thu"
+  },
+  "2019-7-5": {
+    "day": "2019-7-5",
+    "formatted": "Fri 5th July",
+    "index": 2,
+    "name": "Fri"
+  },
+  "2019-7-6": {
+    "day": "2019-7-6",
+    "formatted": "Sat 6th July",
+    "index": 3,
+    "name": "Sat"
+  },
+  "2019-7-7": {
+    "day": "2019-7-7",
+    "formatted": "Sun 7th July",
+    "index": 4,
+    "name": "Sun"
+  }
+}

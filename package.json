@@ -1,7 +1,7 @@
 {
   "name": "info.igordedic.exited",
-  "version": "1.2018.2",
-  "description": "Get Exited! Exit 2018 timeline.",
+  "version": "1.2019.1",
+  "description": "Get Exited! Exit 2019 timeline.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

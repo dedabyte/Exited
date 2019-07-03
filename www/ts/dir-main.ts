@@ -24,7 +24,7 @@ export class Main {
     private $window: IWindowService,
     private $rootScope: IRootScopeService,
   ) {
-    this.mockNow = '2018-07-12T20:30';  // for testing
+    // this.mockNow = '2019-07-04T20:30';  // for testing
     this.vm = this.$rootScope as IVM;
     this.vm.eventContextmenu = {
       show: false,
@@ -57,35 +57,35 @@ export class Main {
       this.setEventsRelativeTime(this.vm.filteredFavs);
     }, 60000 * 1);
 
-    // this.DbService.getLatestData().then(
-    //   (latestData: IData) => {
-    //     if (latestData) {
-    //       console.log('getLatestData: new data available!', latestData);
-    //
-    //       this.data = latestData;
-    //       this.vm.stages = this.data.stages;
-    //       this.vm.days = this.data.days;
-    //
-    //       this.setCurrentDayAndPreselectSelectedDayIfNeeded();
-    //       this.calculateCurrentTime();
-    //       this.saveDataLS();
-    //
-    //       this.filterEvents();
-    //       this.cleanupFavs();
-    //       this.filterFavs();
-    //       this.NotificationsService.recheduleAllNotifications(this.vm.favs, this.data.events);
-    //
-    //       this.markEventsInProgress(this.vm.filteredEvents);
-    //       this.markEventsInProgress(this.vm.filteredFavs);
-    //       this.setEventsRelativeTime(this.vm.filteredFavs);
-    //     } else {
-    //       console.log('getLatestData: no new data.');
-    //     }
-    //   },
-    //   (error) => {
-    //     console.error('getLatestData: error', error);
-    //   }
-    // );
+    this.DbService.getLatestData().then(
+      (latestData: IData) => {
+        if (latestData) {
+          console.log('getLatestData: new data available!', latestData);
+
+          this.data = latestData;
+          this.vm.stages = this.data.stages;
+          this.vm.days = this.data.days;
+
+          this.setCurrentDayAndPreselectSelectedDayIfNeeded();
+          this.calculateCurrentTime();
+          this.saveDataLS();
+
+          this.filterEvents();
+          this.cleanupFavs();
+          this.filterFavs();
+          this.NotificationsService.recheduleAllNotifications(this.vm.favs, this.data.events);
+
+          this.markEventsInProgress(this.vm.filteredEvents);
+          this.markEventsInProgress(this.vm.filteredFavs);
+          this.setEventsRelativeTime(this.vm.filteredFavs);
+        } else {
+          console.log('getLatestData: no new data.');
+        }
+      },
+      (error) => {
+        console.error('getLatestData: error', error);
+      }
+    );
 
 
     // method access via view
