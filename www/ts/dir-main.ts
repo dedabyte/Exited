@@ -24,7 +24,7 @@ export class Main {
     private $window: IWindowService,
     private $rootScope: IRootScopeService,
   ) {
-    // this.mockNow = '2019-07-04T20:30';  // for testing
+    // this.mockNow = '2019-07-04T17:00';  // for testing
     this.vm = this.$rootScope as IVM;
     this.vm.eventContextmenu = {
       show: false,
@@ -331,6 +331,9 @@ export class Main {
       favTimestamp = this.vm.favs[eventId];
       delete this.vm.favs[eventId];
       this.NotificationsService.cancelNotification(favTimestamp);
+      // quick fix for relative time stayes when removed from favs
+      fav.relativeTime = '';
+      fav.relativeTimeUrgent = false;
     } else {
       favTimestamp = Date.now();
       this.vm.favs[eventId] = favTimestamp;

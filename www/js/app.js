@@ -5997,6 +5997,7 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
             this.$interval = $interval;
             this.$window = $window;
             this.$rootScope = $rootScope;
+            this.mockNow = '2019-07-04T17:00';
             this.vm = this.$rootScope;
             this.vm.eventContextmenu = {
                 show: false,
@@ -6212,6 +6213,8 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
                 favTimestamp = this.vm.favs[eventId];
                 delete this.vm.favs[eventId];
                 this.NotificationsService.cancelNotification(favTimestamp);
+                fav.relativeTime = '';
+                fav.relativeTimeUrgent = false;
             }
             else {
                 favTimestamp = Date.now();
