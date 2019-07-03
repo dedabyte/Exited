@@ -5889,7 +5889,7 @@ define("model/notifications-service", ["require", "exports"], function (require,
                 vibrate: true,
                 led: { color: '#DC051E', on: 500, off: 500 },
                 priority: 1,
-                trigger: { in: 15, unit: 'second' }
+                trigger: { at: this.getNotificationTime(fav.day, fav.startInt) }
             });
         };
         NotificationsService.prototype.cancelNotification = function (favTimestamp) {
@@ -5997,7 +5997,6 @@ define("dir-main", ["require", "exports", "types"], function (require, exports, 
             this.$interval = $interval;
             this.$window = $window;
             this.$rootScope = $rootScope;
-            this.mockNow = '2019-07-04T17:00';
             this.vm = this.$rootScope;
             this.vm.eventContextmenu = {
                 show: false,
