@@ -14,8 +14,8 @@
         <tr>
           <td ng-repeat="(day, dayObj) in days"
               class="day"
-              ng-tap="methods.setDay(day)"
-              ng-class="{ selected: prefs.selectedDay === day }"
+              ng-tap="methods.setDay(dayObj.day)"
+              ng-class="{ selected: prefs.selectedDay === dayObj.day }"
               ng-style="{ width: 100/methods.getDaysCount() + '%' }">
             <small>day</small> {{dayObj.index}}<br><small>{{dayObj.name}}</small>
           </td>
