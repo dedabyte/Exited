@@ -1,0 +1,26 @@
+{
+  "2021-7-08": {
+    "day": "2021-7-8",
+    "formatted": "Thu 8th July",
+    "index": 1,
+    "name": "Thu"
+  },
+  "2021-7-09": {
+    "day": "2021-7-9",
+    "formatted": "Fri 9th July",
+    "index": 2,
+    "name": "Fri"
+  },
+  "2021-7-10": {
+    "day": "2021-7-10",
+    "formatted": "Sat 10th July",
+    "index": 3,
+    "name": "Sat"
+  },
+  "2021-7-11": {
+    "day": "2021-7-11",
+    "formatted": "Sun 11th July",
+    "index": 4,
+    "name": "Sun"
+  }
+}
