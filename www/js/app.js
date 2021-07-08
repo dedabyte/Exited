@@ -4316,7 +4316,7 @@ define("tab-favs/dir-favs", ["require", "exports"], function (require, exports) 
     function exTabFavs() {
         return {
             replace: true,
-            templateUrl: '../www/ts/tab-favs/dir-favs-tpl.html'
+            templateUrl: './ts/tab-favs/dir-favs-tpl.html'
         };
     }
     exports.default = exTabFavs;
@@ -4345,7 +4345,7 @@ define("tab-schedule/dir-schedule", ["require", "exports"], function (require, e
     function exTabSchedule() {
         return {
             replace: true,
-            templateUrl: '../www/ts/tab-schedule/dir-schedule-tpl.html'
+            templateUrl: './ts/tab-schedule/dir-schedule-tpl.html'
         };
     }
     exports.default = exTabSchedule;
@@ -4356,7 +4356,7 @@ define("tab-schedule/dir-schedule-event", ["require", "exports"], function (requ
     function exScheduleEvent() {
         return {
             replace: true,
-            templateUrl: '../www/ts/tab-schedule/dir-schedule-event-tpl.html'
+            templateUrl: './ts/tab-schedule/dir-schedule-event-tpl.html'
         };
     }
     exports.default = exScheduleEvent;
@@ -4367,7 +4367,7 @@ define("over/dir-event-contextmenu", ["require", "exports"], function (require, 
     function exEventContextmenu() {
         return {
             replace: true,
-            templateUrl: '../www/ts/over/dir-event-contextmenu-tpl.html'
+            templateUrl: './ts/over/dir-event-contextmenu-tpl.html'
         };
     }
     exports.default = exEventContextmenu;
